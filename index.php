@@ -30,8 +30,8 @@ session_regenerate_id(true);
 	<h2> Kami segenap Panitia Rakernas PT PESONNA OPTIMA JASA Tahun 2022<br/>
 	Mengucapkan Terimakasih banyak kepada<br/>Jajaran Direksi dan Manajemen PT PESONNA OPTIMA JASA<br/>serta Partisipasi seluruh peserta RAKERNAS</h2>
 	<br/>
-	<h2><marquee direction="right">SAMPAI KETEMU DI RAPAT KERJA NASIONAL PT PESONNA OPTIMA JASA di Tahun Berikutnya</marquee></h2>
-	<h2><marquee direction="left">SAMPAI KETEMU DI RAPAT KERJA NASIONAL PT PESONNA OPTIMA JASA di Tahun Berikutnya</marquee></h2>
+	<h2><marquee direction="right">SAMPAI KETEMU DI RAPAT KERJA NASIONAL PT PESONNA OPTIMA JASA di Tahun 2023</marquee></h2>
+	<h2><marquee direction="left">SAMPAI KETEMU DI RAPAT KERJA NASIONAL PT PESONNA OPTIMA JASA di Tahun 2023</marquee></h2>
     
 	</div>
 	<div class="container">
