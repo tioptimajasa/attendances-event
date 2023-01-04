@@ -1,0 +1,5 @@
+-- Admin
+admin
+Admin123$
+
+-- ganti collor di style.css --> sesuaikan dengan optimajasa
