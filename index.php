@@ -53,7 +53,7 @@
           </div>
         </form>
 
-        <center><h5 class="form-signin"><a href="#" data-toggle="modal" data-target="#contact"> RAKERNAS Apps &copy; 2022</a> </h5></center> 
+        <center><h5 class="form-signin"><a href="#" data-toggle="modal" data-target="#contact"> RAKERNAS Apps &copy; 2023</a> </h5></center> 
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
