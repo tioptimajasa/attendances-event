@@ -2,4 +2,12 @@
 admin
 Admin123$
 
+-- User
+user1
+user1
+
+-- Officer => New user in Rakernas 2023
+officer
+Officer2023
+
 -- ganti collor di style.css --> sesuaikan dengan optimajasa

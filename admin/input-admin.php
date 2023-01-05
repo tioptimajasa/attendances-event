@@ -80,7 +80,8 @@
                             <select name="level" class="form-control" required>
 							                <option value=""> -- Pilih Level Pengguna -- </option>
 							                <option value="admin">Admin</option>
-                            <option value="user">User</option>
+                              <option value="user">User</option>
+                              <option value="officer">Officer</option>
 						                </select>
                               </div>
                           </div>

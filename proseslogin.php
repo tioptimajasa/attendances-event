@@ -33,6 +33,8 @@ if (mysqli_num_rows($q) == 1) {
         header('location:admin/index-admin.php');
     } else if ($_SESSION['level'] == 'user'){
         header('location:user/index-user.php');
+    } else if ($_SESSION['level'] == 'officer'){
+        header('location:officer/index-officer.php');
     }
 	
 } else {
