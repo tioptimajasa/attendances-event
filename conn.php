@@ -29,5 +29,4 @@ function create_random($length)
 }
 
 //echo create_random(10);
-//tes
 ?>

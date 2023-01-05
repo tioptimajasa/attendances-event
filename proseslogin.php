@@ -37,7 +37,13 @@ if (mysqli_num_rows($q) == 1) {
         header('location:officer/index-officer.php');
     }
 	
-} else {
+} 
+
+// else if ($_SESSION['username'] == $_SESSION['']) {
+// 	header('location:index.php?error=Anda Belum Terdaftar!');
+// }
+
+else {
 	header('location:index.php?error=Anda Belum Terdaftar!');
 }
 ?>
