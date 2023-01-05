@@ -1,12 +1,13 @@
 <header class="main-header">
         <!-- Logo -->
-        <a href="index-admin.php" class="logo">
+        <!-- <a href="index-admin.php" class="logo"> -->
+        <a href="" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <!-- <span class="logo-mini"><b>POJ</b></span> -->
           <span class="logo-mini"><img src="../dist/img/logo-only.jpg" width="30" height="30" /></span>
           <!-- logo for regular state and mobile devices -->
           <!-- <img src="../dist/img/logo-poj.png" width="2px" height="2px"> -->
-          <span class="logo-lg"><b>RAKERNAS</b> 2022 </span>
+          <span class="logo-lg"><b>RAKERNAS</b> 2023 </span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -15,7 +16,7 @@
             <span class="sr-only">Toggle navigation</span>
           </a>
 
-<a href="index-admin.php"> <img src="../dist/img/logo-poj2.png" width="375" height="48" /> </a>
+<a href=''> <img src="../dist/img/logo-poj2.png" width="375" height="48" /> </a>
 
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">

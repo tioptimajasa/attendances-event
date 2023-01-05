@@ -24,7 +24,7 @@ session_regenerate_id(true);
   <br /><br/>
     
   <div id="rz">
-        <strong> <a href="#" style="color: black;">Copyright &copy; 2022 by TI-POJ</a></strong>
+        <strong> <a href="#" style="color: black;">Copyright &copy; 2023 by TI-POJ</a></strong>
   </div>  
   </body>
 </html>

@@ -1,11 +1,11 @@
 <?php include "session.php"; ?>
 <!DOCTYPE html>
 <html>
-  <?php include "../global-templates/head.php"; ?>
+  <?php include "head.php"; ?>
   <body class="hold-transition skin-green-light sidebar-mini">
     <div class="wrapper">
 
-      <?php include "../global-templates/header.php"; ?>
+      <?php include "header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu.php"; ?>
 
@@ -20,7 +20,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Dashboard
+            Dashboard TES OFFICER
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
@@ -29,7 +29,6 @@
           </ol>
         </section>
 
-        <!-- /Dashboard Content Badge Notif -->
         <!-- Main content -->
         <section class="content">
           <!-- Small boxes (Stat box) -->
@@ -99,7 +98,6 @@
                 <a href="materi-event.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
-            <!-- ./Dashboard Content Badge Notif -->
             
             
           </div><!-- /.row -->
@@ -224,9 +222,9 @@
         </section><!-- /.content -->
         
       </div><!-- /.content-wrapper -->
-      <?php include "../global-templates/footer.php"; ?>
+      <?php include "footer.php"; ?>
 
-      <?php include "../global-templates/sidecontrol.php"; ?>
+      <?php include "sidecontrol.php"; ?>
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>

@@ -104,7 +104,7 @@
           <div class="tab-pane" id="control-sidebar-settings-tab">
           <h3 class="control-sidebar-heading">Tentang Aplikasi</h3>
           <p>
-          Aplikasi Absensi QR Code merupakan aplikasi untuk mendukung suksesnya Rapat Kerja Nasional PT PESONNA OPTIMA JASA Tahun 2022,
+          Aplikasi Absensi QR Code merupakan aplikasi untuk mendukung suksesnya Rapat Kerja Nasional PT PESONNA OPTIMA JASA Tahun 2023,
           Untuk Support bisa menghubungi kontak dibawah ini :
           </p>
           <ul class="control-sidebar-menu">
