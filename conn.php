@@ -23,11 +23,10 @@ function create_random($length)
     $string = '';
     for($i = 0; $i < $length; $i++) {
         $pos = rand(0, strlen($data)-1);
-        $string .= $data{$pos};
+        $string .= $data($pos);
     }
     return $string;
 }
 
 //echo create_random(10);
-//tes
 ?>
