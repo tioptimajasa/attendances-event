@@ -1,163 +1,82 @@
-<?php
-session_start();
-session_unset();
-session_destroy();
-session_write_close();
-setcookie(session_name(),'',0,'/');
-session_regenerate_id(true);
-?>
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Rakernas 2022</title>
-    <script src="dist/js/countdown-end-rakernas2022.js"></script>
-</head>
-<body class="hold-transition" >
-    <br/>
-<div>
-    <img class="center" src="dist/img/id.png" style="width:400px; height:200px">
-</div>
-<br/> 
-<div>
-	<h2 style="center">Acara Rapat Kerja Nasional PT PESONNA OPTIMA JASA Tahun 2022</h2><br/>
-	<h1>telah selesai dilaksanakan</h1><br/>
-	<h4><small>pada Senin, 28 Maret 2022 s/d 30 Maret 2022 di Palace Hotel, Cipanas, Jawa Barat</small></h4><br/>
+    <!-- meta http-equiv="refresh" content="5" /> -->
+    <title>Aplikasi Attendances Event | Optimajasa</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="dist/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
 
-	<h2> Kami segenap Panitia Rakernas PT PESONNA OPTIMA JASA Tahun 2022<br/>
-	Mengucapkan Terimakasih banyak kepada<br/>Jajaran Direksi dan Manajemen PT PESONNA OPTIMA JASA<br/>serta Partisipasi seluruh peserta RAKERNAS</h2>
-	<br/>
-	<h2><marquee direction="right">SAMPAI KETEMU DI RAPAT KERJA NASIONAL PT PESONNA OPTIMA JASA di Tahun 2023</marquee></h2>
-	<h2><marquee direction="left">SAMPAI KETEMU DI RAPAT KERJA NASIONAL PT PESONNA OPTIMA JASA di Tahun 2023</marquee></h2>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition" background="dist/img/login2.jpg">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="#" style="color: black;"><!-- <span class="glyphicon glyphicon-th-large"></span> -->  LOGIN </a>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+      <!--<center><img src="dist/img/logo.png" /></center>-->
+         <p class="login-box-msg"><?php if (isset($_GET['error'])) {echo 
+                  "<div class='alert alert-danger alert-gradient alert-dismissible fade in' role='alert'>
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>x</span></button>
+                            <strong>Error!</strong> $_GET[error]
+                          </div>";} else { echo "";} ?></p>
+        <form action="proseslogin.php" id="login" name="login" method="post">
+          <div class="form-group has-feedback">
+            <input type="text" id="username" name="username" class="form-control" autocomplete="off" placeholder="Username" required="required">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" id="password" name="password" class="form-control" autocomplete="off" placeholder="Password" required="password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+
+        <center><h5 class="form-signin"><a href="#" data-toggle="modal" data-target="#contact"> RAKERNAS Apps &copy; 2022</a> </h5></center> 
+
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
+
     
-	</div>
-	<div class="container">
-		
-		<div class="countdown">
-			<div id="hari">NA</div>
-			<div id="jam">NA</div>
-			<div id="menit">NA</div>
-			<div id="detik">NA</div>
-		</div>
-	</div>
-	<br/><br/><br/><br/>
+     <!-- Modal Dialog Contact -->
+ 
+<!-- end dialog modal -->
 
-    <!-- <button id="tombol">Berhenti!</button> -->
-
-   
-    
-</body>
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+  </body>
 </html>
-
-<style>
-*{
-	margin: 0;
-	padding: 0;
-}
-h2{
-    text-align: center;
-    opacity: 0.6;
-}
-h1{
-	text-align: center;
-	opacity: 0.9;
-}
-h4{
-	text-align: center;
-	opacity: 0.7;
-}
-img.center {
-  opacity: 0.7;
-  text-align: center;
-  display: block;
-    margin: 0 auto;
-}
-#rz {
-  opacity:0.5;
-}
-#rz2 {
-	background-size: auto;
-}
-
-.container{
-	position: auto;
-	top: 80px;
-	left: 100px;
-	right: 100px;
-	bottom: 80px;
-	/* background: url(bg.jpg); */
-	/* background-attachment: fixed; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	/* box-shadow: 0 50px 50px rgba(0,0,0,0.5),
-				0 0 0 100px rgba(0,0,0,0.1); */
-
-	border-radius: 5px;
-}
-
-.container h2{
-	text-align: center;
-	font-size: 10em;
-	line-height: 0.7em;
-	color: #ff3;
-	text-shadow: 2px 2px 5px #000;
-	margin-top: -80px;
-}
-
-.container h2 span{
-	display: block;
-	font-size: 0.2em;
-	font-weight: 300;
-	letter-spacing: 6px;
-}
-
-.countdown{
-	display: flex;
-	margin-top: 50px;
-}
-
-.countdown div{
-	position: relative;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-	text-align: center;
-	background: linear-gradient(#2CF41D, #F5FFF4);
-	color: #fff;
-	margin: 0 0px;
-	font-size: 3em;
-	font-weight: 500;
-}
-
-.countdown div:before{
-	content: '';
-	position: absolute;
-	bottom: -30px;
-	left: 0;
-	width: 100%;
-	height: 50px;
-	background: #89EF81;
-	color: #fff;
-	font-size: 0.35em;
-	line-height: 35px;
-	font-weight: 300;
-}
-
-.countdown #hari:before{
-	content: 'Hari';
-}
-.countdown #jam:before{
-	content: 'Jam';
-}
-.countdown #menit:before{
-	content: 'Menit';
-}
-.countdown #detik:before{
-	content: 'Detik';
-}
-</style>
