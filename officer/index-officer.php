@@ -14,7 +14,7 @@
       $tgl_akhir_raker = ("2022-03-31");
       ?>
 
-<?php include "waktu.php"; ?>
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -224,7 +224,7 @@
       </div><!-- /.content-wrapper -->
       <?php include "../global-templates/footer.php"; ?>
 
-      <?php include "sidecontrol.php"; ?>
+      <?php include "../global-templates/sidecontrol.php"; ?>
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
