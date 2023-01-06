@@ -31,9 +31,22 @@
                 <small class="label pull-right bg-yellow"><?php echo $total; ?></small>
               </a>
               <ul class="treeview-menu">
-                <li><a href="karyawan.php"><i class="fa fa-circle-o"></i> Karyawan</a></li>
+                <li><a href="karyawan-officer.php"><i class="fa fa-circle-o"></i> List Karyawan</a></li>
                 <!-- <li><a href="input-karyawan.php"><i class="fa fa-circle-o"></i> Input Karyawan</a></li> -->
                 <!-- <li><a href="karyawan_importxls.php"><i class="fa fa-circle-o"></i> Import Data Excel</a></li> -->
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa fa-users"></i> <span>Peserta</span> <i class="fa fa-angle-left pull-right"></i>
+                <small class="label pull-right bg-yellow"><?php echo $total; ?></small>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> List Peserta</a></li>
+                <!-- <li><a href="input-karyawan.php"><i class="fa fa-circle-o"></i> Input Karyawan</a></li> -->
+                <!-- <li><a href="karyawan_importxls.php"><i class="fa fa-circle-o"></i> Import Data Excel</a></li> -->
+                <li><a href="#"><i class="fa fa-circle-o"></i> Pendaftaran Peserta</a></li>
               </ul>
             </li>
             
