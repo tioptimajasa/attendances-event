@@ -3,11 +3,13 @@ include "session-user.php";
 ?>
 <!DOCTYPE html>
 <html>
-  <?php include "head-user.php"; ?>
+  <!-- <php include "head-user.php"; ?> -->
+  <?php include "../global-templates/head.php"; ?>
   <body class="hold-transition skin-green-light sidebar-mini">
     <div class="wrapper">
 
-      <?php include "header-user.php"; ?>
+      <!-- <php include "header-user.php"; ?> -->
+      <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu-user.php"; ?>
       
@@ -113,7 +115,8 @@ include "session-user.php";
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-      <?php include "footer-user.php"; ?>
+      <?php include "../global-templates/footer.php"; ?>
+      <!-- <php include "footer-user.php"; ?> -->
 
       
       <!-- Add the sidebar's background. This div must be placed
