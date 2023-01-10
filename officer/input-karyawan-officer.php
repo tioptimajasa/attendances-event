@@ -1,4 +1,4 @@
-<?php include "session.php"; ?>
+<?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
   <?php include "../global-templates/head.php"; ?>
@@ -7,9 +7,9 @@
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu.php"; ?>
+      <?php include "menu-officer.php"; ?>
 
-<?php include "waktu.php"; ?>
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -89,7 +89,7 @@
             }
 			          ?>
                 <div class="box-body">
-                <form class="form-horizontal style-form" action="input-karyawan.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                <form class="form-horizontal style-form" action="input-karyawan-officer.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">NIK</label>
                               <div class="col-sm-4">
@@ -126,7 +126,7 @@
                               <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-10">
                                   <input type="submit" name="input" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
-	                              <a href="karyawan.php" class="btn btn-sm btn-danger">Batal </a>
+	                              <a href="karyawan-officer.php" class="btn btn-sm btn-danger">Batal </a>
                                 
                               </div> 
                           </div>

@@ -29,5 +29,5 @@ echo $_SERVER['HTTP_USER_AGENT'];
 echo "<br> Sistem Operasi :";
 echo php_uname();**/ ?>
         </div>
-        <strong> <a href="../" style="color: black;">Copyright &copy; 2023 by TI-POJ</a></strong>
+        <strong> <a href="../" style="color: black;">Copyright &copy; 2023 by PT Pesonna Optima Jasa</a></strong>
       </footer>

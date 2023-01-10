@@ -1,4 +1,4 @@
-<?php include "session.php"; ?>
+<?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
  <?php include "../global-templates/head.php" ?>
@@ -8,19 +8,19 @@
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu.php"; ?>
+      <?php include "menu-officer.php"; ?>
 
-<?php include "waktu.php"; ?>
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
             Karyawan
-            <small>Barcode Absensi</small>
+            <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="index-admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li class="active">Karyawan</li>
           </ol>
         </section>
@@ -64,16 +64,15 @@
            <input type='submit' value='Cari Data' class="btn btn-sm btn-primary" /> <a href='admin.php' class="btn btn-sm btn-success" >Refresh</i></a>
           	</div>
             </form>-->
-            <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a> <a href="karyawan_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
+            <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
+            <a href="karyawan_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
                    <table id="lookup" class="table table-bordered table-hover">  
 	<thead bgcolor="eeeeee" align="center">
       <tr>
 	  
-       <th>No</th>
-       <th>Nik</th>
-	   <th>Tanggal</th>
-       <th>Event</th>
-       <th>Hadir</th>
+       <th>NIK</th>
+	     <th>Nama</th>
+       <th>Departemen</th>
 	   <th class="text-center"> Action </th> 
 	  
       </tr>
@@ -85,7 +84,7 @@
   </table>  
                 </div><!-- /.box-body -->
                 <div class="box-footer clearfix no-border">
-                  <a href="input-karyawan.php" class="btn btn-sm btn-default pull-right"><i class="fa fa-plus"></i> Tambah Karyawan</a>
+                  <a href="input-karyawan-officer.php" class="btn btn-sm btn-default pull-right"><i class="fa fa-plus"></i> Tambah Karyawan</a>
                   </div>
               </div><!-- /.box -->
 
@@ -99,7 +98,7 @@
       <?php include "../global-templates/sidecontrol.php"; ?>
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
-      <div class="control-sidebar-bg"></div>
+      <!-- <div class="control-sidebar-bg"></div> -->
     </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.4 -->
@@ -131,7 +130,7 @@
 					"processing": true,
 					"serverSide": true,
 					"ajax":{
-						url :"ajax-grid-data.php", // json datasource
+						url :"ajax-data-karyawan-officer.php", // json datasource
 						type: "post",  // method  , by default get
 						error: function(){  // error handling
 							$(".lookup-error").html("");
