@@ -41,12 +41,12 @@ include "session.php";
                 </div><!-- /.box-header -->
                 
                 <div class="box-body">
-                <!-- <form action='admin.php' method="POST">
+                <form action='admin.php' method="POST">
           
 	       <input type='text' class="form-control" style="margin-bottom: 4px;" name='qcari' placeholder='Cari berdasarkan User ID dan Username' required /> 
            <input type='submit' value='Cari Data' class="btn btn-sm btn-primary" /> <a href='admin.php' class="btn btn-sm btn-success" >Refresh</i></a>
           	</div>
-            </form>-->
+            </form>
                   <?php
                     $query1="select * from event";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
@@ -74,7 +74,7 @@ include "session.php";
                  
                     <!--<td><center><img src="<?php //echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
                     <td><center><a href="#"  data-toggle="tooltip" title="Edit" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
-                    <!-- <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="edit-event.php?hal=edit&kd=<?php echo $data['id'];?>"><span class="glyphicon glyphicon-edit"></span></a></center></td></tr></div> -->
+                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="edit-event.php?hal=edit&kd=<?php echo $data['id'];?>"><span class="glyphicon glyphicon-edit"></span></a></center></td></tr></div>
                  <?php   
               } 
               ?>

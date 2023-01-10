@@ -3,12 +3,12 @@ include "session.php";
 ?>
 <!DOCTYPE html>
 <html>
-<?php include "head.php" ?>
+<?php include "../global-templates/head.php" ?>
 <?php include "../phpqrcode/qrlib.php"; ?>
   <body class="hold-transition skin-green-light sidebar-mini">
     <div class="wrapper">
 
-      <?php include "header.php"; ?>
+      <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu.php"; ?>
 

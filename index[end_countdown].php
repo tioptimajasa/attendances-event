@@ -13,7 +13,7 @@ session_regenerate_id(true);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Rakernas 2022</title>
+    <title>Countdown Rakernas 2023</title>
     <script src="dist/js/countdown-end-rakernas2022.js"></script>
 </head>
 <body class="hold-transition" >
