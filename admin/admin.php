@@ -88,8 +88,7 @@ include "session.php";
                     <tr>
                     <td><center><?php echo $no; ?></center></td>
                     <td><center><?php echo $data['username'];?></center></td>
-                    <!-- <td><center><?php echo $data['password'];?></center></td> -->
-                    <td><center>*****</center></td>
+                    <td><center><?php echo $data['password'];?></center></td>
                     <td><center><a href="detail-admin.php?hal=edit&kd=<?php echo $data['user_id'];?>"><span class="glyphicon glyphicon-user"></span> <?php echo $data['fullname']; ?></a></center></td>
                     <td><center><?php 
                             if($data['level'] == 'admin'){
@@ -103,9 +102,11 @@ include "session.php";
 							}
                              ?></center></td>
                     <!--<td><center><img src="<?php //echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
-                    <td><center><a href="#"  data-toggle="tooltip" title="Edit" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>  
-                    <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
-                    
+                    <!-- <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="#" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')"><span class="glyphicon glyphicon-edit"></span></a>  
+                        <a onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Admin" href="#"><span class="glyphicon glyphicon-trash"></a></center></td></tr> -->
+                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="edit-admin.php?hal=edit&kd=<?php echo $data['user_id'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
+                        <a onclick="return confirm ('Yakin hapus <?php echo $data['fullname'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Admin" href="hapus-admin.php?hal=hapus&kd=<?php echo $data['user_id'];?>"><span class="glyphicon glyphicon-trash"></a></center></td></tr>
+                      
                       </div>
                  <?php   
               } 
