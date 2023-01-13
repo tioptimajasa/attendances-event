@@ -1,4 +1,6 @@
-<?php include "session.php"; ?>
+<?php 
+include "session-officer.php";
+?>
 <!DOCTYPE html>
 <html>
   <?php include "../global-templates/head.php"; ?>
@@ -7,20 +9,20 @@
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu.php"; ?>
+      <?php include "menu-officer.php"; ?>
 
-<?php include "waktu.php"; ?>
+      <?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Admin
-            <small>Attendances Event Apps</small>
+            Event
+            <small>Barcode Absensi</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="index-admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Input Admin</li>
+            <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active">Event</li>
           </ol>
         </section>
 
@@ -35,75 +37,74 @@
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Input Data Admin</h3>
-                  <!-- <div class="box-tools pull-right">
-                    <ul class="pagination pagination-sm inline">
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">&raquo;</a></li>
-                    </ul>
-                  </div> -->
+                  <h3 class="box-title">Pengaturan Event</h3>
                 </div><!-- /.box-header -->
+                <?php
+            $query = mysqli_query($koneksi, "SELECT * FROM event WHERE id='$_GET[kd]'");
+            $data  = mysqli_fetch_array($query);
+            ?>
                 <div class="box-body">
+                <?php
+               if(isset($_POST['update'])){
+
+$user_id       = $_POST['user_id'];
+$nama_event    = $_POST['nama_event'];
+$tanggal       = $_POST['tanggal'];
+$lokasi        = $_POST['lokasi'];
+
+$query = mysqli_query($koneksi, "UPDATE event SET nama_event='$nama_event', tanggal='$tanggal', lokasi='$lokasi' WHERE id='$user_id'")or die(mysql_error());
+if ($query){
+    echo '<script>sweetAlert({
+        title: "Berhasil!", 
+        text: "Event berhasil di set!", 
+        type: "success",
+        timer : 2000
+        });</script>';
+
+} else {
+    echo '<script>sweetAlert({
+        title: "Gagal!", 
+        text: "Event gagal di set!", 
+        type: "error",
+        timer : 2000
+        });</script>';
+    }
+}
+?>
                   <div class="form-panel">
-                      <form class="form-horizontal style-form" action="insert-admin.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                      <form class="form-horizontal style-form" action="" method="post" name="form1" id="form1">
+                          
+                                  <input name="user_id" type="hidden" id="user_id" class="form-control" value="<?php echo $data['id'];?>" readonly="readonly" autofocus="on" />
+                              
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">User ID</label>
-                              <div class="col-sm-8">
-                                  <input name="user_id" type="text" id="user_id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" readonly="readonly" />
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Username</label>
-                              <div class="col-sm-8">
-                                  <input name="username" type="text" id="username" class="form-control" placeholder="Username" autocomplete="off" required />
+                              <label class="col-sm-2 col-sm-2 control-label">Nama Event</label>
+                              <div class="col-sm-10">
+                                  <input name="nama_event" type="text" id="nama_event" class="form-control" value="<?php echo $data['nama_event'];?>" required />
                                   <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Password</label>
-                              <div class="col-sm-8">
-                                  <input name="password" type="password" id="password" class="form-control" placeholder="password" autocomplete="off" required />
+                              <label class="col-sm-2 col-sm-2 control-label">Waktu Event</label>
+                              <div class="col-sm-10">
+                                  <input name="tanggal" type="text" id="tanggal" class="form-control" value="<?php echo $data['tanggal'];?>" required />
                               </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Fullname</label>
-                              <div class="col-sm-8">
-                                  <input name="fullname" class="form-control" id="fullname" type="text" placeholder="Fullname" autocomplete="off" required />
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Level</label>
-                              <div class="col-sm-3">
-                            <select name="level" class="form-control" required>
-							                <option value=""> -- Pilih Level Pengguna -- </option>
-							                <option value="admin">Admin</option>
-                              <option value="officer">Officer</option>
-                              <option value="user">User</option>
-						                </select>
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Gambar</label>
-                              <div class="col-sm-6">
-                                  <input name="nama_file" id="nama_file" class="form-control" type="file" required="required"/>
+                              <label class="col-sm-2 col-sm-2 control-label">Lokasi</label>
+                              <div class="col-sm-10">
+                                  <input name="lokasi" class="form-control" id="lokasi" type="text" value="<?php echo $data['lokasi'];?>" required />
                               </div>
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-10">
-                                  <input type="submit" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
-	                              <a href="input-admin.php" class="btn btn-sm btn-danger">Batal </a>
+                                  <input type="submit" value="Simpan Data" name="update"  class="btn btn-sm btn-primary"/>&nbsp;
+	                              <a href="event.php" class="btn btn-sm btn-danger">Batal </a>
                               </div>
                           </div>
                       </form>
                   </div>
                 </div><!-- /.box-body -->
-                <!-- <div class="box-footer clearfix no-border">
-                  <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Tambah Admin</a>
-                </div> -->
               </div><!-- /.box -->
 
             </section><!-- /.Left col -->

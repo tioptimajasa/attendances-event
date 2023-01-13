@@ -11,7 +11,7 @@ include "session.php";
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu.php"; ?>
 
-      <?php include "waktu.php"; ?>
+      <?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -94,6 +94,7 @@ include "session.php";
                             <select name="level" class="form-control" required>
 							                  <option value=""> -- Pilih Level -- </option>
 							                  <option <?php echo ($data['level'] == 'admin') ? 'selected' : '' ?> value="admin">Admin</option>
+                                <option <?php echo ($data['level'] == 'officer') ? 'selected' : '' ?> value="officer">Officer</option>
                                 <option <?php echo ($data['level'] == 'user') ? 'selected' : '' ?> value="user">User</option>
 						                 </select>
                               </div>
@@ -111,7 +112,8 @@ include "session.php";
                           <div class="form-group">
                           <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-6">
-                                  <input name="nama_file" id="nama_file" class="form-control" type="file" />
+                                  <!-- <input name="nama_file" id="nama_file" class="form-control" type="file" /> -->
+                                  <input name="nama_file" id="nama_file" class="form-control" type="file" value="<?php echo $data['gambar'];?>" required />
                               </div>
                           </div>
                           <div class="form-group">

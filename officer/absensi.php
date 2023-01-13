@@ -1,4 +1,3 @@
-<!-- <php include "session.php"; ?> -->
 <html>
 <head>
 <title>Attendances Event Apps | PT. Pesonna Optima Jasa</title>
@@ -19,7 +18,6 @@
 <body>
 <?php
 include "../conn.php";
-// include "session.php";
             $query_event = mysqli_query($koneksi, "SELECT * FROM event WHERE id='1'");
             $data_event  = mysqli_fetch_array($query_event);
             $event = $data_event['nama_event'];

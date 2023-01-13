@@ -66,7 +66,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="data-merchandise.php"><i class="fa fa-circle-o"></i> Data Merchandise</a></li>
+                <li><a href="data-hadiah.php"><i class="fa fa-circle-o"></i> Data Merchandise</a></li>
                 <!--<li><a href="hadiah.php"><i class="fa fa-circle-o"></i> Input Merchandise</a></li>-->
               </ul>
             </li>
@@ -81,7 +81,7 @@
                 <li><a href="../countdown.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
                 <li><a href="absensi.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li>
                 <!-- <li><a href="../countdown-admin2.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
-                <li><a href="merchandise.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li>
+                <li><a href="hadiah.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li>
               </ul>
             </li>
             <li>
@@ -92,7 +92,7 @@
                 <i class="fa fa-dollar"></i> <span>Uang Saku</span> <i class="fa fa-angle-left pull-right"></i>
               </a> -->
               <ul class="treeview-menu">
-                <li><a href="uangSaku.php"><i class="fa fa-circle-o"></i> Scan Uang Saku </a></li>
+                <li><a href="../countdown-admin-uangSaku.php"><i class="fa fa-circle-o"></i> Scan Uang Saku </a></li>
                 <!-- <li><a href="data-uangSaku.php"><i class="fa fa-circle-o"></i> Data Uang Saku</a></li> -->
               </ul>
             </li>
@@ -126,7 +126,7 @@
               </a>
             </li>
 
-            <!-- <li class="treeview">
+            <li class="treeview">
               <a href="#">
                 <i class="fa fa-lock"></i> <span>Admin</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -135,7 +135,7 @@
                 <li><a href="admin.php"><i class="fa fa-circle-o"></i> Data Admin </a></li>
                 <li><a href="input-admin.php"><i class="fa fa-circle-o"></i> Input Admin </a></li>
               </ul>
-            </li> -->
+            </li>
             
             <li>
               <a href="#">
@@ -145,7 +145,6 @@
                 <li><a href="cetak-karyawan.php"><i class="fa fa-circle-o"></i> Laporan Karyawan</a></li>
                 <li><a href="laporan-kehadiran.php"><i class="fa fa-circle-o"></i> Laporan Kehadiran</a></li>
                 <li><a href="laporan-merchandise.php"><i class="fa fa-circle-o"></i> Laporan Merchandise</a></li>
-                <li><a href="laporan-uangSaku.php"><i class="fa fa-circle-o"></i> Laporan Uang Saku</a></li>
                 
               </ul>
             </li>

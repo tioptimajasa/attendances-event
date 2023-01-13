@@ -1,5 +1,22 @@
 <?php
 session_start();
+if ($_SESSION['level'] == "admin") {
+	header('location:admin/index-admin.php');
+	include "../conn.php";
+} else if ($_SESSION['level'] == "officer") {
+	// header('location:index-officer.php');
+	include "../conn.php";
+} else if ($_SESSION['level'] == "user") {
+	header('location:user/index-user.php');
+	include "../conn.php";
+} else {
+    header('location:../index.php');
+}
+?>
+
+<!-- OLD Session -->
+<!-- <php
+session_start();
 if ($_SESSION['level'] == "officer") {
 	include "../conn.php";
 } else if ($_SESSION['level'] == "superuser") {
@@ -10,4 +27,4 @@ if ($_SESSION['level'] == "officer") {
 } else {
     header('location:../index.php');
 }
-?>
+?> -->
