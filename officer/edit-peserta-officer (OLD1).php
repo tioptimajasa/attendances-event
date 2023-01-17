@@ -48,47 +48,15 @@
                     </form> -->
                   </div> 
                 </div><!-- /.box-header -->
-                <?php
-      $kd = $_GET['id'];
-			$sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$kd'");
-			if(mysqli_num_rows($sql) == 0){
-				header("Location: peserta-officer.php");
-			}else{
-				$row = mysqli_fetch_assoc($sql);
-			}
-			if(isset($_POST['update'])){
-				$nip        = $_POST['nip'];
-        $nama       = $_POST['nama'];
-        $jabatan = $_POST['jabatan'];
-        $unit_kerja = $_POST['unit_kerja'];
-        // $departemen = $_POST['departemen'];
-        $type_peserta = $_POST['type_peserta'];
-        $foto = $_POST['foto'];
-				
-				$update = mysqli_query($koneksi, "UPDATE peserta SET nama='$nama', nip='$nip', jabatan='$jabatan', unit_kerja='$unit_kerja', type_peserta='$type_peserta' WHERE nip='$kd'") or die(mysqli_error());
-				if($update){
-          echo '<script>sweetAlert({
-               title: "Berhasil!", 
-               text: "Data berhasil di update!", 
-               type: "success",
-               timer : 2000
-               });</script>';	
-        }else{
-          echo '<script>sweetAlert({
-               title: "Error!", 
-               text: "Data gagal di input!", 
-               type: "error",
-               timer : 2000
-               });</script>';	
-        }
-			}
-			
-			//if(isset($_GET['pesan']) == 'sukses'){
-			//	echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
-			//}
-			?>
+                
+          <!-- === QUERY === -->
+          <?php
+            $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_GET[kd]'");
+            $row  = mysqli_fetch_array($query);
+          ?>
+
                 <div class="box-body">
-                <form class="form-horizontal style-form" action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                <form class="form-horizontal style-form" action="update-peserta-officer.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Nama Peserta</label>
                               <div class="col-sm-4">
@@ -183,8 +151,8 @@
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Foto</label>
                               <div class="col-sm-10">
-                                  <img src="<?php echo $row['foto'];?>" width="200" height="250" class="img-rounded" style="border: 3px solid #888;"/>
-                                  <input name="nama_file" id="nama_file" class="form-control" type="file" value="<?php echo $row['foto'];?>" required />
+                                  <img src="<?php echo $data['foto'];?>" width="200" height="250" class="img-rounded" style="border: 3px solid #888;"/>
+                                  <input name="nama_file" id="nama_file" class="form-control" type="file" value="<?php echo $data['foto'];?>" required />
                               </div>
                           </div>
 

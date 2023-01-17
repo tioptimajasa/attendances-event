@@ -1,5 +1,4 @@
 <?php
-$namafolder="../peserta/foto_peserta/"; //tempat menyimpan file
 /* Database connection start */
 include "../global-templates/koneksi.php";
 /* Database connection end */
@@ -16,13 +15,12 @@ $columns = array(
 	// 2 => 'departemen',
 	2 => 'unit_kerja',
 	3 => 'type_peserta',
-	4 => 'jabatan',
-	5 => 'foto'
+	4 => 'jabatan'
 	
 );
 
 // getting total number records without any search
-$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan, foto";
+$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan";
 $sql.=" FROM peserta";
 $query=mysqli_query($conn, $sql) or die("ajaxin-grid-data.php: get Peserta");
 $totalData = mysqli_num_rows($query);
@@ -31,14 +29,13 @@ $totalFiltered = $totalData;  // when there is no search parameter then total nu
 
 if( !empty($requestData['search']['value']) ) {
 	// if there is a search parameter
-	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan, foto";
+	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan";
 	$sql.=" FROM peserta";
 	$sql.=" WHERE nip LIKE '".$requestData['search']['value']."%' ";    // $requestData['search']['value'] contains search parameter
 	$sql.=" OR nama LIKE '".$requestData['search']['value']."%' ";
     $sql.=" OR unit_kerja LIKE '".$requestData['search']['value']."%' ";
     $sql.=" OR type_peserta LIKE '".$requestData['search']['value']."%' ";
     $sql.=" OR jabatan LIKE '".$requestData['search']['value']."%' ";
-    $sql.=" OR foto LIKE '".$requestData['search']['value']."%' ";
 	$query=mysqli_query($conn, $sql) or die("ajax-grid-data.php: get Peserta");
 	$totalFiltered = mysqli_num_rows($query); // when there is a search parameter then we have to modify total number filtered rows as per search result without limit in the query 
 
@@ -47,7 +44,7 @@ if( !empty($requestData['search']['value']) ) {
 	
 } else {	
 
-	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan, foto";
+	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan";
 	$sql.=" FROM peserta";
 	$sql.=" ORDER BY ". $columns[$requestData['order'][0]['column']]."   ".$requestData['order'][0]['dir']."   LIMIT ".$requestData['start']." ,".$requestData['length']."   ";
 	$query=mysqli_query($conn, $sql) or die("ajaxin-grid-data.php: get Peserta");   
@@ -63,7 +60,6 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 	$nestedData[] = $row["jabatan"];
 	$nestedData[] = $row["unit_kerja"];
 	$nestedData[] = $row["type_peserta"];
-	$nestedData[] = $row["foto"];
 	// $nestedData[] = '<td><center>
 	//                  <a href="cetak-qr.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
     //                  <a href="edit-karyawan.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
