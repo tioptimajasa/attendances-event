@@ -67,7 +67,7 @@
                title: "Berhasil!", 
                text: "Data berhasil di update!", 
                type: "success",
-               timer : 2000
+               timer : 2000,
                });</script>';	
         }else{
           echo '<script>sweetAlert({
@@ -124,7 +124,7 @@
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-10">
-                                  <input type="submit" name="update" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
+                                  <input type="submit" name="update" value="Simpan" class="btn btn-sm btn-primary" window.location="karyawan.php" />&nbsp;
 	                              <a href="karyawan.php" class="btn btn-sm btn-danger">Batal </a>
                               </div> 
                           </div>

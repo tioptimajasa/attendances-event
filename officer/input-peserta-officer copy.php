@@ -48,15 +48,50 @@
                     </form> -->
                   </div> 
                 </div><!-- /.box-header -->
-                
+                <?php
+                if(isset($_POST['input'])){
+
+                  $nip        = $_POST['nip'];
+                  $nama       = $_POST['nama'];
+                  $departemen = $_POST['departemen'];
+                  $type_peserta = $_POST['type_peserta'];
+
+                  $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$nip'");
+			            if(mysqli_num_rows($sql) == 1){
+                    echo '<script>sweetAlert({
+                      title: "Error!", 
+                         text: "NIP sudah ada!", 
+                         type: "error",
+                         timer : 2000
+                         });</script>';
+                  
+			          
+			           }
+                 else {
+                  $query = mysqli_query($koneksi, "INSERT INTO peserta (nip, nama, departemen, type_peserta) VALUES ('$nip', '$nama', '$departemen', '$type_peserta')");
+                  if ($query){
+                    echo '<script>sweetAlert({
+                      title: "Berhasil!", 
+                         text: "Data berhasil di input!", 
+                         type: "success",
+                         timer : 2000
+                         });</script>';	
+                  } 
+                  else {
+                    //echo "<script>alert('Data Gagal dimasukan!'); window.location = 'departemen.php'</script>";	
+                    echo '<script>sweetAlert({
+                      title: "Error!", 
+                         text: "Data gagal di input!", 
+                         type: "error",
+                         timer : 2000
+                         });</script>';
+                  } 
+               
+              }
+            }
+			          ?>
                 <div class="box-body">
-                <form class="form-horizontal style-form" action="insert-peserta.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                          <!-- <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">ID</label>
-                              <div class="col-sm-8">
-                                  <input name="id" type="text" id="id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" readonly="readonly" />
-                              </div>
-                          </div> -->
+                <form class="form-horizontal style-form" action="input-peserta-officer.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">NIP</label>
                               <div class="col-sm-4">
@@ -70,51 +105,9 @@
                               
                             </div>
                           </div>
+                        
                           <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">Jabatan</label>
-                              <div class="col-sm-4">
-                                <select name="jabatan" id="jabatan" class="form-control select2" required>
-                                  <option value=""> --- Pilih Jabatan --- </option>
-                                  <option value="DIREKTUR UTAMA">Direktur Utama</option>
-                                  <!-- <option value="peserta" selected>Peserta</option> -->
-                                  <option value="DIREKTUR">Direktur</option>
-                                  <option value="GENERAL MANAGER">General Manager</option>
-                                  <option value="KEPALA SPI">Kepala SPI</option>
-                                  <option value="MANAGER">Manager</option>
-                                  <option value="ASISTEN MANAGER">Asisten Manager</option>
-                                  <option value="STAF">Staf</option>
-                                </select> 
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">Unit Kerja</label>
-                              <div class="col-sm-4">
-                                <select name="unit_kerja" id="unit_kerja" class="form-control select2" required>
-                                  <option value=""> --- Pilih Unit Kerja --- </option>
-                                  <option value="KANTOR PUSAT">KANTOR PUSAT</option>
-                                  <option value="PERWAKILAN MEDAN">PERWAKILAN MEDAN</option>
-                                  <option value="PERWAKILAN BALIKPAPAN">PERWAKILAN BALIKPAPAN</option>
-                                  <option value="PERWAKILAN BANDUNG">PERWAKILAN BANDUNG</option>
-                                  <option value="PERWAKILAN DENPASAR">PERWAKILAN DENPASAR</option>
-                                  <option value="PERWAKILAN JAKARTA 1">PERWAKILAN JAKARTA 1</option>
-                                  <option value="PERWAKILAN JAKARTA 2">PERWAKILAN JAKARTA 2</option>
-                                  <option value="PERWAKILAN MAKASSAR">PERWAKILAN MAKASSAR</option>
-                                  <option value="PERWAKILAN MANADO">PERWAKILAN MANADO</option>
-                                  <option value="PERWAKILAN PALEMBANG">PERWAKILAN PALEMBANG</option>
-                                  <option value="PERWAKILAN PEKANBARU">PERWAKILAN PEKANBARU</option>
-                                  <option value="PERWAKILAN SEMARANG">PERWAKILAN SEMARANG</option>
-                                  <option value="PERWAKILAN SURABAYA">PERWAKILAN SURABAYA</option>
-                                  <option value="AREA BATAM">AREA BATAM</option>
-                                  <option value="AREA LAMPUNG">AREA LAMPUNG</option>
-                                  <option value="AREA JAMBI">AREA JAMBI</option>
-                                  <option value="AREA JEMBER">AREA JEMBER</option>
-                                  <option value="AREA BANJARMASIN">AREA BANJARMASIN</option>
-                                  <option value="REGIONAL JAKARTA">REGIONAL JAKARTA</option>
-                                </select> 
-                            </div>
-                          </div>
-                          <!-- <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">Unit Kerja</label>
+                            <label class="col-sm-2 col-sm-2 control-label">Departemen</label>
                               <div class="col-sm-4">
                                 <select name="departemen" id="departemen" class="form-control select2" required>
                                   <option value=""> --- Pilih Departemen --- </option>
@@ -130,7 +123,8 @@
                                   <option value="Lainnya">Lainnya</option>
                                 </select> 
                             </div>
-                          </div> -->
+                          </div>
+
                           <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">Type Peserta</label>
                               <div class="col-sm-4">
@@ -141,12 +135,6 @@
                                   <option value="peserta">Peserta</option>
                                 </select> 
                             </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Foto</label>
-                              <div class="col-sm-6">
-                                  <input name="nama_file" id="nama_file" class="form-control" type="file" required="required"/>
-                              </div>
                           </div>
 
                           <div class="form-group">
