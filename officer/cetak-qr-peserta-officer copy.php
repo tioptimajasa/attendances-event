@@ -58,20 +58,17 @@ $_SESSION['start_time'] = time();
                 </div><!-- /.box-header -->
             
                 <div class="box-body">
-          
-          <!-- === Query QR source = id = NIP === -->
-          <?php
-            $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_GET[id]' ");
+              <?php
+            $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_GET[id]'");
             $data  = mysqli_fetch_array($query);
-          ?>
+            ?>
             <div class="text-right">
                   <a href="javascript:printDiv('print-area-2');" class="btn btn-sm btn-danger" >Cetak  <i class="fa fa-print"></i></a>
               
                 </div>
                 <div class="print-area table-responsif" id="print-area-2" >
                  <section class="col-lg-4 connectedSortable">
-                <!-- <table class="table table-bordered" width="360px" height="500px" style="border:1px green solid; background-image:url('../dist/img/background-id-card-rakernas-2023-size A6-01-2.png');"> -->
-                <table class="table table-bordered" width="360px" height="500px" style="border:3px solid transparent; background-image:url('../dist/img/background-id-card-rakernas-2023-size A6-01-2.png'); border-image:linear-gradient(30deg, #008E39, #183C6B); border-image-slice:1; box-shadow:0 25px 25px rgba(0,0,0,.2); border-radius: 10px;">
+                <table class="table table-bordered">
                         <!-- <tr>
                           <td><center><img src="../dist/img/id.png" width="100" height="100" /></center> </td>
                         <td colspan="3" height="60"><center><b>Rapat Kerja Nasional 2022<br/>
@@ -79,63 +76,35 @@ $_SESSION['start_time'] = time();
                       <p><small><b>"Reborn For Sustainable Growth"<b></small></p></center></td>
                         </tr> -->
                         <tr>
-                          <td colspan="4" height="8%"><center><img src="../dist/img/id.png" width="65%" height="65%" ></center></td>
+                          <td colspan="3" height="50"><center><img src="../dist/img/id.png" width="300" height="80" ></center></td>
                         </tr>
                         <!-- <tr>
                         <td colspan="3" height="50"><center><small>Rakernas PT PESONNA OPTIMA JASA Tahun 2022</small></center></td>
                         </tr> -->
-                      <tr height="1%">
-                      <!-- <td rowspan="3" width="100"><center><php QRcode::png("$_GET[id]", "../png/$_GET[id].png", "L", 4, 4); ?><php echo "<img src='../png/$_GET[id].png'  /><br/>" ?></center> -->
-                      <!-- <td rowspan="3" width="100"><center> FOTO<br/> <php echo "<img src='../peserta/foto_peserta/$_GET[foto].png' /><br/>" ?> </center> -->
-                      <!-- <td rowspan="3" width="100"><center> FOTO<br/> <img src="<?php echo $data['foto'] ?>" width="100" height="100" /><br/> </center> -->
-                      <!-- <td rowspan="4" width="100" align="center"><center> <img src="<?php echo $data['foto'] ?>" style='padding:1px; border:thin solid transparent; border-image:linear-gradient(30deg, #FF1200, #FCFF00, #36FF00, #0000FF, #E29000, #0CFFEB); border-image-slice:1; box-shadow:0 25px 25px rgba(0,0,0,.2);' width="100" height="100" /> </center> -->
-                      <!-- <td rowspan="4" width="100" align="center"><center> <img src="<?php echo $data['foto'] ?>" style=' border:3px solid ; border-image:linear-gradient(30deg, #008E39, #183C6B); border-image-slice:1; box-shadow:0 25px 25px rgba(0,0,0,.2); border-radius: 10px;' width="100" height="100" /> </center> -->
-                      <!-- <td rowspan="4" width="100" align="center"><center> <img src="<?php echo $data['foto'] ?>" style=' border: 3px solid #008E39 ; border-radius: 10px; ' width="90" height="120" /> </center> -->
-                      <!-- <td rowspan="4" width="100" align="center"><center> <img src="<?php echo $data['foto'] ?>" style=' border: 3px solid transparent ; border-radius: 10px; border-image:linear-gradient(30deg, #008E39, #183C6B); border-image-slice:1; box-shadow:1 25px 25px rgba(0,0,0,.2); ' width="90" height="120" /> </center> -->
-                      <td rowspan="4" width="100" align="center"><center> <img src="<?php echo $data['foto'] ?>" style=' border: 3px solid transparent ; border-radius: 10px;' width="90" height="120" /> </center>
-                      <td width="35"><b>Nama</b></td>
-                      <td width="1%">:</td>
-                      <td width="200"> <b><?php echo $data['nama']; ?></b></td>
+                      <tr>
+                      <td rowspan="3" width="100"><center><?php QRcode::png("$_GET[id]", "../png/$_GET[id].png", "L", 4, 4); ?><?php echo "<img src='../png/$_GET[id].png' /><br/>" ?></center>
+                      <td width="40"><b>NIP</b></td>
+                      <td width="200">: <b><?php echo $data['nip']; ?></b></td>
                       </tr>
   
-                      <tr height="1%">
-                      <td width="35"><b>NIP</b></td>
-                      <td width="1%">:</td>
-                      <td width="200"> <b><?php echo $data['nip']; ?></b></td>
-                      </tr>
-
-                      <tr height="3%">
-                      <td width="35"><b>Jabatan</b></td>
-                      <td width="1%">:</td>
-                      <td width="200"> <b><?php echo $data['jabatan']; ?></b></td>
-                      </tr>
-
-                      <tr height="3%">
-                      <td width="35"><b>Unit Kerja</b></td>
-                      <td width="1%">:</td>
-                      <td width="250"> <b><?php echo $data['unit_kerja']; ?></b></td>
+                      <tr>
+                      <td width="40"><b>Nama</b></td>
+                      <td width="200">: <b><?php echo $data['nama']; ?></b></td>
                       </tr>
 
                       <tr>
-                        <!-- <td colspan="3" height="50"><center>TES</center></td> -->
-                        <td colspan="4" height="30%" align:"center"> <center> <?php QRcode::png("$_GET[id]", "../png/$_GET[id].png", "L", 4, 4); ?> <?php echo "<img src='../png/$_GET[id].png' width='180' height='180' />" ?> </center></td>
+                      <td width="40"><b>Jabatan</b></td>
+                      <td width="250">: <b><?php echo $data['departemen']; ?></b></td>
                       </tr>
 
                       <tr>
                       <!-- <td Colspan="3" height="60" style="background : green; color: white;"><center><b>PESERTA TES </br><small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td> -->
                       <!-- <td Colspan="3" height="60" style="background : green; color: white;"><center><b> <php echo $data['type_peserta']; ?> </br><small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td> -->
-                      <!-- <td Colspan="4" height="12%" style="background : green; color: white; font-size:20px;"><center><b> <php echo $data['type_peserta']; ?> </b></center></td> -->
-                      <td Colspan="4" height="12%" style="font-size:20px;"><center><b> <?php echo $data['type_peserta']; ?> </b></center></td>
+                      <td Colspan="3" height="30" style="background : green; color: white;"><center><b> <?php echo $data['type_peserta']; ?> </b></center></td>
                       </tr>
 
                       <tr>
-                      <!-- <td Colspan="4" height="8%" style="background : green; color: white;"><center><b> <small>Hotel - Semarang <br/> 7-9 Februari 2023</small></b></center></td>              -->
-                      <td Colspan="2" height="5%" ><center><i class="glyphicon glyphicon-map-marker"> </i><b> <small>Hotel - Semarang</small></b></center></td>             
-                      <td Colspan="2" height="5%" ><center><i class="glyphicon glyphicon-calendar"> </i><b> <small>7-9 Februari 2023</small></b></center></td>             
-                      </tr>
-
-                      <tr>
-                      <td Colspan="4" height="30%"></td>             
+                      <td Colspan="3" height="30" style="background : green; color: white;"><center><b> <small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td>             
                       </tr>
 
                       
