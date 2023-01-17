@@ -48,6 +48,7 @@
                     </form> -->
                   </div> 
                 </div><!-- /.box-header -->
+                
                 <?php
                 if(isset($_POST['input'])){
 
@@ -171,6 +172,8 @@
 	$(".input-group.date").datepicker({ autoclose: true, todayHighlight: true });
 	
     </script>
+      
+
 
   <script>
      $(function () {
