@@ -59,10 +59,10 @@ $_SESSION['start_time'] = time();
             
                 <div class="box-body">
               <?php
-            $query = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_GET[id]'");
-            $data  = mysqli_fetch_array($query);
-            ?>
-            <div class="text-right">
+              $query = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_GET[id]'");
+              $data  = mysqli_fetch_array($query);
+              ?>
+              <div class="text-right">
                   <a href="javascript:printDiv('print-area-2');" class="btn btn-sm btn-danger" >Cetak  <i class="fa fa-print"></i></a>
               
                 </div>
@@ -83,7 +83,7 @@ $_SESSION['start_time'] = time();
                         </tr> -->
                       <tr>
                       <td rowspan="3" width="100"><center><?php QRcode::png("$_GET[id]", "../png/$_GET[id].png", "L", 4, 4); ?><?php echo "<img src='../png/$_GET[id].png' /><br/>" ?></center>
-                      <td width="40"><b>NIK</b></td>
+                      <td width="40"><b>NIK11111</b></td>
                       <td width="200">: <b><?php echo $data['nik']; ?></b></td>
                       </tr>
   
