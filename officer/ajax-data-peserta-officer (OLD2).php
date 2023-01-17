@@ -15,12 +15,13 @@ $columns = array(
 	// 2 => 'departemen',
 	2 => 'unit_kerja',
 	3 => 'type_peserta',
-	4 => 'jabatan'
+	4 => 'jabatan',
+	5 => 'foto'
 	
 );
 
 // getting total number records without any search
-$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan";
+$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan, foto";
 $sql.=" FROM peserta";
 $query=mysqli_query($conn, $sql) or die("ajaxin-grid-data.php: get Peserta");
 $totalData = mysqli_num_rows($query);
@@ -36,6 +37,7 @@ if( !empty($requestData['search']['value']) ) {
     $sql.=" OR unit_kerja LIKE '".$requestData['search']['value']."%' ";
     $sql.=" OR type_peserta LIKE '".$requestData['search']['value']."%' ";
     $sql.=" OR jabatan LIKE '".$requestData['search']['value']."%' ";
+    $sql.=" OR foto LIKE '".$requestData['search']['value']."%' ";
 	$query=mysqli_query($conn, $sql) or die("ajax-grid-data.php: get Peserta");
 	$totalFiltered = mysqli_num_rows($query); // when there is a search parameter then we have to modify total number filtered rows as per search result without limit in the query 
 
@@ -44,7 +46,7 @@ if( !empty($requestData['search']['value']) ) {
 	
 } else {	
 
-	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan";
+	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan, foto";
 	$sql.=" FROM peserta";
 	$sql.=" ORDER BY ". $columns[$requestData['order'][0]['column']]."   ".$requestData['order'][0]['dir']."   LIMIT ".$requestData['start']." ,".$requestData['length']."   ";
 	$query=mysqli_query($conn, $sql) or die("ajaxin-grid-data.php: get Peserta");   
@@ -60,6 +62,7 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 	$nestedData[] = $row["jabatan"];
 	$nestedData[] = $row["unit_kerja"];
 	$nestedData[] = $row["type_peserta"];
+	$nestedData[] = $row["foto"];
 	// $nestedData[] = '<td><center>
 	//                  <a href="cetak-qr.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
     //                  <a href="edit-karyawan.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
@@ -73,10 +76,18 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
 	//                  </center></td>';		
 	
-	//// Function for level Officer Edit=True, Delete=False
+	// //// Function for level Officer Edit=True, Delete=False
+	// $nestedData[] = '<td><center>
+	//                  <a href="cetak-qr-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+    //                  <a href="edit-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+    //                  <a href="detail-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Detail" class="btn btn-sm btn-info"> <i class="glyphicon glyphicon-info-sign"></i> </a>
+	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
+	//                  </center></td>';		
+	
+	//// Function for level Officer Edit=True ==> change not ajax, Delete=False
 	$nestedData[] = '<td><center>
 	                 <a href="cetak-qr-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
-                     <a href="edit-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+                     
                      <a href="detail-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Detail" class="btn btn-sm btn-info"> <i class="glyphicon glyphicon-info-sign"></i> </a>
 				     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
 	                 </center></td>';		
