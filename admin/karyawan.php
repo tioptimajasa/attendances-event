@@ -65,8 +65,17 @@
           	</div>
             </form>-->
             <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
-            <a href="karyawan_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
-                   <table id="lookup" class="table table-bordered table-hover">  
+            
+            
+            <a href="input-karyawan.php" class="btn btn-sm btn-default"><i class="fa fa-plus"></i> Tambah Karyawan</a>
+            <a href="karyawan_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a>
+            <!-- /.box-body -->
+            </div>
+                <div class="box-footer clearfix no-border">
+                  
+                  </div>
+              </div><!-- /.box -->       
+            <table id="lookup" class="table table-bordered table-hover">  
 	<thead bgcolor="eeeeee" align="center">
       <tr>
 	  
@@ -82,11 +91,7 @@
 					 
     </tbody>
   </table>  
-                </div><!-- /.box-body -->
-                <div class="box-footer clearfix no-border">
-                  <a href="input-karyawan.php" class="btn btn-sm btn-default pull-right"><i class="fa fa-plus"></i> Tambah Karyawan</a>
-                  </div>
-              </div><!-- /.box -->
+                
 
             </section><!-- /.Left col -->
           </div><!-- /.row (main row) -->
