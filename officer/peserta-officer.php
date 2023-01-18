@@ -72,8 +72,10 @@
 	  
        <th>NIP</th>
 	     <th>Nama</th>
-       <th>Departemen</th>
+	     <th>Jabatan</th>
+       <th>Unit Kerja</th>
        <th>Type Peserta</th>
+       <th>Foto</th>
 	   <th class="text-center"> Action </th> 
 	  
       </tr>

@@ -1,4 +1,4 @@
-<?php include "session.php"; ?>
+<?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
  <?php include "../global-templates/head.php" ?>
@@ -8,20 +8,20 @@
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu.php"; ?>
+      <?php include "menu-officer.php"; ?>
 
-<?php include "waktu.php"; ?>
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Karyawan
+            Peserta
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="index-admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Karyawan</li>
+            <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active">Peserta</li>
           </ol>
         </section>
 
@@ -36,7 +36,7 @@
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Data Karyawan</h3>
+                  <h3 class="box-title">Data Peserta</h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->
@@ -45,11 +45,11 @@
                 <?php
              if(isset($_GET['aksi']) == 'delete'){
 				$id = $_GET['id'];
-				$cek = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$id'");
+				$cek = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nip='$id'");
 				if(mysqli_num_rows($cek) == 0){
 					echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Data tidak ditemukan.</div>';
 				}else{
-					$delete = mysqli_query($koneksi, "DELETE FROM karyawan WHERE nik='$id'");
+					$delete = mysqli_query($koneksi, "DELETE FROM karyawan WHERE nip='$id'");
 					if($delete){
 						echo '<div class="alert alert-primary alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Data berhasil dihapus.</div>';
 					}else{
@@ -65,33 +65,34 @@
           	</div>
             </form>-->
             <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
-            
-            
-            <a href="input-karyawan.php" class="btn btn-sm btn-default"><i class="fa fa-plus"></i> Tambah Karyawan</a>
-            <a href="karyawan_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a>
-            <!-- /.box-body -->
-            </div>
-                <div class="box-footer clearfix no-border">
-                  
-                  </div>
-              </div><!-- /.box -->       
-            <table id="lookup" class="table table-bordered table-hover">  
+            <a href="karyawan_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
+                   <table id="lookup" class="table table-bordered table-hover">  
 	<thead bgcolor="eeeeee" align="center">
       <tr>
 	  
-       <th>NIK</th>
+       <th>NIP</th>
 	     <th>Nama</th>
-       <th>Departemen</th>
+	     <th>Jabatan</th>
+       <th>Unit Kerja</th>
+       <th>Type Peserta</th>
+       <th>Foto</th>
 	   <th class="text-center"> Action </th> 
 	  
       </tr>
     </thead>
     <tbody>
-	 
-					 
+      <tr>
+        <td>
+          TES
+        </td>
+      </tr>
     </tbody>
   </table>  
-                
+                </div><!-- /.box-body -->
+                <div class="box-footer clearfix no-border">
+                  <a href="input-peserta-officer.php" class="btn btn-sm btn-default pull-right"><i class="fa fa-plus"></i> Tambah Peserta</a>
+                  </div>
+              </div><!-- /.box -->
 
             </section><!-- /.Left col -->
           </div><!-- /.row (main row) -->
@@ -135,7 +136,7 @@
 					"processing": true,
 					"serverSide": true,
 					"ajax":{
-						url :"ajax-data-karyawan.php", // json datasource
+						url :"ajax-data-peserta-officer.php", // json datasource
 						type: "post",  // method  , by default get
 						error: function(){  // error handling
 							$(".lookup-error").html("");

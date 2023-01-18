@@ -1,5 +1,5 @@
 <?php 
-include "session.php";
+include "session-officer.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,7 @@ include "session.php";
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu.php"; ?>
+      <?php include "menu-officer.php"; ?>
 
 <?php
 $timeout = 10; // Set timeout minutes
@@ -31,7 +31,7 @@ $_SESSION['start_time'] = time();
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            QR Code Absensi
+            QR Code
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
@@ -51,7 +51,7 @@ $_SESSION['start_time'] = time();
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Cetak QR Code Absensi</h3>
+                  <h3 class="box-title">Cetak QR Code</h3>
                   <div class="box-tools pull-right">
                   
                   </div> 
@@ -59,10 +59,10 @@ $_SESSION['start_time'] = time();
             
                 <div class="box-body">
               <?php
-              $query = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_GET[id]'");
-              $data  = mysqli_fetch_array($query);
-              ?>
-              <div class="text-right">
+            $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_GET[id]'");
+            $data  = mysqli_fetch_array($query);
+            ?>
+            <div class="text-right">
                   <a href="javascript:printDiv('print-area-2');" class="btn btn-sm btn-danger" >Cetak  <i class="fa fa-print"></i></a>
               
                 </div>
@@ -83,8 +83,8 @@ $_SESSION['start_time'] = time();
                         </tr> -->
                       <tr>
                       <td rowspan="3" width="100"><center><?php QRcode::png("$_GET[id]", "../png/$_GET[id].png", "L", 4, 4); ?><?php echo "<img src='../png/$_GET[id].png' /><br/>" ?></center>
-                      <td width="40"><b>NIK11111</b></td>
-                      <td width="200">: <b><?php echo $data['nik']; ?></b></td>
+                      <td width="40"><b>NIP</b></td>
+                      <td width="200">: <b><?php echo $data['nip']; ?></b></td>
                       </tr>
   
                       <tr>
@@ -98,8 +98,13 @@ $_SESSION['start_time'] = time();
                       </tr>
 
                       <tr>
-                      <td Colspan="3" height="60" style="background : green; color: white;"><center><b>PESERTA </br><small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td>
-                                     
+                      <!-- <td Colspan="3" height="60" style="background : green; color: white;"><center><b>PESERTA TES </br><small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td> -->
+                      <!-- <td Colspan="3" height="60" style="background : green; color: white;"><center><b> <php echo $data['type_peserta']; ?> </br><small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td> -->
+                      <td Colspan="3" height="30" style="background : green; color: white;"><center><b> <?php echo $data['type_peserta']; ?> </b></center></td>
+                      </tr>
+
+                      <tr>
+                      <td Colspan="3" height="30" style="background : green; color: white;"><center><b> <small>Palace Hotel - Cipanas (28-30 Maret 2022)</small></b></center></td>             
                       </tr>
 
                       

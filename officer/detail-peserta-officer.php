@@ -1,6 +1,4 @@
-<?php 
-include "session.php";
-?>
+<?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
   <?php include "../global-templates/head.php"; ?>
@@ -9,20 +7,20 @@ include "session.php";
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu.php"; ?>
-      
-      <?php include "waktu.php"; ?>
+      <?php include "menu-officer.php"; ?>
+
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Event
+            Peserta
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="index-admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Event</li>
+            <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active">Detail Peserta</li>
           </ol>
         </section>
 
@@ -37,50 +35,66 @@ include "session.php";
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Pengaturan Event</h3>
+                  <h3 class="box-title">Detail Data Peserta</h3>
+                  <!-- <div class="box-tools pull-right">
+                    <ul class="pagination pagination-sm inline">
+                      <li><a href="#">&laquo;</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul>
+                  </div> -->
                 </div><!-- /.box-header -->
-                
+                <?php
+            $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_GET[id]'");
+            $data  = mysqli_fetch_array($query);
+            ?>
                 <div class="box-body">
-                <form action='admin.php' method="POST">
-          
-	       <input type='text' class="form-control" style="margin-bottom: 4px;" name='qcari' placeholder='Cari berdasarkan User ID dan Username' required /> 
-           <input type='submit' value='Cari Data' class="btn btn-sm btn-primary" /> <a href='admin.php' class="btn btn-sm btn-success" >Refresh</i></a>
-          	</div>
-            </form>
-                  <?php
-                    $query1="select * from event";
-                    $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
-                    ?>
-                  <table id="example" class="table table-responsive table-hover table-bordered">
-                  <thead>
+                  <div class="form-panel">
+                      <table id="example" class="table table-hover table-bordered">
                       <tr>
-                        <th><center>No </center></th>
-                        <th><center>Event </center></th>
-                        <th><center>Tanggal </center></th>
-                        <th><center>Lokasi </center></th>
-                        <th><center>Tools</center></th>
+                      <td>NIP</td>
+                      <td><?php echo $data['nip']; ?></td>
+                      <td rowspan="5"><div class="pull-right image">
+                            <img src="<?php echo $data['foto']; ?>" class="img-rounded" height="100%" width="100%" alt="Peserta Image" style="border: 2px solid #666;" />
+                        </div></td>
                       </tr>
-                  </thead>
-                     <?php 
-                     $no=0;
-                     while($data=mysqli_fetch_array($tampil))
-                    { $no++; ?>
-                    <tbody>
-                    <tr>
-                    <td><center><?php echo $no; ?></center></td>
-                    <td><center><?php echo $data['nama_event'];?></center></td>
-                    <td><center><?php echo $data['tanggal'];?></center></td>
-                     <td><center><?php echo $data['lokasi'];?></center></td>
-                 
-                    <!--<td><center><img src="<?php //echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
-                    <td><center><a href="#"  data-toggle="tooltip" title="Edit" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="edit-event.php?hal=edit&kd=<?php echo $data['id'];?>"><span class="glyphicon glyphicon-edit"></span></a></center></td></tr></div>
-                 <?php   
-              } 
-              ?>
-                   </tbody>
-                   </table>
+                      <tr>
+                      <td width="250">Nama</td>
+                      <!-- <td width="565" colspan="1">*****</td> -->
+                      <!-- <td width="565" colspan="1"><php echo $data['password']; ?></td> -->
+                      <td width="565" colspan="1"><?php echo $data['nama']; ?></td>
+                      </tr>
+                      <tr>
+                      <!-- <td>Departemen</td>
+                      <td colspan="1"><php echo $data['departemen']; ?></td> -->
+                      <td>Jabatan</td>
+                      <td colspan="1"><?php echo $data['jabatan']; ?></td>
+                      </tr>
+                      <tr>
+                      <td>Unit Kerja</td></td>
+                      <td colspan="1"><?php echo $data['unit_kerja']; ?></td>
+                      </tr>
+                      <tr>
+                      <td>Type Peserta</td></td>
+                      <td colspan="1"><?php echo $data['type_peserta']; ?></td>
+                      </tr>
+                      <!-- <tr>
+                      <td>Jenis Kelamin</td></td>
+                      <td colspan="1"><?php echo $data['jenis_kelamin']; ?></td>
+                      <td colspan="1"> <php echo ($data['jenis_kelamin'] == 'pria') ? 'selected' : '' ?> value </td>
+                      </tr> -->
+                      </table>
+                      <div class="text-right">
+                  <a href="peserta-officer.php" class="btn btn-sm btn-warning">Kembali <i class="fa fa-arrow-circle-right"></i></a>
+              
+                </div>
+                  </div>
                 </div><!-- /.box-body -->
+                <!-- <div class="box-footer clearfix no-border">
+                  <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Tambah Admin</a>
+                </div> -->
               </div><!-- /.box -->
 
             </section><!-- /.Left col -->

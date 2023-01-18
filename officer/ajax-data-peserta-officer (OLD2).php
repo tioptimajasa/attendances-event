@@ -1,5 +1,4 @@
 <?php
-$namafolder="../peserta/foto_peserta/"; //tempat menyimpan file
 /* Database connection start */
 include "../global-templates/koneksi.php";
 /* Database connection end */
@@ -31,7 +30,7 @@ $totalFiltered = $totalData;  // when there is no search parameter then total nu
 
 if( !empty($requestData['search']['value']) ) {
 	// if there is a search parameter
-	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan, foto";
+	$sql = "SELECT nip, nama, unit_kerja, type_peserta, jabatan";
 	$sql.=" FROM peserta";
 	$sql.=" WHERE nip LIKE '".$requestData['search']['value']."%' ";    // $requestData['search']['value'] contains search parameter
 	$sql.=" OR nama LIKE '".$requestData['search']['value']."%' ";
@@ -77,10 +76,18 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
 	//                  </center></td>';		
 	
-	//// Function for level Officer Edit=True, Delete=False
+	// //// Function for level Officer Edit=True, Delete=False
+	// $nestedData[] = '<td><center>
+	//                  <a href="cetak-qr-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+    //                  <a href="edit-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+    //                  <a href="detail-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Detail" class="btn btn-sm btn-info"> <i class="glyphicon glyphicon-info-sign"></i> </a>
+	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
+	//                  </center></td>';		
+	
+	//// Function for level Officer Edit=True ==> change not ajax, Delete=False
 	$nestedData[] = '<td><center>
 	                 <a href="cetak-qr-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
-                     <a href="edit-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+                     
                      <a href="detail-peserta-officer.php?id='.$row['nip'].'"  data-toggle="tooltip" title="Detail" class="btn btn-sm btn-info"> <i class="glyphicon glyphicon-info-sign"></i> </a>
 				     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
 	                 </center></td>';		
