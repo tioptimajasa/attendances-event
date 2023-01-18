@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Jan 2023 pada 09.23
+-- Waktu pembuatan: 18 Jan 2023 pada 04.00
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -466,6 +466,61 @@ INSERT INTO `merchandise` (`no`, `nik`, `tanggal`, `waktu`, `event`, `status`) V
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `peserta`
+--
+
+CREATE TABLE `peserta` (
+  `id` int(11) NOT NULL,
+  `nip` varchar(16) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `jabatan` enum('DIREKTUR UTAMA','DIREKTUR','GENERAL MANAGER','MANAGER','ASISTEN MANAGER','STAF') NOT NULL,
+  `unit_kerja` enum('KANTOR PUSAT','PERWAKILAN MEDAN','PERWAKILAN BALIKPAPAN','PERWAKILAN BANDUNG','PERWAKILAN DENPASAR','PERWAKILAN JAKARTA 1','PERWAKILAN JAKARTA 2','PERWAKILAN MAKASSAR','PERWAKILAN MANADO','PERWAKILAN PALEMBANG','PERWAKILAN PEKANBARU','PERWAKILAN SEMARANG','PERWAKILAN SURABAYA','AREA BATAM','AREA LAMPUNG','AREA JAMBI','AREA JEMBER','AREA BANJARMASIN','REGIONAL JAKARTA') NOT NULL,
+  `departemen` varchar(100) NOT NULL,
+  `sequence` int(10) NOT NULL,
+  `type_kamar` varchar(50) NOT NULL,
+  `no_kamar` int(10) NOT NULL,
+  `type_peserta` enum('PANITIA','PESERTA') NOT NULL,
+  `jenis_kelamin` enum('pria','wanita') NOT NULL,
+  `foto` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `peserta`
+--
+
+INSERT INTO `peserta` (`id`, `nip`, `nama`, `jabatan`, `unit_kerja`, `departemen`, `sequence`, `type_kamar`, `no_kamar`, `type_peserta`, `jenis_kelamin`, `foto`) VALUES
+(1, '1112T3', 'tes11123', 'MANAGER', 'PERWAKILAN BANDUNG', 'BISNIS OUTSOURCING', 0, '', 0, 'PANITIA', 'pria', '../peserta/foto_peserta/odoo.png'),
+(5, 'P821900034', 'Andri Prayogo', 'MANAGER', 'KANTOR PUSAT', 'DIVISI KEUANGAN & T.I', 0, '', 0, 'PESERTA', 'pria', '../peserta/foto_peserta/image.jpeg'),
+(6, '222', 'tes22', 'DIREKTUR UTAMA', 'KANTOR PUSAT', 'DIVISI BISNIS OUTSOURCING', 0, '', 0, 'PESERTA', 'pria', '../peserta/foto_peserta/epployee.png');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `peserta_old`
+--
+
+CREATE TABLE `peserta_old` (
+  `nip` varchar(16) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `departemen` varchar(50) NOT NULL,
+  `no` int(11) NOT NULL,
+  `type_kamar` varchar(50) NOT NULL,
+  `no_kamar` int(11) NOT NULL,
+  `type_peserta` enum('PANITIA','PESERTA') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `peserta_old`
+--
+
+INSERT INTO `peserta_old` (`nip`, `nama`, `departemen`, `no`, `type_kamar`, `no_kamar`, `type_peserta`) VALUES
+('111', 'tes1', 'Administration', 0, '', 0, 'PANITIA'),
+('1111', 'tes2', 'Administration', 0, '', 0, 'PANITIA'),
+('222', 'tes2', 'Administration', 0, '', 0, 'PANITIA');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `uang_saku`
 --
 
@@ -519,6 +574,19 @@ ALTER TABLE `merchandise`
   ADD PRIMARY KEY (`no`);
 
 --
+-- Indeks untuk tabel `peserta`
+--
+ALTER TABLE `peserta`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `nip` (`nip`);
+
+--
+-- Indeks untuk tabel `peserta_old`
+--
+ALTER TABLE `peserta_old`
+  ADD PRIMARY KEY (`nip`);
+
+--
 -- Indeks untuk tabel `uang_saku`
 --
 ALTER TABLE `uang_saku`
@@ -557,6 +625,12 @@ ALTER TABLE `materi_event`
 --
 ALTER TABLE `merchandise`
   MODIFY `no` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT untuk tabel `peserta`
+--
+ALTER TABLE `peserta`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `uang_saku`
