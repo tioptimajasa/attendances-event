@@ -71,7 +71,7 @@ $_SESSION['start_time'] = time();
                 <div class="print-area table-responsif" id="print-area-2" >
                  <section class="col-lg-4 connectedSortable">
                 <!-- <table class="table table-bordered" width="360px" height="500px" style="border:1px green solid; background-image:url('../dist/img/background-id-card-rakernas-2023-size A6-01-2.png');"> -->
-                <table class="table table-bordered" width="360px" height="500px" style="border:3px solid transparent; background-image:url('../dist/img/background-id-card-rakernas-2023-size A6-01-2.png'); border-image:linear-gradient(30deg, #008E39, #183C6B); border-image-slice:1; box-shadow:0 25px 25px rgba(0,0,0,.2); border-radius: 10px;">
+                <table class="table table-bordered" width="360px" height="500px" style="border:4px solid transparent; background-image:url('../dist/img/background-id-card-rakernas-2023-size A6-01-2.png'); border-image:linear-gradient(30deg, #008E39, #183C6B); border-image-slice:1; border-radius: 10px;">
                         <!-- <tr>
                           <td><center><img src="../dist/img/id.png" width="100" height="100" /></center> </td>
                         <td colspan="3" height="60"><center><b>Rapat Kerja Nasional 2022<br/>
