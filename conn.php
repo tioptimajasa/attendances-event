@@ -5,10 +5,10 @@
 	return $hasil;
     }
     **/
-$db_host = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "attendances_event";
+$db_host = "122.248.43.203";
+$db_user = "pess7362_rakernas";
+$db_pass = "@Rakernas123";
+$db_name = "pess7362_rakernas";
 
 $koneksi = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
