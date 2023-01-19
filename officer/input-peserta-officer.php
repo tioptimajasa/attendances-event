@@ -80,8 +80,13 @@
                                   <option value="DIREKTUR">Direktur</option>
                                   <option value="GENERAL MANAGER">General Manager</option>
                                   <option value="KEPALA SPI">Kepala SPI</option>
-                                  <option value="MANAGER">Manager</option>
-                                  <option value="ASISTEN MANAGER">Asisten Manager</option>
+                                  <option value="MANAGER TI">Manager TI</option>
+                                  <option value="MANAGER KEUANGAN">Manager Keuangan</option>
+                                  <option value="MANAGER SDM">Manager SDM</option>
+                                  <option value="MANAGER LOGISTIK">Manager Logistik</option>
+                                  <option value="MANAGER OJP">Manager OJP</option>
+                                  <option value="ASISTEN MANAGER TI">Asisten Manager TI</option>
+                                  <option value="ASISTEN MANAGER SPI">Asisten Manager SPI</option>
                                   <option value="STAF">Staf</option>
                                 </select> 
                             </div>
