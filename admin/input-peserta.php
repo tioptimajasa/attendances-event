@@ -1,5 +1,4 @@
 <?php include "session.php"; ?>
-<?php $namafolder="../peserta/gambar_peserta/"; //tempat menyimpan file ?>
 <!DOCTYPE html>
 <html>
   <?php include "../global-templates/head.php"; ?>
@@ -10,18 +9,18 @@
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu.php"; ?>
 
-<?php include "waktu.php"; ?>
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Peserta & Akun
+            Input Peserta
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="index-admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Input Peserta & Akun</li>
+            <li class="active">Input Peserta</li>
           </ol>
         </section>
 
@@ -36,24 +35,32 @@
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Input Data Peserta & Akun</h3>
-                  <!-- <div class="box-tools pull-right">
-                    <ul class="pagination pagination-sm inline">
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">&raquo;</a></li>
-                    </ul>
-                  </div> -->
+                  <h3 class="box-title">Input Data Peserta</h3>
+                  <div class="box-tools pull-right">
+              <!-- <form action='admin.php' method="POST">
+    	             <div class="input-group" style="width: 230px;">
+                      <input type="text" name="qcari" class="form-control input-sm pull-right" placeholder="Cari Usename Atau Nama">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn btn-sm btn-default tooltips" data-placement="bottom" data-toggle="tooltip" title="Cari Data"><i class="fa fa-search"></i></button>
+                        <a href="admin.php" class="btn btn-sm btn-success tooltips" data-placement="bottom" data-toggle="tooltip" title="Refresh"><i class="fa fa-refresh"></i></a>
+                      </div>
+                    </div>
+                    </form> -->
+                  </div> 
                 </div><!-- /.box-header -->
+                
                 <div class="box-body">
-                  <div class="form-panel">
-                      <form class="form-horizontal style-form" action="insert-peserta.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                      <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">NIK</label>
+                <form class="form-horizontal style-form" action="insert-peserta-officer.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                          <!-- <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">ID</label>
+                              <div class="col-sm-8">
+                                  <input name="id" type="text" id="id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" readonly="readonly" />
+                              </div>
+                          </div> -->
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">NIP</label>
                               <div class="col-sm-4">
-                                  <input name="nik" type="text" id="nik" class="form-control" placeholder="NIK" autocomplete="off" autofocus="on" required="required" />
+                                  <input name="nip" type="text" id="nip" class="form-control" placeholder="NIP" autocomplete="off" autofocus="on" required="required" />
                               </div>
                           </div>
                           <div class="form-group">
@@ -63,81 +70,114 @@
                               
                             </div>
                           </div>
-                        
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Departemen</label>
+                            <label class="col-sm-2 col-sm-2 control-label">Jabatan</label>
                               <div class="col-sm-4">
-                              <select name="departemen" id="departemen" class="form-control select2" required>
-                              <option value=""> --- Pilih Departemen --- </option>
-                              <option value="Administration">Administration</option>
-                              <option value="BISNIS OUTSOURCING">BISNIS OUTSOURCING</option>
-                              <option value="DIVISI BISNIS OUTSOURCING">DIVISI BISNIS OUTSOURCING</option>
-                              <option value="DIVISI BISNIS RENTAL">DIVISI BISNIS RENTAL</option>
-                              <option value="DIVISI BISNIS RENTAL & USAHA LAIN">DIVISI BISNIS RENTAL & USAHA LAIN</option>
-                              <option value="DIVISI KEUANGAN & T.I">DIVISI KEUANGAN & T.I</option>
-                              <option value="DIVISI SDM & LOGISTIK">DIVISI SDM & LOGISTIK</option>
-                              <option value="SPI">SPI</option>
-                              <option value="Sales">Sales</option>
-                              <option value="Lainnya">Lainnya</option>
-                              </select> 
+                                <select name="jabatan" id="jabatan" class="form-control select2" required>
+                                  <option value=""> --- Pilih Jabatan --- </option>
+                                  <option value="DIREKTUR UTAMA">Direktur Utama</option>
+                                  <!-- <option value="peserta" selected>Peserta</option> -->
+                                  <option value="DIREKTUR">Direktur</option>
+                                  <option value="GENERAL MANAGER">General Manager</option>
+                                  <option value="KEPALA SPI">Kepala SPI</option>
+                                  <option value="MANAGER TI">Manager TI</option>
+                                  <option value="MANAGER KEUANGAN">Manager Keuangan</option>
+                                  <option value="MANAGER SDM">Manager SDM</option>
+                                  <option value="MANAGER LOGISTIK">Manager Logistik</option>
+                                  <option value="MANAGER OJP">Manager OJP</option>
+                                  <option value="ASISTEN MANAGER TI">Asisten Manager TI</option>
+                                  <option value="ASISTEN MANAGER SPI">Asisten Manager SPI</option>
+                                  <option value="STAF">Staf</option>
+                                </select> 
                             </div>
-                          </div>       
-
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">User ID</label>
-                              <div class="col-sm-8">
-                                  <input name="user_id" type="text" id="user_id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" readonly="readonly" />
-                              </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Username</label>
-                              <div class="col-sm-8">
-                                  <input name="username" type="text" id="username" class="form-control" placeholder="Username" autocomplete="off" required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
-                              </div>
+                            <label class="col-sm-2 col-sm-2 control-label">Unit Kerja</label>
+                              <div class="col-sm-4">
+                                <select name="unit_kerja" id="unit_kerja" class="form-control select2" required>
+                                  <option value=""> --- Pilih Unit Kerja --- </option>
+                                  <option value="KANTOR PUSAT">KANTOR PUSAT</option>
+                                  <option value="PERWAKILAN MEDAN">PERWAKILAN MEDAN</option>
+                                  <option value="PERWAKILAN BALIKPAPAN">PERWAKILAN BALIKPAPAN</option>
+                                  <option value="PERWAKILAN BANDUNG">PERWAKILAN BANDUNG</option>
+                                  <option value="PERWAKILAN DENPASAR">PERWAKILAN DENPASAR</option>
+                                  <option value="PERWAKILAN JAKARTA 1">PERWAKILAN JAKARTA 1</option>
+                                  <option value="PERWAKILAN JAKARTA 2">PERWAKILAN JAKARTA 2</option>
+                                  <option value="PERWAKILAN MAKASSAR">PERWAKILAN MAKASSAR</option>
+                                  <option value="PERWAKILAN MANADO">PERWAKILAN MANADO</option>
+                                  <option value="PERWAKILAN PALEMBANG">PERWAKILAN PALEMBANG</option>
+                                  <option value="PERWAKILAN PEKANBARU">PERWAKILAN PEKANBARU</option>
+                                  <option value="PERWAKILAN SEMARANG">PERWAKILAN SEMARANG</option>
+                                  <option value="PERWAKILAN SURABAYA">PERWAKILAN SURABAYA</option>
+                                  <option value="AREA BATAM">AREA BATAM</option>
+                                  <option value="AREA LAMPUNG">AREA LAMPUNG</option>
+                                  <option value="AREA JAMBI">AREA JAMBI</option>
+                                  <option value="AREA JEMBER">AREA JEMBER</option>
+                                  <option value="AREA BANJARMASIN">AREA BANJARMASIN</option>
+                                  <option value="REGIONAL JAKARTA">REGIONAL JAKARTA</option>
+                                </select> 
+                            </div>
+                          </div>
+                          <!-- <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">Unit Kerja</label>
+                              <div class="col-sm-4">
+                                <select name="departemen" id="departemen" class="form-control select2" required>
+                                  <option value=""> --- Pilih Departemen --- </option>
+                                  <option value="Administration">Administration</option>
+                                  <option value="BISNIS OUTSOURCING">BISNIS OUTSOURCING</option>
+                                  <option value="DIVISI BISNIS OUTSOURCING">DIVISI BISNIS OUTSOURCING</option>
+                                  <option value="DIVISI BISNIS RENTAL">DIVISI BISNIS RENTAL</option>
+                                  <option value="DIVISI BISNIS RENTAL & USAHA LAIN">DIVISI BISNIS RENTAL & USAHA LAIN</option>
+                                  <option value="DIVISI KEUANGAN & T.I">DIVISI KEUANGAN & T.I</option>
+                                  <option value="DIVISI SDM & LOGISTIK">DIVISI SDM & LOGISTIK</option>
+                                  <option value="SPI">SPI</option>
+                                  <option value="Sales">Sales</option>
+                                  <option value="Lainnya">Lainnya</option>
+                                </select> 
+                            </div>
+                          </div> -->
+                          <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">Type Peserta</label>
+                              <div class="col-sm-4">
+                                <select name="type_peserta" id="type_peserta" class="form-control select2" required>
+                                  <option value=""> --- Pilih Type Peserta --- </option>
+                                  <option value="panitia">Panitia</option>
+                                  <!-- <option value="peserta" selected>Peserta</option> -->
+                                  <option value="peserta">Peserta</option>
+                                </select> 
+                            </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Password</label>
-                              <div class="col-sm-8">
-                                  <input name="password" type="password" id="password" class="form-control" placeholder="Password" autocomplete="off" required />
-                              </div>
+                            <label class="col-sm-2 col-sm-2 control-label">Jenis Kelamin</label>
+                              <div class="col-sm-4">
+                              <input type="radio" name="jenis_kelamin"
+                                <?php if (isset($jenis_kelamin) && $jenis_kelamin=="pria") echo "checked";?>
+                                value="pria" required> Pria &nbsp;&nbsp;
+                                <input type="radio" name="jenis_kelamin"
+                                <?php if (isset($jenis_kelamin) && $jenis_kelamin=="wanita") echo "checked";?>
+                                value="wanita" required> Wanita &nbsp;&nbsp;
+                                <input type="radio" name="jenis_kelamin"
+                                <?php if (isset($jenis_kelamin) && $jenis_kelamin=="other") echo "checked";?>
+                                value="other" required> Other
+                            </div>
                           </div>
                           <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Fullname</label>
-                              <div class="col-sm-8">
-                                  <input name="fullname" class="form-control" id="fullname" type="text" placeholder="Fullname" autocomplete="off" required />
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Level</label>
-                              <div class="col-sm-3">
-                            <select name="level" class="form-control" required>
-							                <!-- <option value=""> -- Pilih Level Pengguna -- </option> -->
-							                <!-- <option value="admin">Admin</option> -->
-                            <option value="user">User</option>
-						                </select>
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Gambar</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Foto</label>
                               <div class="col-sm-6">
-                                  <!-- <input name="nama_file" id="nama_file" class="form-control" type="text"  readonly="readonly" value="../admin/gambar_admin/user-default.png" /> -->
-                                  <input name="nama_file" id="nama_file" class="form-control" type="file" required="required" />
+                                  <input name="nama_file" id="nama_file" class="form-control" type="file" required="required"/>
                               </div>
                           </div>
+
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-10">
-                                  <input type="submit" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
-	                              <a href="input-peserta.php" class="btn btn-sm btn-danger">Batal </a>
-                              </div>
+                                  <input type="submit" name="input" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
+	                              <a href="peserta-officer.php" class="btn btn-sm btn-danger">Batal </a>
+                                
+                              </div> 
                           </div>
                       </form>
-                  </div>
                 </div><!-- /.box-body -->
-                <!-- <div class="box-footer clearfix no-border">
-                  <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Tambah Admin</a>
-                </div> -->
               </div><!-- /.box -->
 
             </section><!-- /.Left col -->
@@ -153,42 +193,35 @@
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
 
-    <!-- jQuery 2.1.4 -->
     <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-      $.widget.bridge('uibutton', $.ui.button);
-    </script>
     <!-- Bootstrap 3.3.5 -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- Morris.js charts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="../plugins/morris/morris.min.js"></script>
-    <!-- Sparkline -->
-    <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
-    <!-- jvectormap -->
-    <script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="../plugins/knob/jquery.knob.js"></script>
-    <!-- daterangepicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- datepicker -->
-    <script src="../plugins/datepicker/bootstrap-datepicker.js"></script>
-    <!-- Bootstrap WYSIHTML5 -->
-    <script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-    <!-- Slimscroll -->
+    <!-- DataTables -->
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
     <script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- FastClick -->
     <script src="../plugins/fastclick/fastclick.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/app.min.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../dist/js/demo.js"></script>
+
+    <script src="../plugins/datepicker/bootstrap-datepicker.js"></script>
+
+    <script src="../plugins/select2/select2.full.min.js"></script>
+
+    <script>
+	//options method for call datepicker
+	$(".input-group.date").datepicker({ autoclose: true, todayHighlight: true });
+	
+    </script>
+
+  <script>
+     $(function () {
+    $(".select2").select2();
+    });
+    </script>
   </body>
 </html>
