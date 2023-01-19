@@ -5,15 +5,18 @@
 	return $hasil;
     }
     **/
-    $db_host = "122.248.43.203";
-    $db_user = "pess7362_root";
-    $db_pass = "optimajasa2023!!!";
-    $db_name = "pess7362_rakernas";
 
-    // $db_host = "localhost";
-    // $db_user = "root";
-    // $db_pass = "";
-    // $db_name = "attendances_event";
+    // // //==== DB to Cpanel POJ ====
+    // $db_host = "122.248.43.203";
+    // $db_user = "pess7362_root";
+    // $db_pass = "optimajasa2023!!!";
+    // $db_name = "pess7362_rakernas";
+
+    //==== DB Local ====
+    $db_host = "localhost";
+    $db_user = "root";
+    $db_pass = "";
+    $db_name = "attendances_event";
 
 $koneksi = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
