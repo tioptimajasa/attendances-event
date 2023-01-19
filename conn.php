@@ -10,6 +10,11 @@
     $db_pass = "optimajasa2023!!!";
     $db_name = "pess7362_rakernas";
 
+    // $db_host = "localhost";
+    // $db_user = "root";
+    // $db_pass = "";
+    // $db_name = "attendances_event";
+
 $koneksi = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
 if(mysqli_connect_errno()){
