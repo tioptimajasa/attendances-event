@@ -8,11 +8,13 @@ include "../conn.php";
 if (!empty($_FILES["nama_file"]["tmp_name"]))
 {
 	$jenis_foto=$_FILES['nama_file']['type'];
-        $id = $_POST['id'];
+        
         $nip = $_POST['nip'];
 		$nama = $_POST['nama'];
-		$departemen = $_POST['departemen'];
+		$jabatan = $_POST['jabatan'];
+		$unit_kerja = $_POST['unit_kerja'];
         $type_peserta=$_POST['type_peserta'];
+        $jenis_kelamin=$_POST['jenis_kelamin'];
 		
 	if($jenis_foto=="image/jpeg" || $jenis_foto=="image/png")
 	{			
@@ -24,8 +26,9 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 							echo "<script>alert('NIP sudah ada!'); window.location = 'input-peserta-officer.php'</script>";
 						}
 						
-							$query="INSERT INTO peserta (id,nip,nama,departemen,type_peserta,foto) VALUES
-							('$id', '$nip', '$nama', '$departemen', '$type_peserta', '$foto')";
+							$query="INSERT INTO peserta (nip,nama,jabatan,unit_kerja,type_peserta,foto, jenis_kelamin) VALUES
+							('$nip', '$nama', '$jabatan', '$unit_kerja', '$type_peserta', '$foto', '$jenis_kelamin')";
+							// echo "$query";
 							$res=mysqli_query($koneksi, $query) or die (mysqli_error());
 							//echo "Foto berhasil dikirim ke direktori".$foto;
 							echo "<script>alert('Data berhasil dimasukan!'); window.location = 'peserta-officer.php'</script>";	   

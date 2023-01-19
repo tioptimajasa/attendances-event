@@ -50,7 +50,7 @@
                 </div><!-- /.box-header -->
                 
                 <div class="box-body">
-                <form class="form-horizontal style-form" action="insert-peserta.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                <form class="form-horizontal style-form" action="insert-peserta-officer.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                           <!-- <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">ID</label>
                               <div class="col-sm-8">
@@ -80,8 +80,13 @@
                                   <option value="DIREKTUR">Direktur</option>
                                   <option value="GENERAL MANAGER">General Manager</option>
                                   <option value="KEPALA SPI">Kepala SPI</option>
-                                  <option value="MANAGER">Manager</option>
-                                  <option value="ASISTEN MANAGER">Asisten Manager</option>
+                                  <option value="MANAGER TI">Manager TI</option>
+                                  <option value="MANAGER KEUANGAN">Manager Keuangan</option>
+                                  <option value="MANAGER SDM">Manager SDM</option>
+                                  <option value="MANAGER LOGISTIK">Manager Logistik</option>
+                                  <option value="MANAGER OJP">Manager OJP</option>
+                                  <option value="ASISTEN MANAGER TI">Asisten Manager TI</option>
+                                  <option value="ASISTEN MANAGER SPI">Asisten Manager SPI</option>
                                   <option value="STAF">Staf</option>
                                 </select> 
                             </div>
@@ -140,6 +145,20 @@
                                   <!-- <option value="peserta" selected>Peserta</option> -->
                                   <option value="peserta">Peserta</option>
                                 </select> 
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">Jenis Kelamin</label>
+                              <div class="col-sm-4">
+                              <input type="radio" name="jenis_kelamin"
+                                <?php if (isset($jenis_kelamin) && $jenis_kelamin=="pria") echo "checked";?>
+                                value="pria" required> Pria &nbsp;&nbsp;
+                                <input type="radio" name="jenis_kelamin"
+                                <?php if (isset($jenis_kelamin) && $jenis_kelamin=="wanita") echo "checked";?>
+                                value="wanita" required> Wanita &nbsp;&nbsp;
+                                <input type="radio" name="jenis_kelamin"
+                                <?php if (isset($jenis_kelamin) && $jenis_kelamin=="other") echo "checked";?>
+                                value="other" required> Other
                             </div>
                           </div>
                           <div class="form-group">
