@@ -50,7 +50,7 @@
                 </div><!-- /.box-header -->
                 
                 <div class="box-body">
-                <form class="form-horizontal style-form" action="insert-peserta-officer.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                <form class="form-horizontal style-form" action="insert-peserta.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                           <!-- <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">ID</label>
                               <div class="col-sm-8">
@@ -172,7 +172,7 @@
                               <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-10">
                                   <input type="submit" name="input" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
-	                              <a href="peserta-officer.php" class="btn btn-sm btn-danger">Batal </a>
+	                              <a href="peserta.php" class="btn btn-sm btn-danger">Batal </a>
                                 
                               </div> 
                           </div>
