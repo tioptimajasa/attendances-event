@@ -89,7 +89,7 @@ include "../conn.php";
      style="transform: scaleX(-1);"></video> 
 </center>
             
-            <form method="POST" id="scan" name="update" action="hadiah.php">
+            <form method="POST" id="scan" name="update" action="merchandise.php">
 <center><input style="width:500px; height:75px; font-size: 25px;" name="kode" id="text2" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off"/></center>
 </form>
 </div>
