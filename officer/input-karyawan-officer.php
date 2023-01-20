@@ -63,8 +63,6 @@
                          type: "error",
                          timer : 2000
                          });</script>';
-                  
-			          
 			           }else{
                   
                   $query = mysqli_query($koneksi, "INSERT INTO karyawan (nik, nama, departemen) VALUES ('$nik', '$nama', '$departemen')");
