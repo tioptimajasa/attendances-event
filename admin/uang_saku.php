@@ -36,7 +36,8 @@ include "../conn.php";
                 $data_uang_saku = mysqli_fetch_array($query_uang_saku);
                 $tgl2 = date("Y-m-d");
 
-        $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
+        // $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
+        $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode]'");
             if(mysqli_num_rows($sql) == 1){
 
 		$sql = mysqli_query($koneksi, "SELECT * FROM uang_saku WHERE nik='$_POST[kode]' and event='$event' ") or die (mysqli_error($koneksi));
@@ -78,7 +79,7 @@ include "../conn.php";
                 }else{
                     echo '<script>sweetAlert({
                                                                title: "FAILED", 
-                                                                  text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2022", 
+                                                                  text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
                                                                   type: "warning",
                                                                 timer : 4000
                                                                   });</script>';
@@ -93,7 +94,7 @@ include "../conn.php";
      style="transform: scaleX(-1);"></video> 
 </center>
             
-            <form method="POST" name="update" action="uang_saku.php">
+            <form method="POST" id="scanner" name="update" action="uang_saku.php">
 <center><input style="width:670px; height:75px; font-size: 25px;" name="kode" class="form-control" placeholder="Scan QR Code lalu tekan Enter untuk ambil Uang Saku" onchange="this.form.submit();" autofocus="on" autocomplete="off"/></center>
 </form>
 </div>
@@ -101,7 +102,8 @@ include "../conn.php";
 <a href="index-admin.php" class="btn btn-md btn-warning" style="margin-bottom : 5px;"><span class="glyphicon glyphicon-arrow-left"></span> Kembali</a> 
 <!-- <a href="uang_saku_exportxls.php" class="btn btn-md btn-success" style="margin-bottom : 5px;"> <span class="glyphicon glyphicon-file"></span> Export Excel</a> -->
 <?php
-   $query1="select uang_saku.*, karyawan.* from uang_saku, karyawan where uang_saku.nik=karyawan.nik AND uang_saku.event='$event' AND uang_saku.status='Sudah Ambil' ORDER BY uang_saku.nik ASC";
+  //  $query1="select uang_saku.*, karyawan.* from uang_saku, karyawan where uang_saku.nik=karyawan.nik AND uang_saku.event='$event' AND uang_saku.status='Sudah Ambil' ORDER BY uang_saku.nik ASC";
+   $query1="select uang_saku.*, peserta.* from uang_saku, peserta where uang_saku.nik=peserta.nip AND uang_saku.event='$event' AND uang_saku.status='Sudah Ambil' ORDER BY uang_saku.nik ASC";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   <table id="example" class="table table-hover table-bordered">
@@ -185,6 +187,7 @@ include "../conn.php";
       // scan QR Code Part
       scanner.addListener('scan', function(c){
           document.getElementById("text2").value=c;
+          $( "#scanner" ).trigger( "submit" ); //post automatis from form id
       });
 
 //.Scan OK

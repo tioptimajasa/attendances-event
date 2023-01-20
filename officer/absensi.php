@@ -22,11 +22,14 @@ include "../conn.php";
             $data_event  = mysqli_fetch_array($query_event);
             $event = $data_event['nama_event'];
             $tgl = $data_event['tanggal'];
-            $query_karyawan = mysqli_query($koneksi, "SELECT * FROM karyawan");
-            $data_karyawan = mysqli_fetch_array($query_karyawan);
-            $nikT = $data_karyawan['nik'];
-            $tgl_awal_raker = ("2022-03-28");
-            $tgl_akhir_raker = ("2022-03-31");
+            // $query_karyawan = mysqli_query($koneksi, "SELECT * FROM karyawan");
+            // $data_karyawan = mysqli_fetch_array($query_karyawan);
+            $query_peserta = mysqli_query($koneksi, "SELECT * FROM peserta");
+            $data_peserta = mysqli_fetch_array($query_peserta);
+            // $nikT = $data_karyawan['nik'];
+            $nipT = $data_peserta['nip'];
+            $tgl_awal_raker = ("2023-01-20");
+            $tgl_akhir_raker = ("2023-01-24");
             ?>
     <h3><center>DAFTAR HADIR PESERTA</center></h3>
 <h3><center><?php echo $data_event['nama_event']; ?>, <?php echo $data_event['tanggal']; ?> </center> </h3>
@@ -42,7 +45,7 @@ include "../conn.php";
         $tgl2 = date("Y-m-d");
 				//$sql = mysqli_query($koneksi, "SELECT * FROM kehadiran WHERE nik='$_POST[kode]' AND event='$event' ");
     
-    $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
+    $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode]'");
 			  if(mysqli_num_rows($sql) == 1){
 
     $sql = mysqli_query($koneksi, "SELECT * FROM kehadiran WHERE nik='$_POST[kode]' AND event='$event' AND tanggal='$tgl2' ") Or die (mysqli_error($koneksi));
@@ -59,7 +62,7 @@ include "../conn.php";
 				if($insert){
 					echo '<script>sweetAlert({
 	                                                   title: "SUCCESS", 
-                                                        text: "Terimakasih sudah hadir di Event Rakernas PT PESONNA OPTIMA JASA Tahun 2022", 
+                                                        text: "Terimakasih sudah hadir di Event Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
                                                         type: "success",
 														timer : 4000
                                                         });</script>';
@@ -85,7 +88,7 @@ include "../conn.php";
       }else{
         echo '<script>sweetAlert({
                                                    title: "FAILED", 
-                                                      text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2022", 
+                                                      text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
                                                       type: "warning",
                           timer : 4000
                                                       });</script>';
@@ -102,7 +105,7 @@ include "../conn.php";
 </center>
            
             
-            <form method="POST" name="update" action="absensi.php">
+            <form method="POST" id="scan" name="update" action="absensi.php">
 <center><input style="width:500px; height:75px; font-size: 25px;" name="kode" id="text2" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off" required="required"/></center>
 <!-- <right><input type="text" name="text" id="text" readonly="" class="form-control> </right> -->
 </form>
@@ -110,7 +113,8 @@ include "../conn.php";
 <div class="col-lg-12" style="margin-top: 40px;">
 <a href="hadir.php" class="btn btn-md btn-danger" style="margin-bottom : 5px;"><span class="glyphicon glyphicon-arrow-left"></span> Kembali</a> <a href="absensi_exportxls.php" class="btn btn-md btn-success" style="margin-bottom : 5px;"> <span class="glyphicon glyphicon-file"></span> Export Excel</a>
 <?php
-   $query1="select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND kehadiran.event='$event' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY kehadiran.nik ASC";
+  //  $query1="select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND kehadiran.event='$event' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY kehadiran.nik ASC";
+   $query1="select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND kehadiran.event='$event' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY kehadiran.nik ASC";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   <table id="example" class="table table-hover table-bordered">
@@ -119,7 +123,7 @@ include "../conn.php";
                         <th><center>No <i class="fa fa-sort"></i></center></th>
                         <th><center>Tanggal <i class="fa fa-sort"></i></center></th>
                         <th><center>Jam <i class="fa fa-sort"></i></center></th>
-                        <th><center>NIK <i class="fa fa-sort"></i></center></th>
+                        <th><center>NIP <i class="fa fa-sort"></i></center></th>
 						            <th><center>Nama <i class="fa fa-sort"></i></center></th>
                         <th><center>Event <i class="fa fa-sort"></i></center></th>
                         <th><center>Status<i class="fa fa-sort"></i></center></th>
@@ -195,6 +199,7 @@ include "../conn.php";
       // scan QR Code Part
       scanner.addListener('scan', function(c){
           document.getElementById("text2").value=c;
+          $( "#scan" ).trigger( "submit" ); //post automatis from id form
       });
 
 //.Scan OK

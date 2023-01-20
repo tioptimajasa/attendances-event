@@ -19,8 +19,8 @@ include "../conn.php";
             $data_event  = mysqli_fetch_array($query_event);
             $event = $data_event['nama_event'];
             $tgl = $data_event['tanggal'];
-            $tgl_awal_raker = ("2022-03-28");
-            $tgl_akhir_raker = ("2022-03-31");
+            $tgl_awal_raker = ("2023-01-20");
+            $tgl_akhir_raker = ("2023-01-24");
             ?>
     <h3><center>DAFTAR PENGAMBILAN <b style="color:red;">MERCHANDISE</b></center></h3>
     <h3><center><?php echo $data_event['nama_event']; ?>, <?php echo $data_event['tanggal']; ?> </center> </h3>
@@ -31,7 +31,8 @@ include "../conn.php";
 			date_default_timezone_set('Asia/Jakarta');
 			if(isset($_POST['kode'])){
 
-        $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
+        // $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
+        $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode]'");
             if(mysqli_num_rows($sql) == 1){
 
 		$sql = mysqli_query($koneksi, "SELECT * FROM merchandise WHERE nik='$_POST[kode]' and event='$event' ") or die (mysqli_error($koneksi));
@@ -73,7 +74,7 @@ include "../conn.php";
             }else{
                 echo '<script>sweetAlert({
                                                            title: "FAILED", 
-                                                              text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2022", 
+                                                              text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
                                                               type: "warning",
                                   timer : 4000
                                                               });</script>';
@@ -95,7 +96,8 @@ include "../conn.php";
 <div class="col-lg-12" style="margin-top: 40px;">
 <a href="data-merchandise.php" class="btn btn-md btn-warning" style="margin-bottom : 5px;"><span class="glyphicon glyphicon-arrow-left"></span> Kembali</a> <a href="merchandise_exportxls.php" class="btn btn-md btn-success" style="margin-bottom : 5px;"> <span class="glyphicon glyphicon-file"></span> Export Excel</a>
 <?php
-   $query1="select merchandise.*, karyawan.* from merchandise, karyawan where merchandise.nik=karyawan.nik AND merchandise.event='$event' AND merchandise.status='Sudah Ambil' AND merchandise.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY merchandise.nik ASC";
+  //  $query1="select merchandise.*, karyawan.* from merchandise, karyawan where merchandise.nik=karyawan.nik AND merchandise.event='$event' AND merchandise.status='Sudah Ambil' AND merchandise.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY merchandise.nik ASC";
+   $query1="select merchandise.*, peserta.* from merchandise, peserta where merchandise.nik=peserta.nip AND merchandise.event='$event' AND merchandise.status='Sudah Ambil' AND merchandise.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY merchandise.nik ASC";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   <table id="example" class="table table-hover table-bordered">
@@ -104,7 +106,7 @@ include "../conn.php";
                         <th><center>No <i class="fa fa-sort"></i></center></th>
                         <th><center>Tanggal <i class="fa fa-sort"></i></center></th>
                         <th><center>Jam <i class="fa fa-sort"></i></center></th>
-                        <th><center>NIK <i class="fa fa-sort"></i></center></th>
+                        <th><center>NIP <i class="fa fa-sort"></i></center></th>
 						            <th><center>Nama <i class="fa fa-sort"></i></center></th>
                         <th><center>Event <i class="fa fa-sort"></i></center></th>
                         <th><center>Status<i class="fa fa-sort"></i></center></th>
@@ -179,7 +181,7 @@ include "../conn.php";
       // scan QR Code Part
       scanner.addListener('scan', function(c){
           document.getElementById("text2").value=c;
-          $( "#scan" ).trigger( "submit" ); //post automatis
+          $( "#scan" ).trigger( "submit" ); //post automatis from id form
       });
 
 //.Scan OK
