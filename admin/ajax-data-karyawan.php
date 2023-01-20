@@ -1,6 +1,6 @@
 <?php
 /* Database connection start */
-include "koneksi.php";
+include "../global-templates/koneksi.php";
 /* Database connection end */
 
 
