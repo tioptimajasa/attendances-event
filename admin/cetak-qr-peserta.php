@@ -1,5 +1,5 @@
 <?php 
-include "session-officer.php";
+include "session.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,7 @@ include "session-officer.php";
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu-officer.php"; ?>
+      <?php include "menu.php"; ?>
 
 <?php
 $timeout = 10; // Set timeout minutes
@@ -35,7 +35,7 @@ $_SESSION['start_time'] = time();
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="index-admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li class="active">QR Code (Cetak)</li>
           </ol>
         </section>

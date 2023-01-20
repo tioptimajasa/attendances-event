@@ -23,7 +23,7 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 
 					$sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$nip'");
 			            if(mysqli_num_rows($sql) == 1){
-							echo "<script>alert('NIP sudah ada!'); window.location = 'input-peserta-officer.php'</script>";
+							echo "<script>alert('NIP sudah ada!'); window.location = 'input-peserta.php'</script>";
 						}
 						
 							$query="INSERT INTO peserta (nip,nama,jabatan,unit_kerja,type_peserta,foto, jenis_kelamin) VALUES
@@ -31,7 +31,7 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 							// echo "$query";
 							$res=mysqli_query($koneksi, $query) or die (mysqli_error());
 							//echo "Foto berhasil dikirim ke direktori".$foto;
-							echo "<script>alert('Data berhasil dimasukan!'); window.location = 'peserta-officer.php'</script>";	   
+							echo "<script>alert('Data berhasil dimasukan!'); window.location = 'peserta.php'</script>";	   
 						} 
 						else {
 						echo "<p>Foto gagal dikirim</p>";
