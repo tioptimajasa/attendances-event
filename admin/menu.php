@@ -37,10 +37,14 @@
               </ul>
             </li>
 
+            <?php 
+            $tampil_peserta=mysqli_query($koneksi, "select * from peserta order by nip desc");
+                        $total_peserta=mysqli_num_rows($tampil_peserta);
+            ?>
             <li>
               <a href="#">
                 <i class="fa fa-users"></i> <span>Peserta</span> <i class="fa fa-angle-left pull-right"></i>
-                <small class="label pull-right bg-yellow"><?php echo $total; ?></small>
+                <small class="label pull-right bg-yellow"><?php echo $total_peserta; ?></small>
               </a>
               <ul class="treeview-menu">
                 <li><a href="peserta.php"><i class="fa fa-circle-o"></i> List Peserta</a></li>

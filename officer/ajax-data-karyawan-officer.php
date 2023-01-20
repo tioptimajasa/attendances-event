@@ -64,14 +64,28 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 	//                  <a href="cetak-qr.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
     //                  <a href="#"  data-toggle="tooltip" title="Edit" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
 	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
-	//                  </center></td>';		
+	//                  </center></td>';	
 	
-	//// Function for level Officer Edit=True, Delete=False
+	// //// Function for level Officer Cetak=False, Edit=True, Delete=False
+	// $nestedData[] = '<td><center>
+	//                  <a href="#"  data-toggle="tooltip" title="Cetak Kartu" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+    //                  <a href="edit-karyawan-officer.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
+	//                  </center></td>';
+
+	//// Function for level Officer Cetak=False, Edit=False, Delete=False
 	$nestedData[] = '<td><center>
-	                 <a href="cetak-qr.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
-                     <a href="edit-karyawan-officer.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+	                 <a href="#"  data-toggle="tooltip" title="Cetak Kartu" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+                     <a href="#"  data-toggle="tooltip" title="Edit" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
 				     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
-	                 </center></td>';		
+	                 </center></td>';
+	
+	// //// Function for level Officer Edit=True, Delete=False
+	// $nestedData[] = '<td><center>
+	//                  <a href="cetak-qr.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+    //                  <a href="edit-karyawan-officer.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+	// 			     <a href="#"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
+	//                  </center></td>';		
 	
 	$data[] = $nestedData;
     

@@ -53,8 +53,16 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
 	$nestedData[] = $row["nik"];
     $nestedData[] = $row["nama"];
 	$nestedData[] = $row["departemen"];
+	// //// Function Cetak=True, Edit=True, Delete=True
+	// $nestedData[] = '<td><center>
+	//                  <a href="cetak-qr.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+    //                  <a href="edit-karyawan.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
+	// 			     <a href="karyawan.php?aksi=delete&id='.$row['nik'].'"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Anda yakin akan menghapus data '.$row['nama'].'?\')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
+	//                  </center></td>';
+
+	//// Function Cetak=False, Edit=True, Delete=True
 	$nestedData[] = '<td><center>
-	                 <a href="cetak-qr.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Cetak Kartu" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
+	                 <a href="#"  data-toggle="tooltip" title="Cetak Kartu" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-print"></i> </a>
                      <a href="edit-karyawan.php?id='.$row['nik'].'"  data-toggle="tooltip" title="Edit" class="btn btn-sm btn-primary"> <i class="glyphicon glyphicon-edit"></i> </a>
 				     <a href="karyawan.php?aksi=delete&id='.$row['nik'].'"  data-toggle="tooltip" title="Delete" onclick="return confirm(\'Anda yakin akan menghapus data '.$row['nama'].'?\')" class="btn btn-sm btn-danger"> <i class="glyphicon glyphicon-trash"> </i> </a>
 	                 </center></td>';
