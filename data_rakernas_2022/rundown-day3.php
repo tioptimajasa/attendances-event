@@ -18,7 +18,7 @@
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -36,11 +36,10 @@
     <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li class="active"><a href="#">Hari ke-3</a></li>
-    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 3 <small> Rabu, 08 Februari 2023</small></h2>
+<h2> Day 3 <small> Rabu, 30 Maret 2022</small></h2>
 
         <!-- //Timeline Rundown -->
         
@@ -152,7 +151,7 @@
                             </li>
                         </ul>
 
-<!-- <h2> Day 4 <small> Kamis, 31 Maret 2023</h2>
+<h2> Day 4 <small> Kamis, 31 Maret 2022</h2>
                         <ul class="timeline">
                             <li class="event" data-date="06:30 WIB - 08:00 WIB">
                                 <h3>Breakfast </h3>
@@ -160,10 +159,10 @@
                             </li>
                             <li class="event" data-date="08:30 WIB - 12:00 WIB">
                                 <h3>Check Out & Pengambilan oleh-oleh </h3>
-                                 <p>Palace Hotel, Cipanas, Jawa Barat</p> 
+                                <!-- <p>Palace Hotel, Cipanas, Jawa Barat</p> -->
                                 <p>Lokasi: di Lantai 2 samping Receptionist</p>
                             </li>
-                        </ul> -->
+                        </ul>
                     
         <!-- .//Timeline Rundown -->
 

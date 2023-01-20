@@ -18,7 +18,7 @@
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -36,11 +36,10 @@
     <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li class="active"><a href="#">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
-    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 2 <small> Selasa, 07 Februari 2023</small></h2>
+<h2> Day 2 <small> Selasa, 29 Maret 2022</small></h2>
 
         <!-- //Timeline Rundown -->
         

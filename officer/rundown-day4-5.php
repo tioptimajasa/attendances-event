@@ -32,36 +32,53 @@
         
 <div class="container">
   <ul class="nav nav-pills nav-justified">
-    <li><a href="rundown-day-tatib.php"  >Tata Tertib</a></li>
-    <li class="active"><a href="#" >Hari ke-1</a></li>
+    <li ><a href="rundown-day-tatib.php"  >Tata Tertib</a></li>
+    <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
-    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
+    <li class="active"><a href="#">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 1 <small> Senin, 06 Februari 2023</small></h2>
+<h2> Day 4 <small> Kamis, 09 Februari 2023</small></h2>
 
         <!-- //Timeline Rundown -->
         
                         <ul class="timeline">
-                            <li class="event" data-date="15:00 WIB - 18:00 WIB">
-                                <h3>Check In & Registrasi serta Souvenir</h3>
-                                <p>Hotel, Semarang, Jawa Tengah</p>
-                                <p><a href="https://www.google.com/maps/place/Palace+Hotel+Semarang/@-6.7361635,107.0421125,15z/data=!4m18!1m9!3m8!1s0x0:0x2c40fd76652e74fa!2sPalace+Hotel+Semarang!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214!3m7!1s0x0:0x2c40fd76652e74fa!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214"><i class="fa fa-map"> Click go to Maps</i></a></p>
-                                <p>Lokasi: disamping Receptionist Lantai 2</p>
+                            <li class="event" data-date="06:00 WIB - 07:00 WIB">
+                                <h3>Breakfast (60 Menit)</h3>
+                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
                             </li>
-                            <li class="event" data-date="18:00 WIB - 19:00 WIB">
-                                <h3>Sholat (60 Menit)</h3>
-                                <!-- <p>Hotel, Semarang, Jawa Tengah</p> -->
-                                <!-- <p>Lokasi: Resto Lantai 2 dekat Receptionist</p> -->
-                            </li>
-                            <li class="event" data-date="19:00 WIB - 21:00 WIB">
-                                <h3>Ramah Tamah / Makan Malam di Hotel (120 Menit)</h3>
+                            <li class="event" data-date="07:00 WIB - 17:00 WIB">
+                                <h3>Outbond (600 Menit)</h3>
                                 <!-- <p>Panitia</p> -->
-                                <p>Lokasi: Flamboyan Cafe Lantai 2</p>
+                                <p>Lokasi: One Day Outbond</p>
+                                <p><a href="#"><i class="fa fa-map"> Click go to Maps</i></a></p>
                             </li>
-                            
+                            <li class="event" data-date="18:00 WIB - 21:00 WIB">
+                                <h3>Dinner (180 Menit)</h3>
+                                <p>Lokasi: Unknown</p>
+                                <!-- <p>Panitia</p> -->
+                                <p><a href="#"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            </li>
+                            <!-- <li class="event" data-date="19:00 WIB - 21:00 WIB">
+                                <h3>Dinner (120 Menit)</h3>
+                                <p>D'Colonel Mountain View Cipanas <br />(D'Colonel Mountain View Resto)</p>
+                                <p><a href="https://goo.gl/maps/x261vGjZjtMGh3N89"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            </li> -->
+                        </ul>
+
+<h2> Day 5 <small> Jumat, 10 Februari 2023</h2>
+                        <ul class="timeline">
+                            <li class="event" data-date="06:30 WIB - 08:00 WIB">
+                                <h3>Breakfast (90 Menit)</h3>
+                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
+                            </li>
+                            <li class="event" data-date="08:00 WIB - 12:00 WIB">
+                                <h3>Check Out & Pengambilan oleh-oleh </h3>
+                                <!-- <p>Palace Hotel, Cipanas, Jawa Barat</p> -->
+                                <p>Lokasi: di Lantai 2 samping Receptionist</p>
+                            </li>
                         </ul>
                     
         <!-- .//Timeline Rundown -->

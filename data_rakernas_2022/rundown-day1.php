@@ -18,7 +18,7 @@
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -36,24 +36,23 @@
     <li class="active"><a href="#" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
-    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 1 <small> Senin, 06 Februari 2023</small></h2>
+<h2> Day 1 <small> Senin, 28 Maret 2022</small></h2>
 
         <!-- //Timeline Rundown -->
         
                         <ul class="timeline">
                             <li class="event" data-date="15:00 WIB - 18:00 WIB">
                                 <h3>Check In & Registrasi serta Souvenir</h3>
-                                <p>Hotel, Semarang, Jawa Tengah</p>
-                                <p><a href="https://www.google.com/maps/place/Palace+Hotel+Semarang/@-6.7361635,107.0421125,15z/data=!4m18!1m9!3m8!1s0x0:0x2c40fd76652e74fa!2sPalace+Hotel+Semarang!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214!3m7!1s0x0:0x2c40fd76652e74fa!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                                <p>Palace Hotel, Cipanas, Jawa Barat</p>
+                                <p><a href="https://www.google.com/maps/place/Palace+Hotel+Cipanas/@-6.7361635,107.0421125,15z/data=!4m18!1m9!3m8!1s0x0:0x2c40fd76652e74fa!2sPalace+Hotel+Cipanas!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214!3m7!1s0x0:0x2c40fd76652e74fa!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214"><i class="fa fa-map"> Click go to Maps</i></a></p>
                                 <p>Lokasi: disamping Receptionist Lantai 2</p>
                             </li>
                             <li class="event" data-date="18:00 WIB - 19:00 WIB">
                                 <h3>Sholat (60 Menit)</h3>
-                                <!-- <p>Hotel, Semarang, Jawa Tengah</p> -->
+                                <!-- <p>Palace Hotel, Cipanas, Jawa Barat</p> -->
                                 <!-- <p>Lokasi: Resto Lantai 2 dekat Receptionist</p> -->
                             </li>
                             <li class="event" data-date="19:00 WIB - 21:00 WIB">

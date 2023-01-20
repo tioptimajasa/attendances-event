@@ -18,7 +18,7 @@
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -32,39 +32,68 @@
         
 <div class="container">
   <ul class="nav nav-pills nav-justified">
-    <li><a href="rundown-day-tatib.php"  >Tata Tertib</a></li>
-    <li class="active"><a href="#" >Hari ke-1</a></li>
+    <li class="active"><a href="#"  >Tata Tertib</a></li>
+    <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
-    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 1 <small> Senin, 06 Februari 2023</small></h2>
+<center>
+<!-- <h2> Tata Tertib </h2><small> Rakernas PT PESONNA OPTIMA JASA Tahun 2022</small> -->
+<h1>Tata Tertib Peserta<br /><small> Rapat Kerja Nasional<br />PT Pesonna Optima Jasa Tahun 2022</small></h1>
+<!-- <img src="../dist/img/id.png" style="width:200px; height:80px"> -->
+</center>
+<br /><br />
 
-        <!-- //Timeline Rundown -->
-        
-                        <ul class="timeline">
-                            <li class="event" data-date="15:00 WIB - 18:00 WIB">
-                                <h3>Check In & Registrasi serta Souvenir</h3>
-                                <p>Hotel, Semarang, Jawa Tengah</p>
-                                <p><a href="https://www.google.com/maps/place/Palace+Hotel+Semarang/@-6.7361635,107.0421125,15z/data=!4m18!1m9!3m8!1s0x0:0x2c40fd76652e74fa!2sPalace+Hotel+Semarang!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214!3m7!1s0x0:0x2c40fd76652e74fa!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214"><i class="fa fa-map"> Click go to Maps</i></a></p>
-                                <p>Lokasi: disamping Receptionist Lantai 2</p>
-                            </li>
-                            <li class="event" data-date="18:00 WIB - 19:00 WIB">
-                                <h3>Sholat (60 Menit)</h3>
-                                <!-- <p>Hotel, Semarang, Jawa Tengah</p> -->
-                                <!-- <p>Lokasi: Resto Lantai 2 dekat Receptionist</p> -->
-                            </li>
-                            <li class="event" data-date="19:00 WIB - 21:00 WIB">
-                                <h3>Ramah Tamah / Makan Malam di Hotel (120 Menit)</h3>
-                                <!-- <p>Panitia</p> -->
-                                <p>Lokasi: Flamboyan Cafe Lantai 2</p>
-                            </li>
-                            
-                        </ul>
-                    
-        <!-- .//Timeline Rundown -->
+        <!-- //Tata Tertib -->
+      <div>
+        <p>
+        <!-- <i class="fa fa-asterisk"></i> --><b>1. </b>Yang berhak mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 adalah peserta yang telah terdaftar pada list peserta.
+        </p><br/>
+        <p>
+        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 melalui alamat web berikut : https:// rekernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        </p><br/>
+        <p>
+        <b>3. </b>Peserta diharuskan hadir di lokasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 sesuai dengan jadwal yang telah diberikan.
+        </p><br/>
+        <p>
+        <b>4. </b>Peserta diharuskan melakukan absensi dan registrasi pada saat kedatangan di meja panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        </p><br/>
+        <p>
+        <b>5. </b>Peserta diharuskan menyiapkan perlengkapan berupa Laptop, alat tulis untuk mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        </p><br/>
+        <p>
+        <b>6. </b>Peserta diharuskan mengenakan Dresscode sesuai jadwal yang ditentukan sebagai berikut: <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Senin, 28 Maret 2022 : Smart Casual (bebas).<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Selasa, 29 Maret 2022 : Smart Casual (kemeja casual; celana/rok tidak blue jeans; blazer/jas jaket).<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Rabu, 30 Maret 2022 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
+        </p><br/>
+        <p>
+        <b>7. </b>Pada hari kedua dan ketiga (29-30 Maret 2022) Peserta diharuskan melakukan absensi di meja panitia paling lambat 5 menit sebelum acara dimulai dengan menunjukan kartu peserta yang telah diperoleh pada saat registrasi.
+        </p><br/>
+        <p>
+        <b>8. </b>Peserta diharuskan mengikuti seluruh rangkaian kegiatan acara yang telah di siapkan oleh panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        </p><br/>
+        <p>
+        <b>9. </b>Peserta diharuskan mematuhi tata tertib dan tidak diperkenankan mengganggu jalannya pelaksanaan acara Rapat Kerja Nasional.
+        </p>
+        <p>
+        <b>10. </b>Pada saat berlangsungnya acara, peserta tidak diperkenankan untuk keluar dari area Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 tanpa alasan yang jelas.
+        </p><br/>
+        <p>
+        <b>11. </b>Peserta diperkenankan untuk mengajukan pertanyaan pada saat berlangsungnya sesi tanya jawab yang telah disediakan oleh setiap pemateri atau panitia.
+        </p><br/>
+        <p>
+        <b>12. </b>Apabila peserta mengalami kendala dalam mengikuti kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 dapat menghubungi sekertariat melalui group Whatsapp peserta Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        </p><br/><br/><br/>
+      </div>
+        <p><center>
+          <h4>Hormat Kami,</h4>
+          <img src="../dist/img/id.png" id="rz" style="width:180px; height:60px">
+          <h4>Panitia Rapat Kerja Nasional<br/>PT Pesonna Optima Jasa Tahun 2022</h4>
+        </center></p>
+        <!-- .//Tata Tertib -->
 
             
         
@@ -199,6 +228,16 @@
 }
 </style>
   <!-- CSS Style tambahan Timeline -->
+  <style>
+
+#rz {
+  opacity:0.5;
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
 
 
 

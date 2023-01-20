@@ -18,7 +18,7 @@
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -36,12 +36,13 @@
     <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
+    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
 <center>
-<!-- <h2> Tata Tertib </h2><small> Rakernas PT PESONNA OPTIMA JASA Tahun 2022</small> -->
-<h1>Tata Tertib Peserta<br /><small> Rapat Kerja Nasional<br />PT Pesonna Optima Jasa Tahun 2022</small></h1>
+<!-- <h2> Tata Tertib </h2><small> Rakernas PT PESONNA OPTIMA JASA Tahun 2023</small> -->
+<h1>Tata Tertib Peserta<br /><small> Rapat Kerja Nasional<br />PT Pesonna Optima Jasa Tahun 2023</small></h1>
 <!-- <img src="../dist/img/id.png" style="width:200px; height:80px"> -->
 </center>
 <br /><br />
@@ -49,49 +50,50 @@
         <!-- //Tata Tertib -->
       <div>
         <p>
-        <!-- <i class="fa fa-asterisk"></i> --><b>1. </b>Yang berhak mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 adalah peserta yang telah terdaftar pada list peserta.
+        <!-- <i class="fa fa-asterisk"></i> --><b>1. </b>Yang berhak mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 adalah peserta yang telah terdaftar pada list peserta.
         </p><br/>
         <p>
-        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 melalui alamat web berikut : https:// rekernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 melalui alamat web berikut : https:// rekernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
-        <b>3. </b>Peserta diharuskan hadir di lokasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 sesuai dengan jadwal yang telah diberikan.
+        <b>3. </b>Peserta diharuskan hadir di lokasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 sesuai dengan jadwal yang telah diberikan.
         </p><br/>
         <p>
-        <b>4. </b>Peserta diharuskan melakukan absensi dan registrasi pada saat kedatangan di meja panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        <b>4. </b>Peserta diharuskan melakukan absensi dan registrasi pada saat kedatangan di meja panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
-        <b>5. </b>Peserta diharuskan menyiapkan perlengkapan berupa Laptop, alat tulis untuk mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        <b>5. </b>Peserta diharuskan menyiapkan perlengkapan berupa Laptop, alat tulis untuk mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>6. </b>Peserta diharuskan mengenakan Dresscode sesuai jadwal yang ditentukan sebagai berikut: <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Senin, 28 Maret 2022 : Smart Casual (bebas).<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Selasa, 29 Maret 2022 : Smart Casual (kemeja casual; celana/rok tidak blue jeans; blazer/jas jaket).<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Rabu, 30 Maret 2022 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Senin, 06 Februari 2023 : Smart Casual (bebas).<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Selasa, 07 Februari 2023 : Smart Casual (kemeja casual; celana/rok tidak blue jeans; blazer/jas jaket).<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Rabu, 08 Februari 2023 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Kamis, 09 Februari 2023 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
         </p><br/>
         <p>
-        <b>7. </b>Pada hari kedua dan ketiga (29-30 Maret 2022) Peserta diharuskan melakukan absensi di meja panitia paling lambat 5 menit sebelum acara dimulai dengan menunjukan kartu peserta yang telah diperoleh pada saat registrasi.
+        <b>7. </b>Pada hari kedua dan ketiga (07-08 Februari 2023) Peserta diharuskan melakukan absensi di meja panitia paling lambat 5 menit sebelum acara dimulai dengan menunjukan kartu peserta yang telah diperoleh pada saat registrasi.
         </p><br/>
         <p>
-        <b>8. </b>Peserta diharuskan mengikuti seluruh rangkaian kegiatan acara yang telah di siapkan oleh panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        <b>8. </b>Peserta diharuskan mengikuti seluruh rangkaian kegiatan acara yang telah di siapkan oleh panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>9. </b>Peserta diharuskan mematuhi tata tertib dan tidak diperkenankan mengganggu jalannya pelaksanaan acara Rapat Kerja Nasional.
         </p>
         <p>
-        <b>10. </b>Pada saat berlangsungnya acara, peserta tidak diperkenankan untuk keluar dari area Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 tanpa alasan yang jelas.
+        <b>10. </b>Pada saat berlangsungnya acara, peserta tidak diperkenankan untuk keluar dari area Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 tanpa alasan yang jelas.
         </p><br/>
         <p>
         <b>11. </b>Peserta diperkenankan untuk mengajukan pertanyaan pada saat berlangsungnya sesi tanya jawab yang telah disediakan oleh setiap pemateri atau panitia.
         </p><br/>
         <p>
-        <b>12. </b>Apabila peserta mengalami kendala dalam mengikuti kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022 dapat menghubungi sekertariat melalui group Whatsapp peserta Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2022.
+        <b>12. </b>Apabila peserta mengalami kendala dalam mengikuti kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 dapat menghubungi sekertariat melalui group Whatsapp peserta Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/><br/><br/>
       </div>
         <p><center>
           <h4>Hormat Kami,</h4>
           <img src="../dist/img/id.png" id="rz" style="width:180px; height:60px">
-          <h4>Panitia Rapat Kerja Nasional<br/>PT Pesonna Optima Jasa Tahun 2022</h4>
+          <h4>Panitia Rapat Kerja Nasional<br/>PT Pesonna Optima Jasa Tahun 2023</h4>
         </center></p>
         <!-- .//Tata Tertib -->
 
