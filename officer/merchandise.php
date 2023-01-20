@@ -88,8 +88,8 @@ include "../conn.php";
      style="transform: scaleX(-1);"></video> 
 </center>
             
-            <form method="POST" name="update" action="hadiah.php">
-<center><input style="width:500px; height:75px; font-size: 25px;" name="kode" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off"/></center>
+            <form method="POST" id="scan" name="update" action="hadiah.php">
+<center><input style="width:500px; height:75px; font-size: 25px;" name="kode" id="text2" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off"/></center>
 </form>
 </div>
 <div class="col-lg-12" style="margin-top: 40px;">
@@ -179,6 +179,7 @@ include "../conn.php";
       // scan QR Code Part
       scanner.addListener('scan', function(c){
           document.getElementById("text2").value=c;
+          $( "#scan" ).trigger( "submit" ); //post automatis
       });
 
 //.Scan OK

@@ -14,6 +14,14 @@
 <!-- <script type="text/javascript" src="https://schmich.github.io/instascan/"></script> -->
 <!-- <script type="text/javascript" src="../static-module/instascan-1.0.0/instascan.min.js"></script> -->
     <link rel="stylesheet" href="../dist/sweetalert.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("input").change();
+  });
+});
+</script>
 
 </head>
 <body>
@@ -104,8 +112,8 @@ include "../conn.php";
 </center>
            
             
-            <form method="POST" name="update" action="absensi.php">
-<center><input style="width:500px; height:75px; font-size: 25px;" name="kode" id="text2" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off" required="required"/></center>
+            <form method="POST" id="idabsen" name="update" action="absensi.php">
+<center><input style="width:500px; height:75px; font-size: 25px;" name="kode" id="text2" class="form-control" placeholder="Scan QR Code111" onchange="alert(this.value)" autofocus="on" autocomplete="off" required="required"/></center>
 <!-- <right><input type="text" name="text" id="text" readonly="" class="form-control> </right> -->
 </form>
 </div>
@@ -197,21 +205,11 @@ include "../conn.php";
       // scan QR Code Part
       scanner.addListener('scan', function(c){
           document.getElementById("text2").value=c;
+          $( "#idabsen" ).trigger( "submit" );
       });
 
 //.Scan OK
 
-
-    //   // Tes Auto Enter
-    //   document.addEventListener('keypress', function(c) {
-    //         // `e` is the event
-    //     });
-
-    
-
-
-
-      
     </script>
 
 <style>
