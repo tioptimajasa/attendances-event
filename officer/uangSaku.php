@@ -94,7 +94,7 @@ include "../conn.php";
      style="transform: scaleX(-1);"></video> 
 </center>
             
-            <form method="POST" id="scan" name="update" action="uang_saku.php">
+            <form method="POST" id="scan" name="update" action="uangSaku.php">
 <center><input style="width:670px; height:75px; font-size: 25px;" name="kode" class="form-control" placeholder="Scan QR Code lalu tekan Enter untuk ambil Uang Saku" onchange="this.form.submit();" autofocus="on" autocomplete="off"/></center>
 </form>
 </div>
