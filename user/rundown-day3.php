@@ -36,19 +36,20 @@
     <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li class="active"><a href="#">Hari ke-3</a></li>
+    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 3 <small> Rabu, 30 Maret 2022</small></h2>
+<h2> Day 3 <small> Rabu, 08 Februari 2023</small></h2>
 
         <!-- //Timeline Rundown -->
         
-                        <ul class="timeline">
-                            <li class="event" data-date="06:00 WIB - 07:30 WIB">
+        <ul class="timeline">
+                            <li class="event" data-date="06:30 WIB - 08:00 WIB">
                                 <h3>Breakfast (90 Menit)</h3>
                                 <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
                             </li>
-                            <li class="event" data-date="07:30 WIB - 09:00 WIB">
+                            <li class="event" data-date="08:00 WIB - 09:30 WIB">
                                 <h3>Speech GM Rental & Usaha Lain (90 Menit)</h3>
                                 <p>Dodik Sugeng H</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
@@ -58,100 +59,53 @@
                                 <p>Andi Pangeran</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li> -->
-                            <li class="event" data-date="09:00 WIB - 09:30 WIB">
-                                <h3>Coffee Break (30 Menit)</h3>
+                            <li class="event" data-date="09:30 WIB - 11:00 WIB">
+                                <h3>Speech GM SDM & Logistik (90 Menit)</h3>
+                                <p>Lucia Retna Widarti</p>
                                 <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <li class="event" data-date="09:30 WIB - 10:00 WIB">
-                                <h3>Speech Kepala SPI (30 Menit)</h3>
-                                <p>Andi Pangeran</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                            <li class="event" data-date="11:00 WIB - 12:00 WIB">
+                                <h3>Speech Ka SPI (60 Menit)</h3>
+                                <p>A. Sigit Agung W</p>
+                                <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <li class="event" data-date="10:00 WIB - 11:00 WIB">
-                                <h3>Speech Regional Manager (60 Menit)</h3>
-                                <p>Yuardi Hendrasetiawan</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                            <li class="event" data-date="12:00 WIB - 13:00 WIB">
+                                <h3>ISHOMA (60 Menit)</h3>
+                                <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <!-- <li class="event" data-date="09:30 WIB - 10:00 WIB">
-                                <h3>Coffee Break (30 Menit)</h3>
-                                <p>Lokasi: Flamboyan Cafe Lantai 2</p>
-                            </li> -->
-                            <li class="event" data-date="11:00 WIB - 11:30 WIB">
-                                <h3>Speech Leadership (30 Menit)</h3>
-                                <p>Katrin Candraswuri</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="11:30 WIB - 12:00 WIB">
-                                <h3>Speech TI (30 Menit)</h3>
-                                <p>Andri Prayogo</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="12:00 WIB - 12:10 WIB">
-                                <h3>Flashmob Marketing Executive (10 Menit)</h3>
-                                <!-- <p>Katrin Candraswuri</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
-                            </li>
-                            <li class="event" data-date="12:10 WIB - 13:00 WIB">
-                                <h3>ISHOMA (50 Menit)</h3>
-                                <!-- <p>I Wayan Sukerata</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
-                            </li>
-                            <!-- <li class="event" data-date="11:00 WIB - 12:00 WIB">
-                                <h3>Speech GM Keuangan dan TI (60 Menit)</h3>
+                            <li class="event" data-date="13:00 WIB - 14:30 WIB">
+                                <h3>Speech GM Keuangan dan TI (90 Menit)</h3>
                                 <p>I Wayan Sukerata</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li>
-                            <li class="event" data-date="12:00 WIB - 12:15 WIB">
-                                <h3>Flashmob Marketing Executive (15 Menit)</h3>
-                                <p>Seluruh ME</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="12:15 WIB - 13:00 WIB">
-                                <h3>ISHOMA (45 Menit)</h3>
-                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
-                            </li> -->
-                            <li class="event" data-date="13:00 WIB - 15:00 WIB">
-                                <h3>Speech Marketing (120 Menit)</h3>
-                                <p>Jamil Azzaini</p>
+                            <li class="event" data-date="14:30 WIB - 15:30 WIB">
+                                <h3>Kontrak Manajemen (60 Menit)</h3>
+                                <p>Panitia</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li>
                             <li class="event" data-date="15:30 WIB - 16:00 WIB">
-                                <h3>Coffee Break & Sholat (30 Menit)</h3>
+                                <h3>Penutupan (30 Menit)</h3>
+                                <!-- <p>Panitia</p>
+                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
+                            </li>
+                            <li class="event" data-date="16:00 WIB - 18:00 WIB">
+                                <h3>Coffee Break & Sholat (120 Menit)</h3>
                                 <!-- <p>Jamil Azzaini</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <li class="event" data-date="16:00 WIB - 17:00 WIB">
-                                <h3>Speech GM Keuangan dan TI (60 Menit)</h3>
-                                <p>I Wayan Sukerata</p>
+                            <!-- <li class="event" data-date="18:00 WIB - 21:00 WIB">
+                                <h3>Dinner (-- Menit)</h3>
+                                <p>Jamil Azzaini</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="17:00 WIB - 17:30 WIB">
-                                <h3>Kontrak Manajemen (30 Menit)</h3>
-                                <p>Panitia</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <!-- <li class="event" data-date="16:00 WIB - 16:30 WIB">
-                                <h3>Coffee Break & Sholat (30 Menit)</h3>
-                                <p>Lokasi: Flamboyan Cafe Lantai 2</p>
                             </li> -->
-                            <li class="event" data-date="17:30 WIB - 18:00 WIB">
-                                <h3>Penutupan (30 Menit)</h3>
-                                <p>Panitia</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
                             <li class="event" data-date="18:00 WIB - 21:00 WIB">
-                                <h3>ISHOMA (180 Menit)</h3>
-                                <!-- <p>Lokasi: Resto Lantai 2 dekat Receptionist</p> -->
-                                <!-- <p>Panitia</p> -->
-                            </li>
-                            <li class="event" data-date="19:00 WIB - 21:00 WIB">
-                                <h3>Dinner (120 Menit)</h3>
+                                <h3>Dinner (-- Menit)</h3>
                                 <p>D'Colonel Mountain View Cipanas <br />(D'Colonel Mountain View Resto)</p>
                                 <p><a href="https://goo.gl/maps/x261vGjZjtMGh3N89"><i class="fa fa-map"> Click go to Maps</i></a></p>
                             </li>
                         </ul>
 
-<h2> Day 4 <small> Kamis, 31 Maret 2022</h2>
+<!-- <h2> Day 4 <small> Kamis, 31 Maret 2023</h2>
                         <ul class="timeline">
                             <li class="event" data-date="06:30 WIB - 08:00 WIB">
                                 <h3>Breakfast </h3>
@@ -159,10 +113,10 @@
                             </li>
                             <li class="event" data-date="08:30 WIB - 12:00 WIB">
                                 <h3>Check Out & Pengambilan oleh-oleh </h3>
-                                <!-- <p>Palace Hotel, Cipanas, Jawa Barat</p> -->
+                                 <p>Palace Hotel, Cipanas, Jawa Barat</p> 
                                 <p>Lokasi: di Lantai 2 samping Receptionist</p>
                             </li>
-                        </ul>
+                        </ul> -->
                     
         <!-- .//Timeline Rundown -->
 

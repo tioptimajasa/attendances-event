@@ -36,83 +36,82 @@
     <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li class="active"><a href="#">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
+    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<h2> Day 2 <small> Selasa, 29 Maret 2022</small></h2>
+<h2> Day 2 <small> Selasa, 07 Februari 2023</small></h2>
 
         <!-- //Timeline Rundown -->
         
-                        <ul class="timeline">
-                            <li class="event" data-date="06:00 WIB - 07:30 WIB">
+        <ul class="timeline">
+                            <li class="event" data-date="06:30 WIB - 08:00 WIB">
                                 <h3>Breakfast (90 Menit)</h3>
                                 <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
                             </li>
-                            <li class="event" data-date="07:00 WIB - 08:00 WIB">
+                            <li class="event" data-date="08:00 WIB - 08:30 WIB">
                                 <h3>Pembukaan (30 Menit)</h3>
                                 <p>Pembukaan MC, Menyanyikan Lagu Indonesia Raya, Sambutan Ketua Panitia, Pembukaan Acara oleh Direksi, Doa</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li>
-                            <li class="event" data-date="08:00 WIB - 09:00 WIB">
-                                <h3>Speech Komisaris (60 Menit)</h3>
+                            <li class="event" data-date="08:30 WIB - 09:15 WIB">
+                                <h3>Speech Komisaris (45 Menit)</h3>
                                 <p>Alfian Noor</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li>
-                            <li class="event" data-date="09:00 WIB - 10:30 WIB">
+                            <li class="event" data-date="09:15 WIB - 10:00 WIB">
+                                <h3>Voice of Customer (45 Menit)</h3>
+                                <p>Pemimpin Wilayah Semarang</p>
+                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                            </li>
+                            <li class="event" data-date="10:00 WIB - 10:30 WIB">
+                                <h3>Coffee Break (30 Menit)</h3>
+                                <!-- <p>Lokasi: Flamboyan Cafe Lantai 2</p> -->
+                            </li>
+                            <li class="event" data-date="10:30 WIB - 12:00 WIB">
                                 <h3>Speech Direktur Utama (90 Menit)</h3>
                                 <p>Agus Priyabodo</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li>
-                            <li class="event" data-date="10:30 WIB - 11:00 WIB">
-                                <h3>Coffee Break (30 Menit)</h3>
-                                <!-- <p>Lokasi: Flamboyan Cafe Lantai 2</p> -->
-                            </li>
-                            <li class="event" data-date="11:00 WIB - 12:00 WIB">
-                                <h3>Speech Direktur (60 Menit)</h3>
-                                <p>Yul Alfian</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="12:00 WIB - 12:15 WIB">
-                                <h3>Flashmob Panitia (15 Menit)</h3>
-                                <p>Panitia</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="12:15 WIB - 13:15 WIB">
+                            <li class="event" data-date="12:00 WIB - 13:00 WIB">
                                 <h3>ISHOMA (60 Menit)</h3>
+                                <!-- <p>Panitia</p> -->
+                                <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
+                            </li>
+                            <li class="event" data-date="13:00 WIB - 14:00 WIB">
+                                <h3>Speech Direktur (60 Menit)</h3>
+                                <p>Yul Afian</p>
+                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                            </li>
+                            <li class="event" data-date="14:00 WIB - 16:00 WIB">
+                                <h3>Speech Motivasi <small>"Bekerja adalah ibadah"</small> (120 Menit)</h3>
+                                <p>Ustadz Wijayanto</p>
                                 <!-- <p>Lokasi: Resto Lantai 2 dekat Receptionist</p> -->
                             </li>
-                            <li class="event" data-date="13:15 WIB - 14:45 WIB">
+                            <li class="event" data-date="16:00 WIB - 16:30 WIB">
+                                <h3>Coffee Break & Sholat (30 Menit)</h3>
+                                <!-- <p>Lokasi: Flamboyan Cafe Lantai 2</p> -->
+                            </li>
+                            <li class="event" data-date="16:30 WIB - 18:00 WIB">
                                 <h3>Speech GM OJP (90 Menit)</h3>
                                 <p>Novian Indrajaya</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li>
-                            <li class="event" data-date="14:45 WIB - 15:45 WIB">
-                                <h3>Presentasi Pengadaan Barang dan Jasa via E-Proc  (45 Menit)</h3>
-                                <p>Syamsul Jauhari</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
-                            <li class="event" data-date="15:45 WIB - 16:15 WIB">
-                                <h3>Coffee Break & Sholat (30 Menit)</h3>
-                                <!-- <p>Lokasi: Flamboyan Cafe Lantai 2</p> -->
-                            </li>
-                            <li class="event" data-date="16:15 WIB - 17:45 WIB">
-                                <h3>Presentasi Pengadaan Barang dan Jasa via E-Proc  (45 Menit)</h3>
-                                <p>Syamsul Jauhari</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                            <li class="event" data-date="18:00 WIB - 19:00 WIB">
+                                <h3>ISHOMA  (60 Menit)</h3>
+                                <!-- <p>Syamsul Jauhari</p>
+                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
                             <!-- <li class="event" data-date="16:15 WIB - 17:45 WIB">
                                 <h3>Speech GM Rental & Usaha Lain (90 Menit)</h3>
                                 <p>Dodik Sugeng H</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li> -->
-                            <li class="event" data-date="17:45 WIB - 19:00 WIB">
-                                <h3>ISHOMA (75 Menit)</h3>
-                            </li>
                             <!-- <li class="event" data-date="17:45 WIB - 19:00 WIB">
                                 <h3>ISHOMA (105 Menit)</h3>
                                 <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
                             </li> -->
-                            <li class="event" data-date="19:00 WIB - 20:30 WIB">
+                            <!-- <li class="event" data-date="19:00 WIB - 20:30 WIB">
                                 <h3>Speech GM SDM & Logistik (90 Menit)</h3>
                                 <p>Lucia Retna Widarti</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
@@ -121,7 +120,7 @@
                                 <h3>Speech Marketing Executive (60 Menit)</h3>
                                 <p>Pamella Patrycia Monangin</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li>
+                            </li> -->
                         </ul>
                     
         <!-- .//Timeline Rundown -->

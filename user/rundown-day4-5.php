@@ -18,7 +18,7 @@
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-user.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -32,70 +32,56 @@
         
 <div class="container">
   <ul class="nav nav-pills nav-justified">
-    <li class="active"><a href="#"  >Tata Tertib</a></li>
+    <li ><a href="rundown-day-tatib.php"  >Tata Tertib</a></li>
     <li><a href="rundown-day1.php" >Hari ke-1</a></li>
     <li><a href="rundown-day2.php">Hari ke-2</a></li>
     <li><a href="rundown-day3.php">Hari ke-3</a></li>
-    <li><a href="rundown-day4-5.php">Hari ke-4 & ke-5</a></li>
+    <li class="active"><a href="#">Hari ke-4 & ke-5</a></li>
   </ul>
 </div>
 
-<center>
-<!-- <h2> Tata Tertib </h2><small> Rakernas PT PESONNA OPTIMA JASA Tahun 2023</small> -->
-<h1>Tata Tertib Peserta<br /><small> Rapat Kerja Nasional<br />PT Pesonna Optima Jasa Tahun 2023</small></h1>
-<!-- <img src="../dist/img/id.png" style="width:200px; height:80px"> -->
-</center>
-<br /><br />
+<h2> Day 4 <small> Kamis, 09 Februari 2023</small></h2>
 
-        <!-- //Tata Tertib -->
-      <div>
-        <p>
-        <!-- <i class="fa fa-asterisk"></i> --><b>1. </b>Yang berhak mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 adalah peserta yang telah terdaftar pada list peserta.
-        </p><br/>
-        <p>
-        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 melalui alamat web berikut : https:// rekernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
-        </p><br/>
-        <p>
-        <b>3. </b>Peserta diharuskan hadir di lokasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 sesuai dengan jadwal yang telah diberikan.
-        </p><br/>
-        <p>
-        <b>4. </b>Peserta diharuskan melakukan absensi dan registrasi pada saat kedatangan di meja panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
-        </p><br/>
-        <p>
-        <b>5. </b>Peserta diharuskan menyiapkan perlengkapan berupa Laptop, alat tulis untuk mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
-        </p><br/>
-        <p>
-        <b>6. </b>Peserta diharuskan mengenakan Dresscode sesuai jadwal yang ditentukan sebagai berikut: <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Senin, 06 Februari 2023 : Smart Casual (bebas).<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Selasa, 07 Februari 2023 : Smart Casual (kemeja casual; celana/rok tidak blue jeans; blazer/jas jaket).<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Rabu, 08 Februari 2023 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Kamis, 09 Februari 2023 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
-        </p><br/>
-        <p>
-        <b>7. </b>Pada hari kedua dan ketiga (07-08 Februari 2023) Peserta diharuskan melakukan absensi di meja panitia paling lambat 5 menit sebelum acara dimulai dengan menunjukan kartu peserta yang telah diperoleh pada saat registrasi.
-        </p><br/>
-        <p>
-        <b>8. </b>Peserta diharuskan mengikuti seluruh rangkaian kegiatan acara yang telah di siapkan oleh panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
-        </p><br/>
-        <p>
-        <b>9. </b>Peserta diharuskan mematuhi tata tertib dan tidak diperkenankan mengganggu jalannya pelaksanaan acara Rapat Kerja Nasional.
-        </p>
-        <p>
-        <b>10. </b>Pada saat berlangsungnya acara, peserta tidak diperkenankan untuk keluar dari area Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 tanpa alasan yang jelas.
-        </p><br/>
-        <p>
-        <b>11. </b>Peserta diperkenankan untuk mengajukan pertanyaan pada saat berlangsungnya sesi tanya jawab yang telah disediakan oleh setiap pemateri atau panitia.
-        </p><br/>
-        <p>
-        <b>12. </b>Apabila peserta mengalami kendala dalam mengikuti kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 dapat menghubungi sekertariat melalui group Whatsapp peserta Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
-        </p><br/><br/><br/>
-      </div>
-        <p><center>
-          <h4>Hormat Kami,</h4>
-          <img src="../dist/img/id.png" id="rz" style="width:180px; height:60px">
-          <h4>Panitia Rapat Kerja Nasional<br/>PT Pesonna Optima Jasa Tahun 2023</h4>
-        </center></p>
-        <!-- .//Tata Tertib -->
+        <!-- //Timeline Rundown -->
+        
+        <ul class="timeline">
+                            <li class="event" data-date="06:00 WIB - 07:00 WIB">
+                                <h3>Breakfast (60 Menit)</h3>
+                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
+                            </li>
+                            <li class="event" data-date="07:00 WIB - 17:00 WIB">
+                                <h3>Outbond (600 Menit)</h3>
+                                <!-- <p>Panitia</p> -->
+                                <p>Lokasi: One Day Outbond</p>
+                                <p><a href="#"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            </li>
+                            <li class="event" data-date="18:00 WIB - 21:00 WIB">
+                                <h3>Dinner (180 Menit)</h3>
+                                <p>Lokasi: Unknown</p>
+                                <!-- <p>Panitia</p> -->
+                                <p><a href="#"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            </li>
+                            <!-- <li class="event" data-date="19:00 WIB - 21:00 WIB">
+                                <h3>Dinner (120 Menit)</h3>
+                                <p>D'Colonel Mountain View Cipanas <br />(D'Colonel Mountain View Resto)</p>
+                                <p><a href="https://goo.gl/maps/x261vGjZjtMGh3N89"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            </li> -->
+                        </ul>
+
+<h2> Day 5 <small> Jumat, 10 Februari 2023</h2>
+                        <ul class="timeline">
+                            <li class="event" data-date="06:30 WIB - 08:00 WIB">
+                                <h3>Breakfast (90 Menit)</h3>
+                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
+                            </li>
+                            <li class="event" data-date="08:00 WIB - 12:00 WIB">
+                                <h3>Check Out & Pengambilan oleh-oleh </h3>
+                                <!-- <p>Palace Hotel, Cipanas, Jawa Barat</p> -->
+                                <p>Lokasi: di Lantai 2 samping Receptionist</p>
+                            </li>
+                        </ul>
+                    
+        <!-- .//Timeline Rundown -->
 
             
         
@@ -230,16 +216,6 @@
 }
 </style>
   <!-- CSS Style tambahan Timeline -->
-  <style>
-
-#rz {
-  opacity:0.5;
-}
-div {
-  text-align: justify;
-  text-justify: inter-word;
-}
-</style>
 
 
 
