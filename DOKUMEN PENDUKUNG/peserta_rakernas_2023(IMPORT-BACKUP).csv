@@ -1,0 +1,60 @@
+sequence;nip;nama;jabatan;unit_kerja;departemen;type_kamar;no_kamar;type_peserta;jenis_kelamin;foto
+1;P80021;Agus Priyabodo;DIREKTUR UTAMA;KANTOR PUSAT;Direktur Utama;Suite;2215;PESERTA;pria;../peserta/foto_peserta/user-default.png
+2;P78622;Yul Afian;DIREKTUR;KANTOR PUSAT;Direktur ;Suite;2216;PESERTA;pria;../peserta/foto_peserta/user-default.png
+3;P80064;I Wayan Sukerata;GENERAL MANAGER;KANTOR PUSAT;GM Keuangan & TI;Queen Single;2136;PESERTA;pria;../peserta/foto_peserta/user-default.png
+4;P77267;Lucia Retna Widarti;GENERAL MANAGER;KANTOR PUSAT;GM SDM & Log;Queen Single;2003;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+5;P78581;Dodik Sugeng H;GENERAL MANAGER;KANTOR PUSAT;GM Rental & USLA;Queen Single;2004;PESERTA;pria;../peserta/foto_peserta/user-default.png
+6;P721900032;Novian Indra Jaya;GENERAL MANAGER;KANTOR PUSAT;GM Outs & JP;Queen Single;2007;PESERTA;pria;../peserta/foto_peserta/user-default.png
+7;0;A. Sigit Agung Wibowo;KEPALA SPI;KANTOR PUSAT;Kepala SPI;Queen Single;2326;PESERTA;pria;../peserta/foto_peserta/user-default.png
+8;P841900002;Damar Wicaksono;MANAGER OJP;KANTOR PUSAT;MANAGER Outs & JP;Twin;2119;PESERTA;pria;../peserta/foto_peserta/user-default.png
+9;P861900044;Sariffudin;MANAGER KEUANGAN;KANTOR PUSAT;MANAGER Keuangan;Twin;2119;PESERTA;pria;../peserta/foto_peserta/user-default.png
+10;P791900025;Antonius Eka Wibowo;MANAGER LOGISTIK;KANTOR PUSAT;MANAGER Logistik;Twin;2327;PESERTA;pria;../peserta/foto_peserta/user-default.png
+11;P741900033;Uus Yuswandhika;MANAGER SDM;KANTOR PUSAT;MANAGER SDM;Twin;2327;PESERTA;pria;../peserta/foto_peserta/user-default.png
+12;P821900034;Andri Prayogo;MANAGER TI;KANTOR PUSAT;DIVISI KEUANGAN & T.I;Twin;2127;PESERTA;pria;../peserta/foto_peserta/user-default.png
+13;K772107962;Andy Wijaya;MANAGER RENTAL;KANTOR PUSAT;MANAGER Bisnis Rental & Usla;Twin;2127;PESERTA;pria;../peserta/foto_peserta/user-default.png
+14;K862207962;Mohammad Ruli Kusumaputra;ASISTEN MANAGER SPI;KANTOR PUSAT;Asmen SPI;Twin;2128;PESERTA;pria;../peserta/foto_peserta/user-default.png
+15;K952207964;R. Eka Prasetya;ASISTEN MANAGER TI;KANTOR PUSAT;Asmen TI;Twin;2128;PESERTA;pria;../peserta/foto_peserta/user-default.png
+16;P842000072; Agus Sudrajat  ;Ka Perwakilan Jakarta;KANTOR PUSAT;Regional Manager Jakarta;Twin;2128;PESERTA;pria;../peserta/foto_peserta/user-default.png
+17;P911900048; Imam Setiawan ;Ka Perwakilan Medan;PERWAKILAN MEDAN;Regional Manager Medan;Twin;2138;PESERTA;pria;../peserta/foto_peserta/user-default.png
+18;P721900016; Zulfahmi ;Ka Perwakilan Pekanbaru;PERWAKILAN PEKANBARU;Regional Manager Pekanbaru;Twin;2138;PESERTA;pria;../peserta/foto_peserta/user-default.png
+19;P802100079; Martupa Sinaga ;Plt Ka Perwakilan Palembang;PERWAKILAN PALEMBANG;Regional Manager Palembang;Twin;2202;PESERTA;pria;../peserta/foto_peserta/user-default.png
+20;P721900028; Yusransyah ;Plt Ka Perwakilan Balikpapan;PERWAKILAN BALIKPAPAN;Regional Manager Balikpapan;Twin;2202;PESERTA;pria;../peserta/foto_peserta/user-default.png
+21;P862000064; Paskalis Kevin Lumi ;Plt Ka Perwakilan Manado;PERWAKILAN MANADO;Regional Manager Manado;Twin;2205;PESERTA;pria;../peserta/foto_peserta/user-default.png
+22;P811900022; Duhi Harto ;Ka Perwakilan Makassar;PERWAKILAN MAKASSAR;Regional Manager Makassar;Twin;2205;PESERTA;pria;../peserta/foto_peserta/user-default.png
+23;P782000065; Bobby Riskhana St ;Ka Perwakilan Denpasar;PERWAKILAN DENPASAR;Regional Manager Denpasar;Twin;2207;PESERTA;pria;../peserta/foto_peserta/user-default.png
+24;P882000053; Muhammad Rizal Jayadiwangsa ;Ka Perwakilan Bandung;PERWAKILAN BANDUNG;Regional Manager Bandung;Twin;2207;PESERTA;pria;../peserta/foto_peserta/user-default.png
+25;P771900014; Achmad Sad Priyo Widodo ;Ka Perwakilan Semarang;PERWAKILAN SEMARANG;Regional Manager Semarang;Twin;2208;PESERTA;pria;../peserta/foto_peserta/user-default.png
+26;K832107962; Yuardi Hendrastiawan ;Ka Perwakilan Surabaya;PERWAKILAN SURABAYA;Regional Manager Surabaya;Twin;2208;PESERTA;pria;../peserta/foto_peserta/user-default.png
+27;K932207975;Erni Sumiati;Marketing Eksekutif Jakarta;;Marketing Eksekutif Jakarta;Twin;2211;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+28;K912207981;Aristyo;Marketing Eksekutif Jakarta;PERWAKILAN JAKARTA 1;Marketing Eksekutif Jakarta;Twin;2211;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+29;K982109238; Theresia Yulinar Lumban Gaol ;Marketing Eksekutif Medan;PERWAKILAN MEDAN;Marketing Eksekutif Medan;Twin;2209;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+30;K932107963; Muhammad Sholeh ;Marketing Eksekutif Pekanbaru;PERWAKILAN PEKANBARU;Marketing Eksekutif Pekanbaru;Twin;2209;PESERTA;pria;../peserta/foto_peserta/user-default.png
+31;K932109238; Dessy Lina Rachmawati ;Marketing Eksekutif Balikpapan;PERWAKILAN BALIKPAPAN;Marketing Eksekutif Balikpapan;Twin;2211;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+32;K942107962; Phamella Patrycia Monangin ;Marketing Eksekutif Manado;PERWAKILAN MANADO;Marketing Eksekutif Manado;Twin;2211;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+33;K972207963; Anak Agung Istri Widya ;Marketing Eksekutif Denpasar;PERWAKILAN DENPASAR;Marketing Eksekutif Denpasar;Twin;2212;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+34;K912107963; Fitria Wijayanti ;Marketing Eksekutif Surabaya;PERWAKILAN SURABAYA;Marketing Eksekutif Surabaya;Twin;2309;PESERTA;wanita;../peserta/foto_peserta/user-default.png
+35;K782009238;Muliyadi;Koor Area Banda Aceh;;Manager Area Banda Aceh;Twin;2310;PESERTA;pria;../peserta/foto_peserta/user-default.png
+36;P802000051;Agus Savutra;Koor Area Padang;;Manager Area Padang;Twin;2310;PESERTA;pria;../peserta/foto_peserta/user-default.png
+37;P842100083;Fauzan Afriyanto;Koor Area Batam;;Manager Area Batam;Twin;2311;PESERTA;pria;../peserta/foto_peserta/user-default.png
+38;P801900038;Reki Jaya Putra;Koor Area Jambi;;Manager Area Jambi;Twin;2311;PESERTA;pria;../peserta/foto_peserta/user-default.png
+39;P812000060;Yohanda Prayoga;Koor Area Lampung;;Manager Area Lampung;Twin;2312;PESERTA;pria;../peserta/foto_peserta/user-default.png
+40;K872207962;Jeldi Mandalika;Koor Area Manado;PERWAKILAN MANADO;Manager Area Manado;Twin;2312;PESERTA;pria;../peserta/foto_peserta/user-default.png
+41;K872107936;Yoga Anugrah;Koor Area Banjarmasin;;Manager Area Banjarmasin;Twin;2315;PESERTA;pria;../peserta/foto_peserta/user-default.png
+42;xxxx;Robby Tjipto Adjie W;Koor Area Pontianak;;Manager Area Pontianak;Twin;2315;PESERTA;pria;../peserta/foto_peserta/user-default.png
+43;P772000061;Muh. Nurassalam. A;Koor Area Palu;;Manager Area Palu;Twin;2318;PESERTA;pria;../peserta/foto_peserta/user-default.png
+44;K822000007;Rahmat Ali ;Koor Area Gorontalo;;Manager Area Gorontalo;Twin;2318;PESERTA;pria;../peserta/foto_peserta/user-default.png
+45;K812107962;Edo Widodo;Koor Area Jakarta;;Manager Area Jakarta;Twin;2121;PESERTA;pria;../peserta/foto_peserta/user-default.png
+46;K822010000;Rico Ferdian Imam ;Koor Area Surabaya;PERWAKILAN SURABAYA;Manager Area Surabaya;Twin;2121;PESERTA;pria;../peserta/foto_peserta/user-default.png
+47;xxxx;Candra Widiatmoko;Koor Area Malang;;Manager Area Malang;Twin;2121;PESERTA;pria;../peserta/foto_peserta/user-default.png
+48;xxxx;Dekky Febrianto M;Koor Area Jogya;;Manager Area Jogya;Twin;2121;PESERTA;pria;../peserta/foto_peserta/user-default.png
+49;K862108999;Muh. Noor;Koor Area Ampenan;;Manager Area Ampenan;Twin;2323;PESERTA;pria;../peserta/foto_peserta/user-default.png
+50;xxxx;Yonas Adu;Koor Area Kupang;;Manager Area Kupang;Twin;2121;PESERTA;pria;../peserta/foto_peserta/user-default.png
+51;P891900050;Zulfikar Rizki;Staf;KANTOR PUSAT;Staf keuangan;Twin;2326;PANITIA;pria;../peserta/foto_peserta/user-default.png
+52;P932000054;Juniarto Parlindungan Sinaga;Staf;KANTOR PUSAT;Staf keuangan;Twin;2323;PANITIA;pria;../peserta/foto_peserta/user-default.png
+53;P922100077;Syamsul Jauhari;Staf;KANTOR PUSAT;Staf Bisnis OJP;Twin;2330;PANITIA;pria;../peserta/foto_peserta/user-default.png
+54;P892100078;Mochamad Nurhadi;Staf;KANTOR PUSAT;Staf Rental & Usla;Twin;2330;PANITIA;pria;../peserta/foto_peserta/user-default.png
+55;K932006348;Ricki Mardianto;Staf;KANTOR PUSAT;Staf Bisnis Rental & Usla;Twin;2323;PANITIA;pria;../peserta/foto_peserta/user-default.png
+56;K932207962;Hana Ragil Ayu Asmara;Staf;KANTOR PUSAT;Sekretaris ;Twin;2330;PANITIA;wanita;../peserta/foto_peserta/user-default.png
+57;K902107963;Ari Wiguna;Staf;KANTOR PUSAT;Staf Bisnis Rental & Usla;Twin;2326;PANITIA;pria;../peserta/foto_peserta/user-default.png
+58;P881900005;Doddy Kurnia Putra;Staf;KANTOR PUSAT;Staf SDM;Twin;2325;PANITIA;pria;../peserta/foto_peserta/user-default.png
+59;P861900015;Agustinus Tomi Aditya;Staf;PERWAKILAN SEMARANG;Staf Perwakilan Semarang;Twin;2323;PANITIA;pria;../peserta/foto_peserta/user-default.png
