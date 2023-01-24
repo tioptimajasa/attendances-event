@@ -33,7 +33,7 @@
         <section class="content">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-           <?php $tampil=mysqli_query($koneksi, "select * from karyawan order by nik desc");
+           <?php $tampil=mysqli_query($koneksi, "select * from peserta order by nip desc");
                         $total=mysqli_num_rows($tampil);
                     ?>
             <div class="col-lg-3 col-xs-6">
@@ -46,7 +46,7 @@
                 <div class="icon">
                   <i class="fa fa-user"></i>
                 </div>
-                <a href="karyawan.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="peserta-officer.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             
@@ -55,7 +55,7 @@
               <!-- small box -->
               <div class="small-box bg-blue">
                 <div class="inner">
-                  <h3>3 Days<!--<sup style="font-size: 20px">%</sup>--></h3>
+                  <h3>5 Days<!--<sup style="font-size: 20px">%</sup>--></h3>
                   <p>Rundown & Tata Tertib</p>
                 </div>
                 <div class="icon">
