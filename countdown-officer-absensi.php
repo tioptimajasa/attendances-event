@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Rakernas 2023</title>
-    <script src="dist/js/countdown-officer-kehadiran.js"></script>
+    <script src="dist/js/countdown-officer-absensi.js"></script>
 </head>
 <body class="hold-transition" background="dist/img/countdown-2023.png">
     <br/>

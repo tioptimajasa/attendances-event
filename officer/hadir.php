@@ -65,8 +65,8 @@
           	</div>
             </form>-->
             <a href="hadir_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a> &nbsp; &nbsp;
-            <!-- <a href="absensi.php" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Scan QR Code Kehadiran</a> &nbsp; &nbsp; -->
-            <a href="../countdown-officer-kehadiran.php" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Scan QR Code Kehadiran</a> &nbsp; &nbsp;
+            <a href="absensi.php" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Scan QR Code Kehadiran</a> &nbsp; &nbsp;
+            <!-- <a href="../countdown-officer-absensi.php" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Scan QR Code Kehadiran</a> &nbsp; &nbsp; -->
             <a href="merchandise.php" class="btn btn-sm btn-warning"><i class="fa fa-plus"></i> Scan QR Code Merchandise</a> &nbsp; &nbsp;
             <!-- <a href="../countdown-admin-uangSaku.php" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Scan QR Code Uang Saku</a> &nbsp; &nbsp; -->
             <a href="uangSaku.php" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Scan QR Code Uang Saku</a> &nbsp; &nbsp;

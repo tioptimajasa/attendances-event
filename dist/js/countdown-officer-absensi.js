@@ -24,7 +24,7 @@ setInterval(function() {
     countDownRakernas2023();
     if (gap <= 0) {
         clearInterval(countDownRakernas2023);
-        location.replace('officer/kehadiran.php');
+        location.replace('officer/absensi.php');
     }
 
 }, 1000);
