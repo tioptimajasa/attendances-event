@@ -11,7 +11,9 @@
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu-user.php"; ?>
 
-<?php include "waktu-user.php"; ?>
+<!-- <php include "waktu-user.php"; ?> -->
+<?php include "../global-templates/waktu-session.php"; ?>
+
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->

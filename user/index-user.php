@@ -11,6 +11,13 @@
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu-user.php"; ?>
 
+      <?php
+      $tgl_awal_raker = ("2022-03-28");
+      $tgl_akhir_raker = ("2022-03-31");
+      ?>
+
+<?php include "../global-templates/waktu-session.php"; ?>
+
 <!-- Variabel -->
 <?php 
 $query_kehadiran = mysqli_query($koneksi, "SELECT * FROM kehadiran");
@@ -69,7 +76,7 @@ $tglToday = date("Y-m-d");
               </div>
             </div><!-- ./col -->
             
-            <?php $tampil2=mysqli_query($koneksi, "select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND tanggal='$tglToday' ");
+            <?php $tampil2=mysqli_query($koneksi, "select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND tanggal='$tglToday' ");
                         $total2=mysqli_num_rows($tampil2);
                     ?>
             <div class="col-lg-3 col-xs-6">
@@ -175,7 +182,7 @@ $tglToday = date("Y-m-d");
 
                 <div class="scroller box-body">
                   <?php
-                  $query1="select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND tanggal='$tglToday' ORDER BY waktu DESC ";
+                  $query1="select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND tanggal='$tglToday' ORDER BY waktu DESC ";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   

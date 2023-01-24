@@ -13,18 +13,20 @@ include "session-user.php";
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu-user.php"; ?>
       
-      <?php include "waktu-user.php"; ?>
+      <!-- <php include "waktu-user.php"; ?> -->
+      <?php include "../global-templates/waktu-session.php"; ?>
+
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Materi Rakernas 2022
+            Materi Rakernas 2023
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="index-user.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Materi Rakernas 2022</li>
+            <li class="active">Materi Rakernas 2023</li>
           </ol>
         </section>
 
@@ -39,7 +41,7 @@ include "session-user.php";
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Data Materi Rakernas 2022</h3>
+                  <h3 class="box-title">Data Materi Rakernas 2023</h3>
                   <div class="box-tools pull-right">
                   <form action='materi-event-user.php' method="POST">
     	             <div class="input-group" style="width: 230px;">

@@ -11,14 +11,16 @@
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu-user.php"; ?>
 
-<?php include "waktu-user.php"; ?>
+<!-- <php include "waktu-user.php"; ?> -->
+<?php include "../global-templates/waktu-session.php"; ?>
+
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
             Run Down
-            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2022</small>
+            <small>RAKERNAS PT PESONNA OPTIMA JASA TAHUN 2023</small>
           </h1>
           <ol class="breadcrumb">
           <li><a href="index-user.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
