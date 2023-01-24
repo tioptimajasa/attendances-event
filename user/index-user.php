@@ -37,7 +37,7 @@ $tglToday = date("Y-m-d");
         <section class="content">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-           <?php $tampil=mysqli_query($koneksi, "select * from karyawan order by nik desc");
+           <?php $tampil=mysqli_query($koneksi, "select * from peserta order by nip desc");
                         $total=mysqli_num_rows($tampil);
                     ?>
             <div class="col-lg-3 col-xs-6">
@@ -115,7 +115,7 @@ $tglToday = date("Y-m-d");
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Daftar Peserta Rakernas 2022</h3>
+                  <h3 class="box-title">Daftar Peserta Rakernas 2023</h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->
@@ -123,7 +123,7 @@ $tglToday = date("Y-m-d");
                 <div class="scroller box-body">
                 
                   <?php
-                    $query1="select * from karyawan ORDER BY no ASC";
+                    $query1="select * from peserta ORDER BY sequence ASC";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   <table id="example" class="table table-responsive table-hover table-bordered">
@@ -133,7 +133,7 @@ $tglToday = date("Y-m-d");
                       <th colspan="2"><center>Kamar</center></th>
                     </tr>
                       <tr>
-                        <th><center>NIK </center></th>
+                        <th><center>NIP </center></th>
                         <th><center>Nama</center></th>
                         <th><center>Jabatan</center></th>
                         <th><center>Type</center></th>
@@ -146,7 +146,7 @@ $tglToday = date("Y-m-d");
                     { //$no++; ?>
                     <tbody>
                     <tr>
-                    <td><center><?php echo $data['nik'];?></center></td>
+                    <td><center><?php echo $data['nip'];?></center></td>
                     <td><center><?php echo $data['nama'];?></center></td>
                     <td><center><?php echo $data['departemen'];?> </center></td>
                     <td><center><?php echo $data['type_kamar'];?></center></td>
@@ -167,7 +167,7 @@ $tglToday = date("Y-m-d");
             <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Daftar Kehadiran Peserta Rakernas 2022</h3>
+                  <h3 class="box-title">Daftar Kehadiran Peserta Rakernas 2023</h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->
@@ -182,7 +182,7 @@ $tglToday = date("Y-m-d");
                   <table id="example" class="table table-responsive table-hover table-bordered">
                   <thead>
                       <tr>
-                        <th><center>NIK </center></th>
+                        <th><center>NIP </center></th>
                         <th><center>Nama</center></th>
                         <th><center>Tanggal</center></th>
                         <th><center>Jam</center></th>
