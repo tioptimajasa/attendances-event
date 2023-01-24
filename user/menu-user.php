@@ -36,27 +36,27 @@
             </li>
             <!-- l -->
 
-            <li class="treeview">
+            <!-- <li class="treeview">
               <a href="#">
                 <i class="fa fa-barcode"></i> <span>Absen & Merchandise</span>
                 <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
+              </a> -->
+              <!-- <ul class="treeview-menu"> -->
                 <!-- <li><a href="../countdown.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li>
                 <li><a href="../countdown.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
-                <li><a href="absensi.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li>
+                <!-- <li><a href="absensi.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li> -->
                 <!-- <li><a href="../countdown-m.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
-                <li><a href="hadiah.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li>
-              </ul>
-            </li>
-            <li>
+                <!-- <li><a href="hadiah.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
+              <!-- </ul> -->
+            <!-- </li> -->
+            <!-- <li> -->
               <!-- <a href="#">
                 <i class="fa fa-dollar"></i> <span>Uang Saku</span> <i class="fa fa-angle-left pull-right"></i>
               </a> -->
               <!-- <a href="uang_saku.php">
                 <i class="fa fa-dollar"></i> <span>Uang Saku</span> <i class="fa fa-angle-left pull-right"></i>
               </a> -->
-            </li>
+            <!-- </li> -->
 
             
               </ul>
