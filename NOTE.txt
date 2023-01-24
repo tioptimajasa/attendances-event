@@ -6,6 +6,9 @@ Admin123$
 user1
 user1
 
+user
+User123$
+
 -- Officer => New user in Rakernas 2023
 officer
 Officer2023
