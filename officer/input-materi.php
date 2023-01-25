@@ -58,7 +58,7 @@
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Nama Event</label>
                               <div class="col-sm-8">
-                                  <input value="Rakernas PT PESONNA OPTIMA JASA Tahun 2022" name="nama_event" type="text" id="nama_event" class="form-control" placeholder="Nama Event" autocomplete="off" required readonly="readonly" />
+                                  <input value="Rakernas PT PESONNA OPTIMA JASA Tahun 2023" name="nama_event" type="text" id="nama_event" class="form-control" placeholder="Nama Event" autocomplete="off" required readonly="readonly" />
                                   <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
                               </div>
                           </div>
