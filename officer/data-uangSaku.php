@@ -68,12 +68,12 @@
                    <table id="lookup" class="table table-bordered table-hover">  
 	<thead bgcolor="eeeeee" align="center">
       <tr>
-	    <th>Tanggal</th>
-	    <th>Jam</th>
-       <th>NIK</th>
-	     <th>Nama</th>
-       <th>Event</th>
-       <th>Status</th>
+	    <th><center>Tanggal</center></th>
+	    <th><center>Jam</center></th>
+      <th><center>NIP</center></th>
+	    <th><center>Nama</center></th>
+      <th><center>Event</center></th>
+      <th><center>Status</center></th>
 	   <th class="text-center"> Action </th> 
 	  
       </tr>
