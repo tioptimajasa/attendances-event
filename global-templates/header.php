@@ -1,7 +1,7 @@
 <header class="main-header">
         <!-- Logo -->
         <!-- <a href="index-admin.php" class="logo"> -->
-        <a href="" class="logo">
+        <a href="javascript:history.go(-1)" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <!-- <span class="logo-mini"><b>POJ</b></span> -->
           <span class="logo-mini"><img src="../dist/img/logo-only.jpg" width="30" height="30" /></span>
