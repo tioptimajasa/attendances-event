@@ -49,12 +49,12 @@
                 <div class="box-body">
                   <div class="form-panel">
                       <form class="form-horizontal style-form" action="insert-materi.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                          <div class="form-group">
+                          <!-- <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">materi_ID</label>
                               <div class="col-sm-8">
                                   <input name="materi_id" type="text" id="materi_id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" readonly="readonly" />
                               </div>
-                          </div>
+                          </div> -->
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Nama Event</label>
                               <div class="col-sm-8">
@@ -74,7 +74,7 @@
                               <div class="col-sm-6">
                                   <input name="nama_file" id="nama_file" class="form-control" type="file" required="required"/>
                               </div>
-                              <h4><small>* file harus .pdf .ppt</small></h4>
+                              <h4><small style="color:red;">* file harus .pdf .ppt</small></h4>
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label"></label>
