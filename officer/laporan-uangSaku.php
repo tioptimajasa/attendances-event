@@ -93,7 +93,7 @@ $tahun = date('Y');
                   <table style="margin-top: 20px; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;" id="example" class="table table-bordered">
                   <thead>
                       <tr style="border: 1px solid black">
-                        <th style="border: 1px solid black">Nik</th>
+                        <th style="border: 1px solid black">NIP</th>
                         <th style="border: 1px solid black">Nama</th>
                         <th style="border: 1px solid black">Tanggal</th>
                         <th style="border: 1px solid black">Event</th>
