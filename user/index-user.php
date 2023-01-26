@@ -222,8 +222,11 @@ $tglToday = date("Y-m-d");
             </section><!-- right col -->
           </div><!-- /.row (main row) -->
 
-          <!-- Image Slider -->
-          <?php include "carousel-img.php"; ?>
+           <!-- Image Slider -->
+          <!-- <php include "carousel-img.php"; ?> -->
+          <!-- Image Slider on Global -->
+          <!-- <php include "../global-data/carousel/carousel-img.php"; ?> -->
+          <?php include "carousel-img-2023.php"; ?>
 
         </section><!-- /.content -->
         
