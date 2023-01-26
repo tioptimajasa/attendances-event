@@ -1,3 +1,6 @@
+<?php
+$tahun = date('Y');
+?>
 <?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
@@ -58,8 +61,8 @@
                    if(isset($_POST['tglawal']) && isset($_POST['tglakhir'])){
 	               $tglawal=$_POST['tglawal'];
                    $tglakhir=$_POST['tglakhir'];
-	               $query1="SELECT merchandise.*, karyawan.* FROM  merchandise, karyawan 
-	               where merchandise.nik=karyawan.nik AND(merchandise.tanggal between '$tglawal'
+	               $query1="SELECT uang_saku.*, peserta.* FROM  uang_saku, peserta 
+	               where uang_saku.nik=peserta.nip AND(uang_saku.tanggal between '$tglawal'
 	               and '$tglakhir')";
                    
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
@@ -68,7 +71,7 @@
                     <!-- Judul -->
                     <table class="heading" style="width:100%;">
                       <tr>
-                      <td> <center><p style="text-align:center; font-size: 18px; font-weight:bold;">LAPORAN PENGAMBILAN UANG SAKU</p></center></td>
+                      <td> <center><p style="text-align:center; font-size: 18px; font-weight:bold;">LAPORAN PENGAMBILAN UANG SAKU PESERTA RAKERNAS <?php echo "$tahun" ?></p></center></td>
                       <!-- <td> <center><p style="text-align:center; font-size: 12px; font-weight:bold;"><a href="#">rakernas.optimajasa.co.id</a></p></center></td> -->
                       </tr>
                       <tr>
@@ -127,7 +130,7 @@
    
     <div class="text-right">
                   <?php if(isset($_POST['tglawal']) && isset($_POST['tglakhir'])){ ?>
-                  <a href="cetak-uangSaku.php?kd=<?php echo $_POST['tglawal'];?>&&kode=<?php echo $_POST['tglakhir'];?>" target="_blank" class="btn btn-sm btn-info">Export PDF  <i class="fa fa-download"></i></a>
+                  <!-- <a href="cetak-uangSaku.php?kd=<?php echo $_POST['tglawal'];?>&&kode=<?php echo $_POST['tglakhir'];?>" target="_blank" class="btn btn-sm btn-info">Export PDF  <i class="fa fa-download"></i></a> -->
                   <a href="javascript:printDiv('print-area-2');" class="btn btn-sm btn-danger" >Cetak  <i class="fa fa-print"></i></a>
                   <?php } ?>
                   

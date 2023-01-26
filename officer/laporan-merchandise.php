@@ -1,3 +1,6 @@
+<?php
+$tahun = date('Y');
+?>
 <?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
@@ -58,8 +61,8 @@
                    if(isset($_POST['tglawal']) && isset($_POST['tglakhir'])){
 	               $tglawal=$_POST['tglawal'];
                    $tglakhir=$_POST['tglakhir'];
-	               $query1="SELECT merchandise.*, karyawan.* FROM  merchandise, karyawan 
-	               where merchandise.nik=karyawan.nik AND(merchandise.tanggal between '$tglawal'
+	               $query1="SELECT merchandise.*, peserta.* FROM  merchandise, peserta 
+	               where merchandise.nik=peserta.nip AND(merchandise.tanggal between '$tglawal'
 	               and '$tglakhir')";
                    
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
@@ -68,7 +71,7 @@
                     <!-- Judul -->
                     <table class="heading" style="width:100%;">
                       <tr>
-                      <td> <center><p style="text-align:center; font-size: 18px; font-weight:bold;">LAPORAN PENGAMBILAN MERCHANDISE</p></center></td>
+                      <td> <center><p style="text-align:center; font-size: 18px; font-weight:bold;">LAPORAN PENGAMBILAN MERCHANDISE PESERTA RAKERNAS <?php echo "$tahun" ?></p></center></td>
                       <!-- <td> <center><p style="text-align:center; font-size: 12px; font-weight:bold;"><a href="#">rakernas.optimajasa.co.id</a></p></center></td> -->
                       </tr>
                       <tr>
@@ -90,7 +93,7 @@
                   <table style="margin-top: 20px; border-top: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;" id="example" class="table table-bordered">
                   <thead>
                       <tr style="border: 1px solid black">
-                        <th style="border: 1px solid black">Nik</th>
+                        <th style="border: 1px solid black">NIP</th>
                         <th style="border: 1px solid black">Nama</th>
                         <th style="border: 1px solid black">Tanggal</th>
                         <th style="border: 1px solid black">Event</th>
@@ -127,7 +130,7 @@
    
     <div class="text-right">
                   <?php if(isset($_POST['tglawal']) && isset($_POST['tglakhir'])){ ?>
-                  <a href="cetak-merchandise.php?kd=<?php echo $_POST['tglawal'];?>&&kode=<?php echo $_POST['tglakhir'];?>" target="_blank" class="btn btn-sm btn-info">Export PDF  <i class="fa fa-download"></i></a>
+                  <!-- <a href="cetak-merchandise.php?kd=<?php echo $_POST['tglawal'];?>&&kode=<?php echo $_POST['tglakhir'];?>" target="_blank" class="btn btn-sm btn-info">Export PDF  <i class="fa fa-download"></i></a> -->
                   <a href="javascript:printDiv('print-area-2');" class="btn btn-sm btn-danger" >Cetak  <i class="fa fa-print"></i></a>
                   <?php } ?>
                   

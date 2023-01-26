@@ -148,7 +148,7 @@
                 <i class="fa fa-print"></i> <span>Laporan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="cetak-karyawan.php"><i class="fa fa-circle-o"></i> Laporan Karyawan</a></li>
+                <!-- <li><a href="cetak-karyawan.php"><i class="fa fa-circle-o"></i> Laporan Karyawan</a></li> -->
                 <li><a href="laporan-kehadiran.php"><i class="fa fa-circle-o"></i> Laporan Kehadiran</a></li>
                 <li><a href="laporan-merchandise.php"><i class="fa fa-circle-o"></i> Laporan Merchandise</a></li>
                 <li><a href="laporan-uangSaku.php"><i class="fa fa-circle-o"></i> Laporan Uang Saku</a></li>
