@@ -55,7 +55,7 @@
 <a href="#"><i class="fa fa-map"> Click go to Maps</i></a></small></h2>
 
         <!-- //Isi -->
-        <img src="Lawang Sewu.jpg" style="width:100%;">
+        <img src="../global-data/carousel/img-carousel/Lawang Sewu 2.jpg" style="width:100%;">
         <br /><br/>
       <p>
         <p>
@@ -75,7 +75,7 @@
 <a href="#"><i class="fa fa-map"> Click go to Maps</i></a></small></h2>
 
         <!-- //Isi -->
-        <img src="img-carousel/Kota Lama Semarang.jpg" style="width:100%;">
+        <img src="../global-data/carousel/img-carousel/Kota Lama Semarang 3.jpg" style="width:100%;">
         <br /><br/>
       <p>
         <p>
@@ -95,7 +95,7 @@
 <a href="https://g.page/safaribogor?share"><i class="fa fa-map"> Click go to Maps</i></a></small></h2>
 
         <!-- //Isi -->
-        <img src="img-carousel/Brown Canyon.jpg" style="width:100%;">
+        <img src="../global-data/carousel/img-carousel/Brown Canyon 4.jpg" style="width:100%;">
         <br /><br/>
       <p>
         <p>
