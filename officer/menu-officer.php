@@ -84,10 +84,11 @@
               <ul class="treeview-menu">
                 <!-- <li><a href="../countdown.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li>
                 <li><a href="../countdown.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
-                <!-- <li><a href="absensi.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li> -->
-                <li><a href="../countdown-officer-kehadiran.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li>
+                <li><a href="absensi.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li>
+                <!-- <li><a href="../countdown-officer-kehadiran.php"><i class="fa fa-circle-o"></i> Scan Kehadiran </a></li> -->
                 <!-- <li><a href="../countdown-admin2.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li> -->
                 <li><a href="merchandise.php"><i class="fa fa-circle-o"></i> Scan Merchandise</a></li>
+                <li><a href="uangSaku.php"><i class="fa fa-circle-o"></i> Scan Uang Saku</a></li>
               </ul>
             </li>
             <li>
@@ -98,8 +99,8 @@
                 <i class="fa fa-dollar"></i> <span>Uang Saku</span> <i class="fa fa-angle-left pull-right"></i>
               </a> -->
               <ul class="treeview-menu">
-                <li><a href="uangSaku.php"><i class="fa fa-circle-o"></i> Scan Uang Saku </a></li>
-                <!-- <li><a href="data-uangSaku.php"><i class="fa fa-circle-o"></i> Data Uang Saku</a></li> -->
+                <!-- <li><a href="uangSaku.php"><i class="fa fa-circle-o"></i> Scan Uang Saku </a></li> -->
+                <li><a href="data-uangSaku.php"><i class="fa fa-circle-o"></i> Data Uang Saku</a></li>
               </ul>
             </li>
             

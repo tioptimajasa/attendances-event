@@ -20,8 +20,8 @@ $columns = array(
 );
 
 // getting total number records without any search
-$sql = "SELECT kehadiran.no, kehadiran.tanggal, kehadiran.nik, kehadiran.event, kehadiran.status, karyawan.nik, karyawan.nama";
-$sql.=" FROM kehadiran, karyawan WHERE kehadiran.nik=karyawan.nik";
+$sql = "SELECT kehadiran.no, kehadiran.tanggal, kehadiran.nik, kehadiran.event, kehadiran.status, peserta.nip, peserta.nama";
+$sql.=" FROM kehadiran, peserta WHERE kehadiran.nik=peserta.nip";
 $query=mysqli_query($conn, $sql) or die("ajax-data-hadir-officer.php: get Hadir");
 $totalData = mysqli_num_rows($query);
 $totalFiltered = $totalData;  // when there is no search parameter then total number rows = total number filtered rows.
@@ -29,10 +29,10 @@ $totalFiltered = $totalData;  // when there is no search parameter then total nu
 
 if( !empty($requestData['search']['value']) ) {
 	// if there is a search parameter
-	$sql = "SELECT kehadiran.no, kehadiran.tanggal, kehadiran.nik, kehadiran.event, kehadiran.status, karyawan.nik, karyawan.nama";
-	$sql.=" FROM kehadiran, karyawan ";
-	$sql.=" WHERE kehadiran.nik=karyawan.nik ";    // $requestData['search']['value'] contains search parameter
-	$sql.=" AND karyawan.nama LIKE '".$requestData['search']['value']."%' ";
+	$sql = "SELECT kehadiran.no, kehadiran.tanggal, kehadiran.nik, kehadiran.event, kehadiran.status, peserta.nip, peserta.nama";
+	$sql.=" FROM kehadiran, peserta ";
+	$sql.=" WHERE kehadiran.nik=peserta.nip ";    // $requestData['search']['value'] contains search parameter
+	$sql.=" AND peserta.nama LIKE '".$requestData['search']['value']."%' ";
 	$query=mysqli_query($conn, $sql) or die("ajax-data-hadir-officer.php: get Hadir");
 	$totalFiltered = mysqli_num_rows($query); // when there is a search parameter then we have to modify total number filtered rows as per search result without limit in the query 
 
@@ -41,8 +41,8 @@ if( !empty($requestData['search']['value']) ) {
 	
 } else {	
 
-	$sql = "SELECT kehadiran.no, kehadiran.tanggal, kehadiran.waktu, kehadiran.nik, kehadiran.event, kehadiran.status, karyawan.nik, karyawan.nama";
-	$sql.=" FROM kehadiran, karyawan WHERE kehadiran.nik=karyawan.nik";
+	$sql = "SELECT kehadiran.no, kehadiran.tanggal, kehadiran.waktu, kehadiran.nik, kehadiran.event, kehadiran.status, peserta.nip, peserta.nama";
+	$sql.=" FROM kehadiran, peserta WHERE kehadiran.nik=peserta.nip";
 	$sql.=" ORDER BY ". $columns[$requestData['order'][0]['column']]."   ".$requestData['order'][0]['dir']."   LIMIT ".$requestData['start']." ,".$requestData['length']."   ";
 	$query=mysqli_query($conn, $sql) or die("ajax-data-hadir-officer.php: get Hadir");   
 	

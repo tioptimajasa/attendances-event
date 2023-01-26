@@ -19,8 +19,8 @@ include "../conn.php";
             $data_event  = mysqli_fetch_array($query_event);
             $event = $data_event['nama_event'];
             $tgl = $data_event['tanggal'];
-            $tgl_awal_raker = ("2023-01-20");
-            $tgl_akhir_raker = ("2023-01-24");
+            $tgl_awal_raker = ("2023-01-23");
+            $tgl_akhir_raker = ("2023-01-27");
             ?>
     <h3><center>DAFTAR PENGAMBILAN <b style="color:red;">MERCHANDISE</b></center></h3>
     <h3><center><?php echo $data_event['nama_event']; ?>, <?php echo $data_event['tanggal']; ?> </center> </h3>
