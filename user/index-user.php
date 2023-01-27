@@ -1,3 +1,6 @@
+<?php 
+$tahun = date('Y');
+?>
 <?php include "session-user.php";  ?>
 <!DOCTYPE html>
 <html>
@@ -122,7 +125,7 @@ $tglToday = date("Y-m-d");
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Daftar Peserta Rakernas 2023</h3>
+                  <h3 class="box-title">Daftar Peserta Rakernas <?php echo "$tahun" ?></h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->
@@ -155,7 +158,7 @@ $tglToday = date("Y-m-d");
                     <tr>
                     <td><center><?php echo $data['nip'];?></center></td>
                     <td><center><?php echo $data['nama'];?></center></td>
-                    <td><center><?php echo $data['departemen'];?> </center></td>
+                    <td><center><?php echo $data['jabatan'];?> </center></td>
                     <td><center><?php echo $data['type_kamar'];?></center></td>
                     <td><center><?php echo $data['no_kamar'];?></center></td>
                     </tr></div>
@@ -174,7 +177,7 @@ $tglToday = date("Y-m-d");
             <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Daftar Kehadiran Peserta Rakernas 2023</h3>
+                  <h3 class="box-title">Daftar Kehadiran Peserta Rakernas <?php echo "$tahun" ?></h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->

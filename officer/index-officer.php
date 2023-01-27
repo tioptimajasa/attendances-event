@@ -1,3 +1,6 @@
+<?php 
+$tahun = date('Y');
+?>
 <?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
@@ -65,7 +68,7 @@
               </div>
             </div><!-- ./col -->
             
-            <?php $tampil2=mysqli_query($koneksi, "select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ");
+            <?php $tampil2=mysqli_query($koneksi, "select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ");
                         $total2=mysqli_num_rows($tampil2);
                     ?>
             <div class="col-lg-3 col-xs-6">
@@ -110,7 +113,7 @@
               <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Daftar Peserta Rakernas 2022</h3>
+                  <h3 class="box-title">Daftar Peserta Rakernas <?php echo"$tahun" ?> </h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->
@@ -118,7 +121,7 @@
                 <div class="scroller box-body">
                 
                   <?php
-                    $query1="select * from karyawan";
+                    $query1="select * from peserta";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   <table id="example" class="table table-responsive table-hover table-bordered">
@@ -128,7 +131,7 @@
                       <th colspan="2"><center>Kamar</center></th>
                     </tr>
                       <tr>
-                        <th><center>NIK </center></th>
+                        <th><center>NIP </center></th>
                         <th><center>Nama</center></th>
                         <th><center>Jabatan</center></th>
                         <th><center>Type</center></th>
@@ -141,9 +144,9 @@
                     { //$no++; ?>
                     <tbody>
                     <tr>
-                    <td><center><?php echo $data['nik'];?></center></td>
+                    <td><center><?php echo $data['nip'];?></center></td>
                     <td><center><?php echo $data['nama'];?></center></td>
-                    <td><center><?php echo $data['departemen'];?> </center></td>
+                    <td><center><?php echo $data['jabatan'];?> </center></td>
                     <td><center><?php echo $data['type_kamar'];?> </center></td>
                     <td><center><?php echo $data['no_kamar'];?> </center></td>
                     </tr></div>
@@ -162,7 +165,7 @@
             <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Daftar Kehadiran Peserta Event</h3>
+                  <h3 class="box-title">Daftar Kehadiran Peserta Rakernas <?php echo"$tahun" ?></h3>
                   <div class="box-tools pull-right">
                   </div> 
                 </div><!-- /.box-header -->
@@ -170,13 +173,13 @@
                  
                 <div class="scroller box-body">
                   <?php
-                    $query1="select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY tanggal DESC, waktu DESC ";
+                    $query1="select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY tanggal DESC, waktu DESC ";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                   <table id="example" class="table table-responsive table-hover table-bordered">
                   <thead>
                       <tr>
-                        <th><center>NIK </center></th>
+                        <th><center>NIP </center></th>
                         <th><center>Nama </center></th>
                         <th><center>Tanggal</center></th>
                         <th><center>Jam</center></th>
