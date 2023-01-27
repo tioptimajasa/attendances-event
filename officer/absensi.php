@@ -29,7 +29,7 @@ include "../conn.php";
             // $nikT = $data_karyawan['nik'];
             $nipT = $data_peserta['nip'];
             $tgl_awal_raker = ("2023-01-20");
-            $tgl_akhir_raker = ("2023-01-24");
+            $tgl_akhir_raker = ("2023-01-28");
             ?>
     <h3><center>DAFTAR HADIR PESERTA</center></h3>
 <h3><center><?php echo $data_event['nama_event']; ?>, <?php echo $data_event['tanggal']; ?> </center> </h3>
@@ -39,26 +39,27 @@ include "../conn.php";
 <?php
 			date_default_timezone_set('Asia/Jakarta');
             
-			if(isset($_POST['kode'])){
+			if(isset($_POST['kode_qr'])){
         $query_kehadiran = mysqli_query($koneksi, "SELECT * FROM kehadiran");
         $data_kehadiran = mysqli_fetch_array($query_kehadiran);
-        $tgl2 = date("Y-m-d");
-				//$sql = mysqli_query($koneksi, "SELECT * FROM kehadiran WHERE nik='$_POST[kode]' AND event='$event' ");
+        $tgl_today = date("Y-m-d");
+        $tgl_today_notif = date("d-m-Y");
+				//$sql = mysqli_query($koneksi, "SELECT * FROM kehadiran WHERE nik='$_POST[kode_qr]' AND event='$event' ");
     
-    $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode]'");
+    $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode_qr]'");
 			  if(mysqli_num_rows($sql) == 1){
 
-    $sql = mysqli_query($koneksi, "SELECT * FROM kehadiran WHERE nik='$_POST[kode]' AND event='$event' AND tanggal='$tgl2' ") Or die (mysqli_error($koneksi));
+    $sql = mysqli_query($koneksi, "SELECT * FROM kehadiran WHERE nik='$_POST[kode_qr]' AND event='$event' AND tanggal='$tgl_today' ") Or die (mysqli_error($koneksi));
 			if(mysqli_num_rows($sql) == 0){
 				
-				$kode = $_POST['kode'];
+				$kode_qr = $_POST['kode_qr'];
 				  $acara= $event;
 		          $status = "Hadir";
 		          $tanggal = date("Y-m-d");
               $waktu = date("H:i:s");
 				
                                   
-				$insert = mysqli_query($koneksi, "INSERT INTO kehadiran (nik, tanggal, waktu, event, status) VALUES ('$kode', '$tanggal', '$waktu', '$acara', '$status')") or die (mysqli_error($koneksi));
+				$insert = mysqli_query($koneksi, "INSERT INTO kehadiran (nik, tanggal, waktu, event, status) VALUES ('$kode_qr', '$tanggal', '$waktu', '$acara', '$status')") or die (mysqli_error($koneksi));
 				if($insert){
 					echo '<script>sweetAlert({
 	                                                   title: "SUCCESS", 
@@ -79,7 +80,7 @@ include "../conn.php";
 			}else{
 				  echo '<script>sweetAlert({
 	                                                   title: "INFORMATION", 
-                                                        text: "Anda sudah terdaftar absen!", 
+                                                        text: "Anda sudah terdaftar absen hari ini: '.$tgl_today_notif.' !", 
                                                         type: "info",
 														timer : 2000
                                                         });</script>';
@@ -87,10 +88,10 @@ include "../conn.php";
 
       }else{
         echo '<script>sweetAlert({
-                                                   title: "FAILED", 
+                                                      title: "FAILED", 
                                                       text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
                                                       type: "warning",
-                          timer : 4000
+                                                      timer : 4000
                                                       });</script>';
       }
 			
@@ -106,7 +107,7 @@ include "../conn.php";
            
             
             <form method="POST" id="scan" name="update" action="absensi.php">
-<center><input style="width:500px; height:75px; font-size: 25px;" name="kode" id="text2" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off" required="required"/></center>
+<center><input style="width:500px; height:75px; font-size: 25px;" name="kode_qr" id="text2" class="form-control" placeholder="Scan QR Code" onchange="this.form.submit();" autofocus="on" autocomplete="off" required="required"/></center>
 <!-- <right><input type="text" name="text" id="text" readonly="" class="form-control> </right> -->
 </form>
 </div>
