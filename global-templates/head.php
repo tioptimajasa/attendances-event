@@ -43,12 +43,30 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-    .scroller {
-  height: 325px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-}
+<style type="text/css">
+  .scroller { /* div table ==> scrollable parent element */
+    height: 325px;
+    /* overflow-y: scroll; */
+    scrollbar-width: thin;
+    /* Penambahan untuk freeze from tableFix = Scrollable parent element */
+    position: relative; /* Penambahan untuk freeze from tableFix = Scrollable parent element */
+    overflow: auto;
+    /* height: 100px; */
+  }
+  .scroller table{
+  width: 100%;
+  border-collapse: collapse;
+  }
+  .scroller th,
+  .scroller td{
+  padding: 8px;
+  text-align: left;
+  }
+  .scroller thead th {
+  position: sticky;  /* Edge, Chrome, FF */
+  top: 0px;
+  background: #fff;  /* Some background is needed */
+  }
 </style>
 
 <script src="../dist/sweetalert-dev.js"></script>
