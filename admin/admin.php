@@ -100,6 +100,9 @@ include "session.php";
                             else if ($data['level'] == 'user' ){
 								echo '<span class="label label-info">User</span>';
 							}
+                          else if ($data['level'] == 'officer' ){
+              echo '<span class="label label-warning">Officer</span>';
+              }
                              ?></center></td>
                     <!--<td><center><img src="<?php //echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
                     <!-- <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="#" onclick="return confirm(\'Silahkan hubungi tim TI-POJ \')"><span class="glyphicon glyphicon-edit"></span></a>  

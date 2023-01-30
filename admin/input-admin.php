@@ -49,10 +49,16 @@
                 <div class="box-body">
                   <div class="form-panel">
                       <form class="form-horizontal style-form" action="insert-admin.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                          <div class="form-group">
+                          <!-- <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">User ID</label>
                               <div class="col-sm-8">
                                   <input name="user_id" type="text" id="user_id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" readonly="readonly" />
+                              </div>
+                          </div> -->
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Event</label>
+                              <div class="col-sm-8">
+                                  <input name="event" type="text" id="user_id" class="form-control" placeholder="Tidak perlu di isi" value="Rakernas PT PESONNA OPTIMA JASA Tahun 2023" autofocus="on" readonly="readonly" />
                               </div>
                           </div>
                           <div class="form-group">
