@@ -1,4 +1,4 @@
-<?php include "session-user.php"; ?>
+<?php include "session-officer.php"; ?>
 <!DOCTYPE html>
 <html>
  <?php include "../global-templates/head.php" ?>
@@ -8,7 +8,7 @@
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
-      <?php include "menu-user.php"; ?>
+      <?php include "menu-officer.php"; ?>
 
 <?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
@@ -20,7 +20,7 @@
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="index-user.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="index-officer.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li class="active">Peserta</li>
           </ol>
         </section>
@@ -65,20 +65,19 @@
           	</div>
             </form>-->
             <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
-            <!-- <a href="peserta_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br /> -->
-  
-<table id="lookup" class="table table-bordered table-hover">  
+            <a href="peserta_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
+                   <table id="lookup" class="table table-bordered table-hover">  
 	<thead bgcolor="eeeeee" align="center">
-                    <tr>
-                      <th colspan="3"><center>Data Pegawai</center></th>
-                      <th colspan="2"><center>Kamar</center></th>
-                    </tr>
       <tr>
-       <th style="text-align:center">NIP</th>
-	     <th style="text-align:center">Nama</th>
-	     <th style="text-align:center">Jabatan</th>
-       <th style="text-align:center">Type Kamar</th>
-       <th style="text-align:center">Nomor Kamar</th>
+	  
+       <th>NIP</th>
+	     <th>Nama</th>
+	     <th>Jabatan</th>
+       <th>Unit Kerja</th>
+       <th>Type Peserta</th>
+       <th>Foto</th>
+	   <th class="text-center"> Action </th> 
+	  
       </tr>
     </thead>
     <tbody>
@@ -88,7 +87,7 @@
   </table>  
                 </div><!-- /.box-body -->
                 <div class="box-footer clearfix no-border">
-                  <!-- <a href="input-peserta-officer.php" class="btn btn-sm btn-default pull-right"><i class="fa fa-plus"></i> Tambah Peserta</a> -->
+                  <a href="input-peserta-officer.php" class="btn btn-sm btn-default pull-right"><i class="fa fa-plus"></i> Tambah Peserta</a>
                   </div>
               </div><!-- /.box -->
 
@@ -134,8 +133,7 @@
 					"processing": true,
 					"serverSide": true,
 					"ajax":{
-						// url :"ajax-data-peserta-officer.php", // json datasource
-						url :"ajax-list-peserta-user.php", // json datasource
+						url :"ajax-data-peserta-officer.php", // json datasource
 						type: "post",  // method  , by default get
 						error: function(){  // error handling
 							$(".lookup-error").html("");
@@ -146,6 +144,6 @@
 					}
 				} );
 			} );
-</script>
+        </script>
   </body>
 </html>
