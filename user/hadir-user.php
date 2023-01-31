@@ -1,12 +1,14 @@
 <?php include "session-user.php"; ?>
 <!DOCTYPE html>
 <html>
- <?php include "head-user.php" ?>
+ <!-- <php include "head-user.php" ?> -->
+ <?php include "../global-templates/head.php" ?>
   </head>
   <body class="hold-transition skin-green-light sidebar-mini">
     <div class="wrapper">
 
-      <?php include "header-user.php"; ?>
+      <!-- <php include "header-user.php"; ?> -->
+      <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "menu-user.php"; ?>
 
@@ -15,21 +17,23 @@
 $query_kehadiran = mysqli_query($koneksi, "SELECT * FROM kehadiran");
 $data_kehadiran = mysqli_fetch_array($query_kehadiran);
 $tglToday = date("Y-m-d");
+$tahun = date('Y');
 
 ?>
 
-<?php include "waktu-user.php"; ?>
+<!-- <php include "waktu-user.php"; ?> -->
+<?php include "../global-templates/waktu-session.php"; ?>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Kehadiran Peserta Rakernas 2022
+            Kehadiran Peserta Rakernas <?php echo "$tahun" ?>
             <small>Attendances Event Apps</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="index-user.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Kehadiran Peserta Rakernas 2022</li>
+            <li class="active">Kehadiran Peserta Rakernas <?php echo "$tahun" ?></li>
           </ol>
         </section>
 
@@ -44,11 +48,11 @@ $tglToday = date("Y-m-d");
                <div class="box box-primary">
                 <div class="box-header">
                   <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">Data Kehadiran Peserta Rakernas 2022</h3>
+                  <h3 class="box-title">Data Kehadiran Peserta Rakernas <?php echo "$tahun" ?></h3>
                   <div class="box-tools pull-right">
                   <form action='hadir-user.php' method="POST">
     	             <div class="input-group" style="width: 230px;">
-                      <input type="text" name="qcari" class="form-control input-sm pull-right" placeholder="Cari NIK Peserta">
+                      <input type="text" name="qcari" class="form-control input-sm pull-right" placeholder="Cari NIP Peserta">
                       <div class="input-group-btn">
                         <button type="submit" class="btn btn-sm btn-default tooltips" data-placement="bottom" data-toggle="tooltip" title="Cari Data"><i class="fa fa-search"></i></button>
                         <a href="hadir-user.php" class="btn btn-sm btn-success tooltips" data-placement="bottom" data-toggle="tooltip" title="Refresh"><i class="fa fa-refresh"></i></a>
@@ -66,7 +70,8 @@ $tglToday = date("Y-m-d");
           	</div>
             </form>-->
                   <?php
-                    $query1="select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND tanggal='$tglToday' ";
+                    // $query1="select kehadiran.*, karyawan.* from kehadiran, karyawan where kehadiran.nik=karyawan.nik AND kehadiran.status='Hadir' AND tanggal='$tglToday' ";
+                    $query1="select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND tanggal='$tglToday' ";
                     
                     if(isset($_POST['qcari'])){
 	               $qcari=$_POST['qcari'];
@@ -82,7 +87,7 @@ $tglToday = date("Y-m-d");
                   <thead>
                       <tr>
                         <th><center>No </center></th>
-                        <th><center>NIK </center></th>
+                        <th><center>NIP </center></th>
                         <!-- <th><center>Nama </center></th> -->
                         <th><center>Tanggal </center></th>
                         <!-- <th><center>Event </center></th> -->
@@ -124,9 +129,11 @@ $tglToday = date("Y-m-d");
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-      <?php include "../admin/footer.php"; ?>
+      <!-- <php include "../admin/footer.php"; ?> -->
+      <?php include "../global-templates/footer.php"; ?>
 
-      <?php include "../admin/sidecontrol.php"; ?>
+      <!-- <php include "../admin/sidecontrol.php"; ?> -->
+      <?php include "../global-templates/sidecontrol.php"; ?>
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
