@@ -51,7 +51,7 @@
                 <li><a href="peserta-officer.php"><i class="fa fa-circle-o"></i> List Peserta</a></li>
                 <!-- <li><a href="input-karyawan.php"><i class="fa fa-circle-o"></i> Input Karyawan</a></li> -->
                 <!-- <li><a href="karyawan_importxls.php"><i class="fa fa-circle-o"></i> Import Data Excel</a></li> -->
-                <li><a href="input-peserta-officer.php"><i class="fa fa-circle-o"></i> Pendaftaran Peserta Rakernas</a></li>
+                <li><a href="input-peserta-officer.php"><i class="fa fa-circle-o"></i> Pendaftaran Peserta</a></li>
               </ul>
             </li>
             

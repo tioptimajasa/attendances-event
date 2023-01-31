@@ -1,5 +1,6 @@
  <!-- this content page == head.php -->
  <head>
+    <link rel="icon" href="../dist/img/icon-poj.png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Attendances Event Apps | PT. Pesonna Optima Jasa</title>
