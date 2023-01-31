@@ -130,8 +130,8 @@ $_SESSION['start_time'] = time();
 
                       <tr>
                       <!-- <td Colspan="4" height="8%" style="background : green; color: white;"><center><b> <small>Hotel - Semarang <br/> 7-9 Februari 2023</small></b></center></td>              -->
-                      <td Colspan="2" height="5%" ><center><i class="glyphicon glyphicon-map-marker"> </i><b> <small>Hotel - Semarang</small></b></center></td>             
-                      <td Colspan="2" height="5%" ><center><i class="glyphicon glyphicon-calendar"> </i><b> <small>7-9 Februari 2023</small></b></center></td>             
+                      <td Colspan="2" height="5%" ><center><i class="glyphicon glyphicon-map-marker"> </i><b> <small>Hotel Santika Premiere<br/>Semarang, Jawa Tengah</small></b></center></td>             
+                      <td Colspan="2" height="5%" ><center><i class="glyphicon glyphicon-calendar"> </i><b> <small>6-10 Februari 2023</small></b></center></td>             
                       </tr>
 
                       <tr>
