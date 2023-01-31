@@ -85,9 +85,14 @@
                                   <option value="MANAGER SDM">Manager SDM</option>
                                   <option value="MANAGER LOGISTIK">Manager Logistik</option>
                                   <option value="MANAGER OJP">Manager OJP</option>
+                                  <option value="MANAGER RENTAL">Manager Rental</option>
                                   <option value="ASISTEN MANAGER TI">Asisten Manager TI</option>
                                   <option value="ASISTEN MANAGER SPI">Asisten Manager SPI</option>
                                   <option value="STAF">Staf</option>
+                                  <option value="KA PERWAKILAN">KA Perwakilan</option>
+                                  <option value="Plt KA PERWAKILAN">Plt KA Perwakilan</option>
+                                  <option value="MARKETING EKSEKUTIF">Marketing Eksekutif</option>
+                                  <option value="KOORDINATOR AREA">Koordinator Area</option>
                                 </select> 
                             </div>
                           </div>

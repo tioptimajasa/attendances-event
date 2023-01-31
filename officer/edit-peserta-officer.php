@@ -113,9 +113,19 @@
                              <option <?=($jabat=='DIREKTUR')?'selected="selected"':''?>>DIREKTUR</option>
                              <option <?=($jabat=='GENERAL MANAGER')?'selected="selected"':''?>>GENERAL MANAGER</option>
                              <option <?=($jabat=='KEPALA SPI')?'selected="selected"':''?>>KEPALA SPI</option>
-                             <option <?=($jabat=='MANAGER')?'selected="selected"':''?>>MANAGER</option>
-                             <option <?=($jabat=='ASISTEN MANAGER')?'selected="selected"':''?>>ASISTEN MANAGER</option>
+                             <option <?=($jabat=='MANAGER TI')?'selected="selected"':''?>>MANAGER TI</option>
+                             <option <?=($jabat=='MANAGER KEUANGAN')?'selected="selected"':''?>>MANAGER KEUANGAN</option>
+                             <option <?=($jabat=='MANAGER SDM')?'selected="selected"':''?>>MANAGER SDM</option>
+                             <option <?=($jabat=='MANAGER LOGISTIK')?'selected="selected"':''?>>MANAGER LOGISTIK</option>
+                             <option <?=($jabat=='MANAGER OJP')?'selected="selected"':''?>>MANAGER OJP</option>
+                             <option <?=($jabat=='MANAGER RENTAL')?'selected="selected"':''?>>MANAGER RENTAL</option>
+                             <option <?=($jabat=='ASISTEN MANAGER TI')?'selected="selected"':''?>>ASISTEN MANAGER TI</option>
+                             <option <?=($jabat=='ASISTEN MANAGER SPI')?'selected="selected"':''?>>ASISTEN MANAGER SPI</option>
                              <option <?=($jabat=='STAF')?'selected="selected"':''?>>STAF</option>
+                             <option <?=($jabat=='KA PERWAKILAN')?'selected="selected"':''?>>KA PERWAKILAN</option>
+                             <option <?=($jabat=='Plt KA PERWAKILAN')?'selected="selected"':''?>>Plt KA PERWAKILAN</option>
+                             <option <?=($jabat=='MARKETING EKSEKUTIF')?'selected="selected"':''?>>MARKETING EKSEKUTIF</option>
+                             <option <?=($jabat=='KOORDINATOR AREA')?'selected="selected"':''?>>KOORDINATOR AREA</option>
                               </select> 
                             </div>
                           </div>
