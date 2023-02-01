@@ -2279,6 +2279,23 @@ th {
   max-width: 100%;
   margin-bottom: 20px;
 }
+
+/* TES CSS responsive table */
+/* Media Query */
+@media (max-width: 767px){
+  .table{
+    width: 90%;
+  }
+  
+}
+@media (max-width: 375px){
+  .table{
+    width: 90%;
+  }
+  
+}
+
+
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -2462,8 +2479,10 @@ table th[class*="col-"] {
     width: 100%;
     margin-bottom: 15px;
     overflow-y: hidden;
+    overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
+    -webkit-overflow-scrolling: touch;
   }
   .table-responsive > .table {
     margin-bottom: 0;

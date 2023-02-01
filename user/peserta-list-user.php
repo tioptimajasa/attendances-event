@@ -67,7 +67,14 @@
             <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
             <!-- <a href="peserta_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br /> -->
   
-<table id="lookup" class="table table-bordered table-hover">  
+<!-- <table id="lookup" class="table table-bordered table-hover">   -->
+<div class="scroller box-body">
+                  <?php
+                    // $query1="select kehadiran.*, peserta.* from kehadiran, peserta where kehadiran.nik=peserta.nip AND kehadiran.status='Hadir' AND kehadiran.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY tanggal DESC, waktu DESC ";
+                    $query1="select peserta.* from peserta ORDER BY sequence ASC";
+                    $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
+                  ?>
+<table id="example" class="table table-responsive table-hover table-bordered">  
 	<thead bgcolor="eeeeee" align="center">
                     <tr>
                       <th colspan="3"><center>Data Pegawai</center></th>
@@ -81,9 +88,21 @@
        <th style="text-align:center">Nomor Kamar</th>
       </tr>
     </thead>
+                    <?php 
+                     //$no=0;
+                     while($data=mysqli_fetch_array($tampil))
+                    { //$no++; ?>
     <tbody>
-	 
-					 
+    <tr>
+                    <td><center><?php echo $data['nip'];?></center></td>
+                    <td><center><?php echo $data['nama'];?></center></td>
+                    <td><center><?php echo $data['jabatan'];?></center></td>
+                    <td><center><?php echo $data['type_kamar'];?> </center></td>
+                    <td><center><?php echo $data['no_kamar'];?> </center></td>
+                    </tr></div>
+                 <?php   
+              } 
+                ?>
     </tbody>
   </table>  
                 </div><!-- /.box-body -->
