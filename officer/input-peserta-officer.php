@@ -91,7 +91,7 @@
                                   <option value="STAF">Staf</option>
                                   <option value="REGIONAL MANAGER">Regional Manager</option>
                                   <option value="Plt REGIONAL MANAGER">Plt Regional Manager</option>
-                                  <option value="MARKETING EKSEKUTIF">Marketing Eksekutif</option>
+                                  <option value="MARKETING EXECUTIVE">Marketing Executive</option>
                                   <option value="AREA MANAGER">Area Manager</option>
                                 </select> 
                             </div>

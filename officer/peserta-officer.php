@@ -4,7 +4,7 @@
  <?php include "../global-templates/head.php" ?>
   </head>
   <body class="hold-transition skin-green-light sidebar-mini">
-    <div class="wrapper">
+    <div class="wrapper table-responsive">
 
       <?php include "../global-templates/header.php"; ?>
       <!-- Left side column. contains the logo and sidebar -->
@@ -67,7 +67,7 @@
             <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
             <a href="peserta_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
                    <!-- <table id="lookup" class="table table-responsive table-bordered table-hover">   -->
-                   <table id="lookup" class="display responsive nowrap table-bordered table-hover" style="width:100%; height:100%">  
+                   <table id="lookup" class="display responsive nowrap table-bordered table-hover" style="width:100%">  
 	<thead bgcolor="eeeeee" align="center">
       <tr>
 	  
@@ -131,8 +131,10 @@
  <script>
         $(document).ready(function() {
 				var dataTable = $('#lookup').DataTable( {
+          responsive: true,
 					"processing": true,
 					"serverSide": true,
+          "autoWidth": false,
 					"ajax":{
 						url :"ajax-data-peserta-officer.php", // json datasource
 						type: "post",  // method  , by default get

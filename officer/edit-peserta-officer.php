@@ -124,7 +124,7 @@
                              <option <?=($jabat=='STAF')?'selected="selected"':''?>>STAF</option>
                              <option <?=($jabat=='REGIONAL MANAGER')?'selected="selected"':''?>>REGIONAL MANAGER</option>
                              <option <?=($jabat=='Plt REGIONAL MANAGER')?'selected="selected"':''?>>Plt REGIONAL MANAGER</option>
-                             <option <?=($jabat=='MARKETING EKSEKUTIF')?'selected="selected"':''?>>MARKETING EKSEKUTIF</option>
+                             <option <?=($jabat=='MARKETING EXECUTIVE')?'selected="selected"':''?>>MARKETING EXECUTIVE</option>
                              <option <?=($jabat=='AREA MANAGER')?'selected="selected"':''?>>AREA MANAGER</option>
                               </select> 
                             </div>
