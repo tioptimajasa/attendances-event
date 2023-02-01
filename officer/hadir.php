@@ -41,7 +41,7 @@
                   </div> 
                 </div><!-- /.box-header -->
                 
-                <div class="box-body">
+                <div class="box-body table-responsive">
                 <?php
              if(isset($_GET['aksi']) == 'delete'){
 				$id = $_GET['id'];
