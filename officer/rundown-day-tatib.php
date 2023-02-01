@@ -48,38 +48,38 @@
 <br /><br />
 
         <!-- //Tata Tertib -->
-      <div>
+        <div>
         <p>
         <!-- <i class="fa fa-asterisk"></i> --><b>1. </b>Yang berhak mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 adalah peserta yang telah terdaftar pada list peserta.
         </p><br/>
         <p>
-        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 melalui alamat web berikut : https:// rekernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
+        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 melalui alamat web berikut : https://rakernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>3. </b>Peserta diharuskan hadir di lokasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 sesuai dengan jadwal yang telah diberikan.
         </p><br/>
         <p>
-        <b>4. </b>Peserta diharuskan melakukan absensi dan registrasi pada saat kedatangan di meja panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
+        <b>4. </b>Peserta diharuskan melakukan registrasi dan pengambilan merchandise pada saat kedatangan haari pertama di meja panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>5. </b>Peserta diharuskan menyiapkan perlengkapan berupa Laptop, alat tulis untuk mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>6. </b>Peserta diharuskan mengenakan Dresscode sesuai jadwal yang ditentukan sebagai berikut: <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Senin, 06 Februari 2023 : Smart Casual (bebas).<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Selasa, 07 Februari 2023 : Smart Casual (kemeja casual; celana/rok tidak blue jeans; blazer/jas jaket).<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Rabu, 08 Februari 2023 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp; - Kamis, 09 Februari 2023 : Polo Tshirt (dari Panitia); celana/rok tidak blue jeans; blazer/jaket.<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Senin,  06 Februari 2023 : <b>Smart Casual (bebas).</b><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Selasa, 07 Februari 2023 : <b>Kemeja Putih dan Celana/rok Warna Khaki.</b><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Rabu,   08 Februari 2023 : <b>Polo T-shirt (disediakan panitia yang diserahkan saat pengambilan merchandise) dan Celana/rok boleh jeans.</b><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp; - Kamis,  09 Februari 2023 : <b>T-shirt (disediakan panitia yang diserahkan saat pengambilan merchandise) dan Celana/rok Bebas.</b><br/>
         </p><br/>
         <p>
-        <b>7. </b>Pada hari kedua dan ketiga (07-08 Februari 2023) Peserta diharuskan melakukan absensi di meja panitia paling lambat 5 menit sebelum acara dimulai dengan menunjukan kartu peserta yang telah diperoleh pada saat registrasi.
+        <b>7. </b>Pada hari kedua sampai hari keempat (07-09 Februari 2023) Peserta diharuskan melakukan absensi di meja panitia paling lambat 5 menit sebelum acara dimulai dengan menunjukan kartu peserta yang telah diperoleh pada saat registrasi.
         </p><br/>
         <p>
         <b>8. </b>Peserta diharuskan mengikuti seluruh rangkaian kegiatan acara yang telah di siapkan oleh panitia Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>9. </b>Peserta diharuskan mematuhi tata tertib dan tidak diperkenankan mengganggu jalannya pelaksanaan acara Rapat Kerja Nasional.
-        </p>
+        </p><br/>
         <p>
         <b>10. </b>Pada saat berlangsungnya acara, peserta tidak diperkenankan untuk keluar dari area Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 tanpa alasan yang jelas.
         </p><br/>

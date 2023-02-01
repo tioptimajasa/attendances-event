@@ -49,22 +49,22 @@
         <ul class="timeline">
                             <li class="event" data-date="06:30 WIB - 08:00 WIB">
                                 <h3>Breakfast (90 Menit)</h3>
-                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
+                                <p>Lokasi: Restoran Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="08:00 WIB - 08:30 WIB">
                                 <h3>Pembukaan (30 Menit)</h3>
                                 <p>Pembukaan MC, Menyanyikan Lagu Indonesia Raya, Sambutan Ketua Panitia, Pembukaan Acara oleh Direksi, Doa</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang C</p>
                             </li>
                             <li class="event" data-date="08:30 WIB - 09:15 WIB">
                                 <h3>Speech Komisaris (45 Menit)</h3>
                                 <p>Alfian Noor</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="09:15 WIB - 10:00 WIB">
                                 <h3>Voice of Customer (45 Menit)</h3>
                                 <p>Pemimpin Wilayah Semarang</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="10:00 WIB - 10:30 WIB">
                                 <h3>Coffee Break (30 Menit)</h3>
@@ -73,7 +73,7 @@
                             <li class="event" data-date="10:30 WIB - 12:00 WIB">
                                 <h3>Speech Direktur Utama (90 Menit)</h3>
                                 <p>Agus Priyabodo</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang C</p>
                             </li>
                             <li class="event" data-date="12:00 WIB - 13:00 WIB">
                                 <h3>ISHOMA (60 Menit)</h3>
@@ -83,12 +83,12 @@
                             <li class="event" data-date="13:00 WIB - 14:00 WIB">
                                 <h3>Speech Direktur (60 Menit)</h3>
                                 <p>Yul Afian</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang C</p>
                             </li>
                             <li class="event" data-date="14:00 WIB - 16:00 WIB">
                                 <h3>Speech Motivasi <small>"Bekerja adalah ibadah"</small> (120 Menit)</h3>
                                 <p>Ustadz Wijayanto</p>
-                                <!-- <p>Lokasi: Resto Lantai 2 dekat Receptionist</p> -->
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="16:00 WIB - 16:30 WIB">
                                 <h3>Coffee Break & Sholat (30 Menit)</h3>
@@ -97,18 +97,18 @@
                             <li class="event" data-date="16:30 WIB - 18:00 WIB">
                                 <h3>Speech GM OJP (90 Menit)</h3>
                                 <p>Novian Indrajaya</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="18:00 WIB - 19:00 WIB">
                                 <h3>ISHOMA  (60 Menit)</h3>
                                 <!-- <p>Syamsul Jauhari</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <!-- <li class="event" data-date="16:15 WIB - 17:45 WIB">
-                                <h3>Speech GM Rental & Usaha Lain (90 Menit)</h3>
-                                <p>Dodik Sugeng H</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li> -->
+                            <li class="event" data-date="19:00 WIB - 21:00 WIB">
+                                <h3>Dinner & Ramah tamah (120 Menit)</h3>
+                                <p>Panitia</p>
+                                <p>Lokasi: Restoran Hotel Santika Premiere Semarang</p>
+                            </li>
                             <!-- <li class="event" data-date="17:45 WIB - 19:00 WIB">
                                 <h3>ISHOMA (105 Menit)</h3>
                                 <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
@@ -123,7 +123,7 @@
                                 <p>Pamella Patrycia Monangin</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li> -->
-                        </ul>
+        </ul>
                     
         <!-- .//Timeline Rundown -->
 

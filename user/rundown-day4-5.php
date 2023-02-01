@@ -49,19 +49,19 @@
         <ul class="timeline">
                             <li class="event" data-date="06:00 WIB - 07:00 WIB">
                                 <h3>Breakfast (60 Menit)</h3>
-                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
+                                <p>Lokasi: Restoran Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="07:00 WIB - 17:00 WIB">
-                                <h3>Outbond (600 Menit)</h3>
-                                <!-- <p>Panitia</p> -->
-                                <p>Lokasi: One Day Outbond</p>
-                                <p><a href="#"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                                <h3>One Day Outbond (600 Menit)</h3>
+                                <p>Panitia</p>
+                                <p>Lokasi: Bukit Cinta Rawa Pening</p>
+                                <p><a href="https://goo.gl/maps/UtjLjVTzPBVaada87"><i class="fa fa-map"> Click go to Maps</i></a></p>
                             </li>
                             <li class="event" data-date="18:00 WIB - 21:00 WIB">
                                 <h3>Dinner (180 Menit)</h3>
-                                <p>Lokasi: Unknown</p>
-                                <!-- <p>Panitia</p> -->
-                                <p><a href="#"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                                <p>Panitia</p>
+                                <p>Lokasi: Restoran Layang-layang</p>
+                                <p><a href="https://goo.gl/maps/6HyfbBBsqFiNbJTG9"><i class="fa fa-map"> Click go to Maps</i></a></p>
                             </li>
                             <!-- <li class="event" data-date="19:00 WIB - 21:00 WIB">
                                 <h3>Dinner (120 Menit)</h3>

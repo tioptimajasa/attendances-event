@@ -49,63 +49,69 @@
         <ul class="timeline">
                             <li class="event" data-date="06:30 WIB - 08:00 WIB">
                                 <h3>Breakfast (90 Menit)</h3>
-                                <p>Lokasi: Resto Lantai 2 dekat Receptionist</p>
+                                <p>Lokasi: Restoran Hotel Santika Premiere Semarang</p>
                             </li>
                             <li class="event" data-date="08:00 WIB - 09:30 WIB">
                                 <h3>Speech GM Rental & Usaha Lain (90 Menit)</h3>
                                 <p>Dodik Sugeng H</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
                             <!-- <li class="event" data-date="07:30 WIB - 08:30 WIB">
                                 <h3>Speech Kepala SPI (60 Menit)</h3>
                                 <p>Andi Pangeran</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li> -->
-                            <li class="event" data-date="09:30 WIB - 11:00 WIB">
+                            <li class="event" data-date="09:30 WIB - 10:00 WIB">
+                                <h3>Coffe Breaak (30 Menit)</h3>
+                                <!--<p>Panitia</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>-->
+                            </li>
+                            <li class="event" data-date="10:00 WIB - 11:30 WIB">
                                 <h3>Speech GM SDM & Logistik (90 Menit)</h3>
                                 <p>Lucia Retna Widarti</p>
-                                <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
-                            <li class="event" data-date="11:00 WIB - 12:00 WIB">
+                            <li class="event" data-date="11:30 WIB - 12:30 WIB">
                                 <h3>Speech Ka SPI (60 Menit)</h3>
                                 <p>A. Sigit Agung W</p>
-                                <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
-                            <li class="event" data-date="12:00 WIB - 13:00 WIB">
+                            <li class="event" data-date="12:30 WIB - 13:30 WIB">
                                 <h3>ISHOMA (60 Menit)</h3>
                                 <!-- <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <li class="event" data-date="13:00 WIB - 14:30 WIB">
+                            <li class="event" data-date="13:30 WIB - 15:00 WIB">
                                 <h3>Speech GM Keuangan dan TI (90 Menit)</h3>
                                 <p>I Wayan Sukerata</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
-                            <li class="event" data-date="14:30 WIB - 15:30 WIB">
-                                <h3>Kontrak Manajemen (60 Menit)</h3>
+                            <li class="event" data-date="15:00 WIB - 16:00 WIB">
+                                <h3>Apresiasi & Kontrak Manajemen (60 Menit)</h3>
                                 <p>Panitia</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
-                            <li class="event" data-date="15:30 WIB - 16:00 WIB">
-                                <h3>Penutupan (30 Menit)</h3>
-                                <!-- <p>Panitia</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
-                            </li>
-                            <li class="event" data-date="16:00 WIB - 18:00 WIB">
-                                <h3>Coffee Break & Sholat (120 Menit)</h3>
+                            <li class="event" data-date="16:00 WIB - 16:15 WIB">
+                                <h3>Coffee Break & Sholat (15 Menit)</h3>
                                 <!-- <p>Jamil Azzaini</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p> -->
                             </li>
-                            <!-- <li class="event" data-date="18:00 WIB - 21:00 WIB">
-                                <h3>Dinner (-- Menit)</h3>
-                                <p>Jamil Azzaini</p>
-                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
-                            </li> -->
-                            <li class="event" data-date="18:00 WIB - 21:00 WIB">
-                                <h3>Dinner (-- Menit)</h3>
-                                <p>D'Colonel Mountain View Cipanas <br />(D'Colonel Mountain View Resto)</p>
-                                <p><a href="https://goo.gl/maps/x261vGjZjtMGh3N89"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            <li class="event" data-date="16:15 WIB - 17:00 WIB">
+                                <h3>Penutupan (30 Menit)</h3>
+                                <p>Panitia</p>
+                                <p>Lokasi: R. Borobudur 1 Hotel Santika Premiere Semarang</p>
                             </li>
-                        </ul>
+                            <li class="event" data-date="17:00 WIB - 18:30 WIB">
+                                <h3>Istiraahat & Sholat (90 Menit)</h3>
+                                <!--<p>Jamil Azzaini</p>
+                                <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>-->
+                            </li> 
+                            <li class="event" data-date="18:00 WIB - 21:00 WIB">
+                                <h3>Dinner (150 Menit)</h3>
+                                <p>Panitia</p>
+                                <p>Restoran Kampung Laut Semarang</p>
+                                <p><a href="https://www.google.com/maps/place/Restoran+Kampung+Laut+Semarang/@-6.962044,110.3860703,15z/data=!4m5!3m4!1s0x0:0x34e7dea74586cb2c!8m2!3d-6.9620039!4d110.386065"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                            </li>
+        </ul>
 
 <!-- <h2> Day 4 <small> Kamis, 31 Maret 2023</h2>
                         <ul class="timeline">

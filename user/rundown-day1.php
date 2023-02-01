@@ -49,9 +49,9 @@
         <ul class="timeline">
                             <li class="event" data-date="15:00 WIB - 18:00 WIB">
                                 <h3>Check In & Registrasi serta Souvenir</h3>
-                                <p>Hotel, Semarang, Jawa Tengah</p>
-                                <p><a href="https://www.google.com/maps/place/Palace+Hotel+Semarang/@-6.7361635,107.0421125,15z/data=!4m18!1m9!3m8!1s0x0:0x2c40fd76652e74fa!2sPalace+Hotel+Semarang!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214!3m7!1s0x0:0x2c40fd76652e74fa!5m2!4m1!1i2!8m2!3d-6.7361638!4d107.0421214"><i class="fa fa-map"> Click go to Maps</i></a></p>
-                                <p>Lokasi: disamping Receptionist Lantai 2</p>
+                                <p>Hotel Santika Premiere, Semarang, Jawa Tengah</p>
+                                <p><a href="https://www.google.com/maps/place/Hotel+Santika+Premiere+Semarang/@-6.9886287,110.4209317,17z/data=!3m1!4b1!4m8!3m7!1s0x2e708b597587dc27:0xcea4b269aec445b8!5m2!4m1!1i2!8m2!3d-6.9886287!4d110.4209317"><i class="fa fa-map"> Click go to Maps</i></a></p>
+                                <p>Lokasi: disamping Receptionist</p>
                             </li>
                             <li class="event" data-date="18:00 WIB - 19:00 WIB">
                                 <h3>Sholat (60 Menit)</h3>
@@ -60,11 +60,11 @@
                             </li>
                             <li class="event" data-date="19:00 WIB - 21:00 WIB">
                                 <h3>Ramah Tamah / Makan Malam di Hotel (120 Menit)</h3>
-                                <!-- <p>Panitia</p> -->
-                                <p>Lokasi: Flamboyan Cafe Lantai 2</p>
+                                <p>Panitia</p>
+                                <p>Lokasi: Restoran Hotel Santika Premiere Semarang</p>
                             </li>
                             
-                        </ul>
+        </ul>
                     
         <!-- .//Timeline Rundown -->
 
