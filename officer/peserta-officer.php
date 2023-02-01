@@ -66,7 +66,8 @@
             </form>-->
             <!-- <a href="karyawan_importxls.php" class="btn btn-sm btn-warning"><i class="fa fa-file"></i> Import Excel</a>  -->
             <a href="peserta_exportxls.php" class="btn btn-sm btn-success"><i class="fa fa-file"></i> Export Excel</a><br /><br />
-                   <table id="lookup" class="table table-bordered table-hover">  
+                   <!-- <table id="lookup" class="table table-responsive table-bordered table-hover">   -->
+                   <table id="lookup" class="display responsive nowrap table-bordered table-hover" style="width:100%; height:100%">  
 	<thead bgcolor="eeeeee" align="center">
       <tr>
 	  

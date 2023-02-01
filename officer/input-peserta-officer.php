@@ -89,10 +89,10 @@
                                   <option value="ASISTEN MANAGER TI">Asisten Manager TI</option>
                                   <option value="ASISTEN MANAGER SPI">Asisten Manager SPI</option>
                                   <option value="STAF">Staf</option>
-                                  <option value="KA PERWAKILAN">KA Perwakilan</option>
-                                  <option value="Plt KA PERWAKILAN">Plt KA Perwakilan</option>
+                                  <option value="REGIONAL MANAGER">Regional Manager</option>
+                                  <option value="Plt REGIONAL MANAGER">Plt Regional Manager</option>
                                   <option value="MARKETING EKSEKUTIF">Marketing Eksekutif</option>
-                                  <option value="KOORDINATOR AREA">Koordinator Area</option>
+                                  <option value="AREA MANAGER">Area Manager</option>
                                 </select> 
                             </div>
                           </div>

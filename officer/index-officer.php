@@ -236,7 +236,7 @@ $tahun = date('Y');
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
    
-    <script>
+    <!-- <script>
 		var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		var color = Chart.helpers.color;
 		var barChartData = {
@@ -280,7 +280,7 @@ $tahun = date('Y');
 		};
 
 
-	</script>
+	</script> -->
 
 
     <!-- jQuery 2.1.4 -->

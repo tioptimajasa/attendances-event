@@ -71,7 +71,8 @@
             <!-- <a href="../countdown-admin-uangSaku.php" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Scan QR Code Uang Saku</a> &nbsp; &nbsp; -->
             <a href="uangSaku.php" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Scan QR Code Uang Saku</a> &nbsp; &nbsp;
             <br /><br />
-  <table id="lookup" class="table table-bordered table-hover">  
+  <!-- <table id="lookup" class="table table-bordered table-hover"> -->
+  <table id="lookup" class="display responsive nowrap table-bordered table-hover" style="width:100%; height:100%">
 	<thead bgcolor="eeeeee" align="center">
       <tr>
 	    <th>Tanggal</th>

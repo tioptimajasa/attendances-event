@@ -122,10 +122,10 @@
                              <option <?=($jabat=='ASISTEN MANAGER TI')?'selected="selected"':''?>>ASISTEN MANAGER TI</option>
                              <option <?=($jabat=='ASISTEN MANAGER SPI')?'selected="selected"':''?>>ASISTEN MANAGER SPI</option>
                              <option <?=($jabat=='STAF')?'selected="selected"':''?>>STAF</option>
-                             <option <?=($jabat=='KA PERWAKILAN')?'selected="selected"':''?>>KA PERWAKILAN</option>
-                             <option <?=($jabat=='Plt KA PERWAKILAN')?'selected="selected"':''?>>Plt KA PERWAKILAN</option>
+                             <option <?=($jabat=='REGIONAL MANAGER')?'selected="selected"':''?>>REGIONAL MANAGER</option>
+                             <option <?=($jabat=='Plt REGIONAL MANAGER')?'selected="selected"':''?>>Plt REGIONAL MANAGER</option>
                              <option <?=($jabat=='MARKETING EKSEKUTIF')?'selected="selected"':''?>>MARKETING EKSEKUTIF</option>
-                             <option <?=($jabat=='KOORDINATOR AREA')?'selected="selected"':''?>>KOORDINATOR AREA</option>
+                             <option <?=($jabat=='AREA MANAGER')?'selected="selected"':''?>>AREA MANAGER</option>
                               </select> 
                             </div>
                           </div>
