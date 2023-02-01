@@ -113,7 +113,7 @@ include "session.php";
                           <label class="col-sm-2 col-sm-2 control-label"></label>
                               <div class="col-sm-6">
                                   <!-- <input name="nama_file" id="nama_file" class="form-control" type="file" /> -->
-                                  <input name="nama_file" id="nama_file" class="form-control" type="file" value="<?php echo $data['gambar'];?>" required />
+                                  <input name="nama_file" id="nama_file" class="form-control" type="file" value="<?php echo $data['gambar'];?>" />
                               </div>
                           </div>
                           <div class="form-group">
