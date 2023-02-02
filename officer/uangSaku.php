@@ -34,7 +34,7 @@
                       date_default_timezone_set('Asia/Jakarta');
                       // if
                       // if validasi tanggal
-                    if(($tgl_today_tes >= $tgl_awal_raker) && ($tgl_today_tes <= $tgl_akhir_raker)){
+                    if(($tgl_today >= $tgl_awal_raker) && ($tgl_today <= $tgl_akhir_raker)){
                       if(isset($_POST['kode'])){
 
                         // if == 1
@@ -49,8 +49,8 @@
                             $kode = $_POST['kode'];
                                       $acara= $event;
                                   $status = "Sudah Ambil";
-                                  // $tanggal = date("Y-m-d");
-                                  $tanggal = $tgl_today_tes;
+                                  $tanggal = date("Y-m-d");
+                                  // $tanggal = $tgl_today_tes;
                                   $waktu = date("H:i:s");
                             
                             $insert = mysqli_query($koneksi, "INSERT INTO uang_saku (nik, tanggal, waktu, event, status) VALUES ('$kode', '$tanggal', '$waktu', '$acara', '$status')") or die (mysqli_error($koneksi));
@@ -131,8 +131,8 @@
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
 
-<!-- <h4>Tanggal: <php echo "$tgl_today" ?></h4>                 -->
-<h4>Tanggal: <?php echo "$tgl_today_tes" ?></h4>                
+<h4>Tanggal: <?php echo "$tgl_today" ?></h4>                
+<!-- <h4>Tanggal: <php echo "$tgl_today_tes" ?></h4>                 -->
                   <table id="example" class="table table-hover table-bordered">
                   <thead>
                       <tr>
