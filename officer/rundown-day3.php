@@ -109,7 +109,7 @@
                                 <p>Restoran Kampung Laut Semarang</p>
                                 <p><a href="https://www.google.com/maps/place/Restoran+Kampung+Laut+Semarang/@-6.962044,110.3860703,15z/data=!4m5!3m4!1s0x0:0x34e7dea74586cb2c!8m2!3d-6.9620039!4d110.386065"><i class="fa fa-map"> Click go to Maps</i></a></p>
                             </li>
-        </ul>
+                        </ul>
 
 <!-- <h2> Day 4 <small> Kamis, 31 Maret 2023</h2>
                         <ul class="timeline">

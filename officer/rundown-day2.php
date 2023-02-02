@@ -121,7 +121,7 @@
                                 <p>Pamella Patrycia Monangin</p>
                                 <p>Lokasi: Ballroom Teratai Lantai 3 Tower C</p>
                             </li> -->
-        </ul>
+                        </ul>
                     
         <!-- .//Timeline Rundown -->
 

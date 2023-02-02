@@ -55,7 +55,7 @@
         <!-- <i class="fa fa-asterisk"></i> --><b>1. </b>Yang berhak mengikuti Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 adalah peserta yang telah terdaftar pada list peserta.
         </p><br/>
         <p>
-        <b>2. </b>Peserta diharuskan melakukan login pada aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 melalui alamat web berikut : https://rakernas.optimajasa.co.id untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
+        <b>2. </b>Peserta memeperoleh informasi dan materi rapat kerja melalui aplikasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 yang dapat di akses melalui alamat web <a href="https://rakernas.optimajasa.co.id"><b>https://rakernas.optimajasa.co.id</b></a> dan aplikasi android khusus peserta yang sudah tersedia di <a href="https://play.google.com/store/apps/details?id=com.poj.peserta_rakernas"><b>google playstore</b></a> untuk memperoleh informasi kegiatan Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023.
         </p><br/>
         <p>
         <b>3. </b>Peserta diharuskan hadir di lokasi Rapat Kerja Nasional PT Pesonna Optima Jasa Tahun 2023 sesuai dengan jadwal yang telah diberikan.
