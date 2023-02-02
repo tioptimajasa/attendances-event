@@ -13,106 +13,76 @@
 
 </head>
 <body>
-  <?php
-  include "../conn.php";
-              $query_event = mysqli_query($koneksi, "SELECT * FROM event WHERE id='1'");
-              $data_event  = mysqli_fetch_array($query_event);
-              $event = $data_event['nama_event'];
-              $tgl = $data_event['tanggal'];
-              $tgl_awal_raker = ("2023-01-28");
-              $tgl_akhir_raker = ("2023-02-02");
-              $tgl_today = date("Y-m-d");
-              $tgl_today_tes = ("2023-01-27");
-  ?>
-
-      <h3><center>DAFTAR PENGAMBILAN <b style="color:red;">UANG SAKU</b></center></h3>
-      <h3><center><?php echo $data_event['nama_event']; ?>, <?php echo $data_event['tanggal']; ?> </center> </h3>
-      <h3><center><?php echo $data_event['lokasi']; ?></center></h3>
+<?php
+include "../conn.php";
+            $query_event = mysqli_query($koneksi, "SELECT * FROM event WHERE id='1'");
+            $data_event  = mysqli_fetch_array($query_event);
+            $event = $data_event['nama_event'];
+            $tgl = $data_event['tanggal'];
+            $tgl_awal_raker = ("2023-01-23");
+            $tgl_akhir_raker = ("2023-01-27");
+            ?>
+    <h3><center>DAFTAR PENGAMBILAN <b style="color:red;">UANG SAKU</b></center></h3>
+    <h3><center><?php echo $data_event['nama_event']; ?>, <?php echo $data_event['tanggal']; ?> </center> </h3>
+<h3><center><?php echo $data_event['lokasi']; ?></center></h3>
 
 <div class="col-lg-12" style="margin-top: 40px;">
-                <?php
-                      date_default_timezone_set('Asia/Jakarta');
-                      // if
-                      // if validasi tanggal
-                    if(($tgl_today_tes >= $tgl_awal_raker) && ($tgl_today_tes <= $tgl_akhir_raker)){
-                      if(isset($_POST['kode'])){
+<?php
+			date_default_timezone_set('Asia/Jakarta');
+			if(isset($_POST['kode'])){
 
-                        // if == 1
-                        // $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
-                        $sql1 = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode]'") or die (mysqli_error($koneksi));
-                        if(mysqli_num_rows($sql1) == 1){
+        // $sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$_POST[kode]'");
+        $sql = mysqli_query($koneksi, "SELECT * FROM peserta WHERE nip='$_POST[kode]'");
+            if(mysqli_num_rows($sql) == 1){
 
-                          // if == 0  
-                          $sql0 = mysqli_query($koneksi, "SELECT * FROM uang_saku WHERE nik='$_POST[kode]' and event='$event' BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ") or die (mysqli_error($koneksi));
-                          if(mysqli_num_rows($sql0) == 0){
-                            
-                            $kode = $_POST['kode'];
-                                      $acara= $event;
-                                  $status = "Sudah Ambil";
-                                  // $tanggal = date("Y-m-d");
-                                  $tanggal = $tgl_today_tes;
-                                  $waktu = date("H:i:s");
-                            
-                            $insert = mysqli_query($koneksi, "INSERT INTO uang_saku (nik, tanggal, waktu, event, status) VALUES ('$kode', '$tanggal', '$waktu', '$acara', '$status')") or die (mysqli_error($koneksi));
-                            if($insert){
-                              echo '<script>sweetAlert({
-                                                                      title: "SUCCESS", 
-                                                                          text: "Silahkan ambil uang saku", 
-                                                                          type: "success",
-                                              timer : 5000
-                                                                          });</script>';
-                                  }
-                                  // else
-                                  // {
-                                  //   echo '<script>sweetAlert({
-                                  //                                   title: "Gagal!", 
-                                  //                                       text: "Ups, Anda sudah ambil uang saku!", 
-                                  //                                       type: "error",
-                                  //           timer : 2000
-                                  //                                       });</script>';
-                                  // }
-                        
-                                    
-                      }
-                      // .if == 0
-                      else
-                      {
-                          echo '<script>sweetAlert({
-                                                                    title: "INFORMATION", 
-                                                                        text: "Anda sudah ambil uang saku!", 
-                                                                        type: "info",
-                                            timer : 4000
-                                                                        });</script>';
-                        }
-
-                    // .if == 1
+		$sql = mysqli_query($koneksi, "SELECT * FROM uang_saku WHERE nik='$_POST[kode]' and event='$event' ") or die (mysqli_error($koneksi));
+			if(mysqli_num_rows($sql) == 0){
+				
+				$kode = $_POST['kode'];
+                  $acara= $event;
+		          $status = "Sudah Ambil";
+		          $tanggal = date("Y-m-d");
+              $waktu = date("H:i:s");
+				  
+				$insert = mysqli_query($koneksi, "INSERT INTO uang_saku (nik, tanggal, waktu, event, status) VALUES ('$kode', '$tanggal', '$waktu', '$acara', '$status')") or die (mysqli_error($koneksi));
+				if($insert){
+					echo '<script>sweetAlert({
+	                                                   title: "SUCCESS", 
+                                                        text: "Silahkan ambil uang saku", 
+                                                        type: "success",
+														timer : 4000
+                                                        });</script>';
+                }else{
+					echo '<script>sweetAlert({
+	                                                   title: "Gagal!", 
+                                                        text: "Ups, Anda sudah ambil uang saku!", 
+                                                        type: "error",
+														timer : 2000
+                                                        });</script>';
                     }
+				
+                    
+			}else{
+				  echo '<script>sweetAlert({
+	                                                   title: "INFORMATION", 
+                                                        text: "Anda sudah ambil uang saku!", 
+                                                        type: "info",
+														timer : 2000
+                                                        });</script>';
+				}
 
-                              else
-                              {
-                                  echo '<script>sweetAlert({
-                                                                            title: "WARNING", 
-                                                                                text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
-                                                                                type: "warning",
-                                                    timer : 4000
-                                                                                });</script>';
-                                }
-                      
-                  }
-                  //.if
-                }
-                else
-                  {
-                    echo '<script>sweetAlert({
-                      title: "FAILED", 
-                          text: "Mohon Maaf waktu Pengambilan Uang Saku belum dibuka", 
-                          type: "error",
-                          timer : 6000
-                          });</script>';
-                  }
-                // .if validasi tanggal 
-                  
-                ?>
+            }else{
+                echo '<script>sweetAlert({
+                                                           title: "FAILED", 
+                                                              text: "Mohon maaf Anda tidak terdaftar sebagai peserta Rakernas PT PESONNA OPTIMA JASA Tahun 2023", 
+                                                              type: "warning",
+                                  timer : 4000
+                                                              });</script>';
+              }
+			
+   }
+			
+			?>
 
 <center>
             <video id="preview" autoplay="autoplay" class="active"
@@ -130,9 +100,6 @@
    $query1="select uang_saku.*, peserta.* from uang_saku, peserta where uang_saku.nik=peserta.nip AND uang_saku.event='$event' AND uang_saku.status='Sudah Ambil' AND uang_saku.tanggal BETWEEN '$tgl_awal_raker' AND '$tgl_akhir_raker' ORDER BY uang_saku.nik ASC";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
-
-<!-- <h4>Tanggal: <php echo "$tgl_today" ?></h4>                 -->
-<h4>Tanggal: <?php echo "$tgl_today_tes" ?></h4>                
                   <table id="example" class="table table-hover table-bordered">
                   <thead>
                       <tr>

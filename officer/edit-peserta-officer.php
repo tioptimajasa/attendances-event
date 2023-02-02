@@ -111,7 +111,10 @@
                               <?php $jabat = $row['jabatan']; ?>
                              <option <?=($jabat=='DIREKTUR UTAMA')?'selected="selected"':''?>>DIREKTUR UTAMA</option>
                              <option <?=($jabat=='DIREKTUR')?'selected="selected"':''?>>DIREKTUR</option>
-                             <option <?=($jabat=='GENERAL MANAGER')?'selected="selected"':''?>>GENERAL MANAGER</option>
+                             <option <?=($jabat=='GENERAL MANAGER KEUANGAN & TI')?'selected="selected"':''?>>GENERAL MANAGER KEUANGAN & TI</option>
+                             <option <?=($jabat=='GENERAL MANAGER SDM & LOGISTIK')?'selected="selected"':''?>>GENERAL MANAGER SDM & LOGISTIK</option>
+                             <option <?=($jabat=='GENERAL MANAGER OJP')?'selected="selected"':''?>>GENERAL MANAGER OJP</option>
+                             <option <?=($jabat=='GENERAL MANAGER RENTAL & USLA')?'selected="selected"':''?>>GENERAL MANAGER RENTAL & USLA</option>
                              <option <?=($jabat=='KEPALA SPI')?'selected="selected"':''?>>KEPALA SPI</option>
                              <option <?=($jabat=='MANAGER TI')?'selected="selected"':''?>>MANAGER TI</option>
                              <option <?=($jabat=='MANAGER KEUANGAN')?'selected="selected"':''?>>MANAGER KEUANGAN</option>

@@ -75,24 +75,27 @@
                               <div class="col-sm-4">
                                 <select name="jabatan" id="jabatan" class="form-control select2" required>
                                   <option value=""> --- Pilih Jabatan --- </option>
-                                  <option value="DIREKTUR UTAMA">Direktur Utama</option>
+                                  <option value="DIREKTUR UTAMA">DIREKTUR UTAMA</option>
                                   <!-- <option value="peserta" selected>Peserta</option> -->
-                                  <option value="DIREKTUR">Direktur</option>
-                                  <option value="GENERAL MANAGER">General Manager</option>
-                                  <option value="KEPALA SPI">Kepala SPI</option>
-                                  <option value="MANAGER TI">Manager TI</option>
-                                  <option value="MANAGER KEUANGAN">Manager Keuangan</option>
-                                  <option value="MANAGER SDM">Manager SDM</option>
-                                  <option value="MANAGER LOGISTIK">Manager Logistik</option>
-                                  <option value="MANAGER OJP">Manager OJP</option>
-                                  <option value="MANAGER RENTAL">Manager Rental</option>
-                                  <option value="ASISTEN MANAGER TI">Asisten Manager TI</option>
-                                  <option value="ASISTEN MANAGER SPI">Asisten Manager SPI</option>
-                                  <option value="STAF">Staf</option>
-                                  <option value="REGIONAL MANAGER">Regional Manager</option>
-                                  <option value="Plt REGIONAL MANAGER">Plt Regional Manager</option>
-                                  <option value="MARKETING EXECUTIVE">Marketing Executive</option>
-                                  <option value="AREA MANAGER">Area Manager</option>
+                                  <option value="DIREKTUR">DIREKTUR</option>
+                                  <option value="GENERAL MANAGER KEUANGAN & TI">GENERAL MANAGER KEUANGAN & TI</option>
+                                  <option value="GENERAL MANAGER SDM & LOGISTIK">GENERAL MANAGER SDM & LOGISTIK</option>
+                                  <option value="GENERAL MANAGER OJP">GENERAL MANAGER OJP</option>
+                                  <option value="GENERAL MANAGER RENTAL & USLA">GENERAL MANAGER RENTAL & USLA</option>
+                                  <option value="KEPALA SPI">KEPALA SPI</option>
+                                  <option value="MANAGER TI">MANAGER TI</option>
+                                  <option value="MANAGER KEUANGAN">MANAGER KEUANGAN</option>
+                                  <option value="MANAGER SDM">MANAGER SDM</option>
+                                  <option value="MANAGER LOGISTIK">MANAGER LOGISTIK</option>
+                                  <option value="MANAGER OJP">MANAGER OJP</option>
+                                  <option value="MANAGER RENTAL">MANAGER RENTAL</option>
+                                  <option value="ASISTEN MANAGER TI">ASISTEN MANAGER TI</option>
+                                  <option value="ASISTEN MANAGER SPI">ASISTEN MANAGER SPI</option>
+                                  <option value="STAF">STAF</option>
+                                  <option value="REGIONAL MANAGER">REGIONAL MANAGER</option>
+                                  <option value="Plt REGIONAL MANAGER">Plt REGIONAL MANAGER</option>
+                                  <option value="MARKETING EXECUTIVE">MARKETING EXECUTIVE</option>
+                                  <option value="AREA MANAGER">AREA MANAGER</option>
                                 </select> 
                             </div>
                           </div>

@@ -87,10 +87,11 @@ $tahun = date('Y');
                   <thead>
                       <tr>
                         <th><center>No </center></th>
-                        <th><center>NIP </center></th>
-                        <!-- <th><center>Nama </center></th> -->
                         <th><center>Tanggal </center></th>
-                        <!-- <th><center>Event </center></th> -->
+                        <th><center>Jam </center></th>
+                        <th><center>NIP </center></th>
+                        <th><center>Nama </center></th>
+                        <th><center>Event </center></th>
                         <th><center>Status </center></th>
                         <!-- <th><center>Tools</center></th> -->
                       </tr>
@@ -102,10 +103,11 @@ $tahun = date('Y');
                     <tbody>
                     <tr>
                     <td><center><?php echo $no; ?></center></td>
-                    <td><center><?php echo $data['nik'];?></center></td>
-                    <!-- <td><center><?php echo $data['nama'];?></center></td> -->
                     <td><center><?php echo $data['tanggal'];?></center></td>
-                    <!-- <td><center><?php echo $data['event'];?></center></td> -->
+                    <td><center><?php echo $data['waktu'];?></center></td>
+                    <td><center><?php echo $data['nik'];?></center></td>
+                    <td><center><?php echo $data['nama'];?></center></td>
+                    <td><center><?php echo $data['event'];?></center></td>
                     <td><center><?php echo $data['status'];?></center></td>
                    
                     <!--<td><center><img src="<?php //echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
